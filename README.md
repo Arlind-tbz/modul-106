@@ -2,6 +2,7 @@
 
 - [1. Modul 106](#1-modul-106)
   - [1.1. Aufgabe 1.1 Datenbankmodelle und Datenbanktheorie](#11-aufgabe-11-datenbankmodelle-und-datenbanktheorie)
+  - [1.2. Aufgabe 1.2 Repetitionsfragen lösen](#12-aufgabe-12-repetitionsfragen-lösen)
 
 
 **Teilnehmer**: Arlind Sulejmani <br>
@@ -24,3 +25,61 @@ Eine objektrelationale Datenbank ist ein Datenbankmodell, das die Vorteile von r
 - Objektorientierte Datenbank
 
 Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in Form von Objekten gespeichert werden, die Eigenschaften und Methoden haben. Es unterstützt die objektorientierte Programmierung und ermöglicht es, Daten in einer Weise zu speichern und abzufragen, die der natürlichen Struktur der Anwendung entspricht. Beispiele für objektorientierte Datenbanken sind ObjectDB und Gemstone.
+
+- Datenbanktheorie
+
+
+- Datenbanksprache SQL
+
+
+## 1.2. Aufgabe 1.2 Repetitionsfragen lösen
+
+1. Was ist eine Relationale Datenbank?
+
+2. Nennen Sie drei verschiedene relationale Datenbank Management Systeme DBMS?
+
+3. Welche Aufgaben erfüllt ein DBMS für Sie als Entwickler?
+
+4. Wie greifen Benutzer (keine Entwickler) auf eine Datenbank zu?
+
+5. Handelt es sich bei SQL um eine Programmiersprache?
+
+6. Ist die Sprache SQL auf allen Datenbanken gleich?
+
+7. Was versteht man unter NoSQL Datenbank?
+
+8. Nennen Sie drei NoSQL Datenbanksysteme?
+
+9. Was versteht man unter Datenbank Schema?
+
+10. Wozu dient ein Entity Relationship Model (ERM)?
+
+11. Wie sieht ein Enhanced Entity Relationship (EER) Model aus?
+
+12. Was bedeuten die Begriffe: Entität, Attribut und Tupel?
+
+13. Was versteht man unter Datenkonsistenz?
+
+14. Was bedeutet Redundanz im Zusammenhang mit einer Datenbank?
+
+15. Was versteht man unter Normalform?
+
+16. Wie unterscheiden sich die erste, zweite und dritte Normalform?
+
+17. Was versteht man unter Primär- und Fremdschlüssel?
+
+18. Was ist referentielle Integrität?
+
+19. Was bringt Object-Relational Mapping (ORM)?
+
+20. Wie unterscheiden sich die Datentypen Char und Varchar?
+
+21. Was ist ein Character Set und wie unterscheiden sich ASCII, LATIN1 und UTF-8?
+
+22. Wie unterscheiden sich die Datentypen Integer und Float?
+
+23. Wozu verwendet man den Datentyp Decimal?
+
+24. Wie unterscheiden sich die Datentypen Timestamp und Datetime?
+
+25. Wie unterscheiden sich 0 und NULL?

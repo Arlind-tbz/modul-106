@@ -73,7 +73,7 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
    - Verwaltung und Speicherung von Daten in einer Datenbank
    - Ermöglicht den Zugriff auf die Datenbank durch Abfragen und Aktionen mittels einer Abfragesprache
    - Bietet Werkzeuge zur Verwaltung und Verwaltung der Datenbankstruktur, wie z.B. Erstellung, Änderung und Löschen von Tabellen.
-  
+
 4. Wie greifen Benutzer (keine Entwickler) auf eine Datenbank zu?
    - Benutzer greifen auf eine Datenbank über eine Benutzeroberfläche (**GUI**) zu, die ihnen ermöglicht, Daten einzugeben, abzufragen, anzuzeigen und zu bearbeiten.
    - Benutzer können auf die Datenbank über eine Anwendung (z.B. ein Programm oder eine Website) zugreifen, die speziell für den Zugriff auf die Datenbank entwickelt wurde.
@@ -83,12 +83,12 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
    - SQL (Structured Query Language) ist eine spezielle Abfragesprache, die entwickelt wurde, um Daten in relationalen Datenbanken zu verwalten und abzufragen.
    - SQL ist keine allgemeine Programmiersprache, sondern eine Domänen-spezifische Sprache, die ausschließlich für die Arbeit mit Datenbanken verwendet wird.
    - SQL wird verwendet, um Aktionen wie Einfügen, Aktualisieren, Löschen und Abfragen von Daten in einer relationalen Datenbank durchzuführen.
-  
+
 6. Ist die Sprache SQL auf allen Datenbanken gleich?
    - SQL ist eine standardisierte Abfragesprache, die von vielen Datenbankmanagementsystemen unterstützt wird.
    - Allerdings gibt es Unterschiede in der Implementierung von SQL zwischen verschiedenen Datenbanken, insbesondere in Bezug auf erweiterte Funktionen und Erweiterungen.
    - Einige Datenbanken haben ihre eigene Variante der SQL-Sprache, die speziell für die Verwendung mit dieser Datenbank optimiert wurde, wie z.B. T-SQL(Transact-SQL) von Microsoft SQL Server.
-  
+
 7. Was versteht man unter NoSQL Datenbank?
    - NoSQL Datenbanken sind Datenbanken, die nicht auf die relationale Datenmodellierung und die Verwendung von SQL als Abfragesprache setzen.
    - NoSQL Datenbanken verwenden andere Datenmodelle wie Dokument, Schlüssel-Wert, Graf oder Column-Family-basiertes Modell.
@@ -100,10 +100,10 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
    - Redis
 
 9.  Was versteht man unter Datenbank Schema?
-   - Ein Datenbank-Schema beschreibt die Struktur und Organisation von Daten in einer Datenbank.
-   - Es enthält die Definitionen von Tabellen, Spalten, Indizes, Beziehungen und anderen Strukturelementen der Datenbank.
-   - Es legt die Regeln und Einschränkungen fest, die die Daten in der Datenbank einhalten müssen, um die Integrität der Daten zu gewährleisten.
-  
+    - Ein Datenbank-Schema beschreibt die Struktur und Organisation von Daten in einer Datenbank.
+    - Es enthält die Definitionen von Tabellen, Spalten, Indizes, Beziehungen und anderen Strukturelementen der Datenbank.
+    - Es legt die Regeln und Einschränkungen fest, die die Daten in der Datenbank einhalten müssen, um die Integrität der Daten zu gewährleisten.
+
 10. Wozu dient ein Entity Relationship Model (ERM)?
     - Ein Entity Relationship Model (ERM) dient dazu, die Beziehungen zwischen Entitäten in einer Datenbank zu beschreiben und darzustellen. Es hilft dabei, komplexe Datenstrukturen zu verstehen und zu analysieren.
 
@@ -188,7 +188,7 @@ mysql> USE mysql;
 mysql> SHOW TABLES;
 ```
 
-- Beschreibung (Struktur) einer Tabelle anzeigen  
+- Beschreibung (Struktur) einer Tabelle anzeigen
 ```SQL
 mysql> DESCRIBE user;
 mysql> DESC user;

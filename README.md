@@ -46,6 +46,15 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
 - Unterstützung von mehreren Benutzern und Zugriffssteuerung für Sicherheit.
 ### 1.1.6. Datenbanksprache SQL
 
+1. Datendefinition (DDL): Diese Sprachelemente werden verwendet, um Datenbankobjekte wie Tabellen, Views und Indizes zu erstellen, zu ändern oder zu löschen. Die Befehle, die zu diesem Sprachelement gehören, sind CREATE, ALTER, DROP, TRUNCATE und RENAME.
+
+2. Datenmanipulation (DML): Diese Sprachelemente werden verwendet, um Daten in einer Datenbank zu ändern, abzurufen oder zu löschen. Die Befehle, die zu diesem Sprachelement gehören, sind SELECT, INSERT, UPDATE, DELETE und MERGE.
+
+3. Datenabfrage (DQL): Diese Sprachelemente werden verwendet, um Daten aus einer Datenbank abzurufen. Die Befehle, die zu diesem Sprachelement gehören, sind SELECT und JOIN.
+
+4. Datensteuerungssprache (DCL): Diese Sprachelemente werden verwendet, um Berechtigungen zu verwalten und zu kontrollieren, wer auf eine Datenbank zugreifen darf. Die Befehle, die zu diesem Sprachelement gehören, sind GRANT und REVOKE.
+
+5. Transaktionssteuerung (TCL): Diese Sprachelemente werden verwendet, um Änderungen an einer Datenbank in einer Transaktion zu verwalten. Die Befehle, die zu diesem Sprachelement gehören, sind COMMIT, ROLLBACK und SAVEPOINT.
 
 ## 1.2. Aufgabe 1.2 Repetitionsfragen lösen
 

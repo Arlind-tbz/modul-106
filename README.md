@@ -11,6 +11,7 @@
     - [1.2.5. Datenbanktheorie](#125-datenbanktheorie)
     - [1.2.6. Datenbanksprache SQL](#126-datenbanksprache-sql)
   - [1.3. Aufgabe 1.2 Repetitionsfragen lösen](#13-aufgabe-12-repetitionsfragen-lösen)
+  - [1.4. Aufgabe 1.3 Erste Schritte mit MariaDB](#14-aufgabe-13-erste-schritte-mit-mariadb)
 
 
 **Teilnehmer**: Arlind Sulejmani
@@ -127,3 +128,31 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
 
 25. Wie unterscheiden sich 0 und NULL?
     -  0 ist eine Zahl, die als Wert 0 dargestellt wird, während NULL als leerer Wert in Programmiersprachen verwendet wird. In der Datenbank wird NULL als fehlender Wert definiert, der keinen Wert hat.
+
+## 1.4. Aufgabe 1.3 Erste Schritte mit MariaDB
+
+- Hilfe anzeigen
+```SQL
+mysql> \?
+```
+
+- Liste aller Datenbanken anzeigen
+```SQL
+mysql> SHOW DATABASES;
+```
+
+- Mit einer bestimmten Datenbank verbinden
+```SQL
+mysql> USE mysql;
+```
+
+- Alle Tabellen anzeigen
+```SQL
+mysql> SHOW TABLES;
+```
+
+- Beschreibung (Struktur) einer Tabelle anzeigen  
+```SQL
+mysql> DESCRIBE user;
+mysql> DESC user;
+```

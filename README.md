@@ -99,16 +99,28 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
 17. Was versteht man unter Primär- und Fremdschlüssel?
 
 18. Was ist referentielle Integrität?
+    - Referentielle Integrität ist ein Datenbanksystem, das sicherstellt, dass Daten nicht versehentlich oder absichtlich verändert oder gelöscht werden. Es schützt die Daten vor unerlaubten Änderungen, indem es Verbindungen zwischen Tabellen herstellt und Änderungen an den Daten validiert, bevor sie in der Datenbank gespeichert werden.
 
 19. Was bringt Object-Relational Mapping (ORM)?
+    - ORM ermöglicht die Abbildung relationaler Datenbanken in objektorientierte Programmiersprachen. Es vereinfacht den Zugriff auf Datenbanken, da keine SQL-Befehle verwendet werden müssen, sondern die Datenbanken direkt über den Code angesprochen werden können.
 
 20. Wie unterscheiden sich die Datentypen Char und Varchar?
+    - Der Datentyp Char speichert konstante Zeichenketten einer festen Länge, während der Datentyp Varchar Variable-Längen-Zeichenketten speichert.  
 
 21. Was ist ein Character Set und wie unterscheiden sich ASCII, LATIN1 und UTF-8?
+    - Ein Character Set ist eine Sammlung von Symbolen und Zeichen, die einem bestimmten Zweck dienen. 
+
+    - ASCII (American Standard Code for Information Interchange) ist ein 7-bit-Code, der zur Darstellung von Texten in Englisch verwendet wird.
+
+    - LATIN1 (ISO-8859-1) ist ein 8-bit-Code, der zur Darstellung von Texten in Westeuropa verwendet wird.
+
+    - UTF-8 (Unicode Transformation Format 8-bit) ist ein 8-bit-Code, der für die Darstellung von Texten in verschiedenen Sprachen verwendet wird.
 
 22. Wie unterscheiden sich die Datentypen Integer und Float?
+    - Integer-Variablen speichern ganzzahlige Werte, während Float-Variablen Gleitkommazahlen speichern.  
 
 23. Wozu verwendet man den Datentyp Decimal?
+    - Der Datentyp Decimal wird verwendet, um finanzielle Werte und Gleitkommazahlen mit hoher Genauigkeit zu speichern und zu verarbeiten.  
 
 24. Wie unterscheiden sich die Datentypen Timestamp und Datetime?
     - Der Timestamp-Datentyp speichert eine einzelne Zeitangabe als Ganzzahl, während der Datetime-Datentyp speichert eine kombinierte Datum und Uhrzeitangabe als Zeichenfolge. 

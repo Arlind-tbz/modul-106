@@ -11,6 +11,7 @@
     - [1.2.5. Datenbanktheorie](#125-datenbanktheorie)
     - [1.2.6. Datenbanksprache SQL](#126-datenbanksprache-sql)
   - [1.3. Aufgabe 1.2 Repetitionsfragen lösen](#13-aufgabe-12-repetitionsfragen-lösen)
+  - [1.4. Aufgabe 1.3 Erste Schritte mit MariaDB](#14-aufgabe-13-erste-schritte-mit-mariadb)
 
 
 **Teilnehmer**: Arlind Sulejmani
@@ -61,7 +62,7 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
 ## 1.3. Aufgabe 1.2 Repetitionsfragen lösen
 
 1. Was ist eine Relationale Datenbank?
-   - Eine relationale Datenbank ist eine Art von Datenbank, die Daten in Tabellen speichert, die über Schlüsselwörter und Verknüpfungen miteinander verbunden sind. Dies ermöglicht ein schnelleres und genaueres Abrufen von Informationen. 
+   - Eine relationale Datenbank ist eine Art von Datenbank, die Daten in Tabellen speichert, die über Schlüsselwörter und Verknüpfungen miteinander verbunden sind. Dies ermöglicht ein schnelleres und genaueres Abrufen von Informationen.
 
 2. Nennen Sie drei verschiedene relationale Datenbank Management Systeme DBMS?
    - MySQL
@@ -69,13 +70,21 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
    - Oracle Database
 
 3. Welche Aufgaben erfüllt ein DBMS für Sie als Entwickler?
-
+   - Verwaltung und Speicherung von Daten in einer Datenbank
+   - Ermöglicht den Zugriff auf die Datenbank durch Abfragen und Aktionen mittels einer Abfragesprache
+   - Bietet Werkzeuge zur Verwaltung und Verwaltung der Datenbankstruktur, wie z.B. Erstellung, Änderung und Löschen von Tabellen.
 4. Wie greifen Benutzer (keine Entwickler) auf eine Datenbank zu?
-
+   - Benutzer greifen auf eine Datenbank über eine Benutzeroberfläche (GUI) zu, die ihnen ermöglicht, Daten einzugeben, abzufragen, anzuzeigen und zu bearbeiten.
+   - Benutzer können auf die Datenbank über eine Anwendung (z.B. ein Programm oder eine Website) zugreifen, die speziell für den Zugriff auf die Datenbank entwickelt wurde.
+   - Benutzer können auf die Datenbank über Abfragesprachen (z.B. SQL) direkt zugreifen, wenn sie über die notwendigen Kenntnisse und Berechtigungen verfügen.
 5. Handelt es sich bei SQL um eine Programmiersprache?
-
+   - SQL (Structured Query Language) ist eine spezielle Abfragesprache, die entwickelt wurde, um Daten in relationalen Datenbanken zu verwalten und abzufragen.
+   - SQL ist keine allgemeine Programmiersprache, sondern eine Domänen-spezifische Sprache, die ausschließlich für die Arbeit mit Datenbanken verwendet wird.
+   - SQL wird verwendet, um Aktionen wie Einfügen, Aktualisieren, Löschen und Abfragen von Daten in einer relationalen Datenbank durchzuführen.
 6. Ist die Sprache SQL auf allen Datenbanken gleich?
-
+   - SQL ist eine standardisierte Abfragesprache, die von vielen Datenbankmanagementsystemen unterstützt wird.
+   - Allerdings gibt es Unterschiede in der Implementierung von SQL zwischen verschiedenen Datenbanken, insbesondere in Bezug auf erweiterte Funktionen und Erweiterungen.
+   - Einige Datenbanken haben ihre eigene Variante der SQL-Sprache, die speziell für die Verwendung mit dieser Datenbank optimiert wurde, wie z.B. T-SQL(Transact-SQL) von Microsoft SQL Server.
 7. Was versteht man unter NoSQL Datenbank?
 
 8. Nennen Sie drei NoSQL Datenbanksysteme?
@@ -143,3 +152,31 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
 
 25. Wie unterscheiden sich 0 und NULL?
     -  0 ist eine Zahl, die als Wert 0 dargestellt wird, während NULL als leerer Wert in Programmiersprachen verwendet wird. In der Datenbank wird NULL als fehlender Wert definiert, der keinen Wert hat.
+
+## 1.4. Aufgabe 1.3 Erste Schritte mit MariaDB
+
+- Hilfe anzeigen
+```SQL
+mysql> \?
+```
+
+- Liste aller Datenbanken anzeigen
+```SQL
+mysql> SHOW DATABASES;
+```
+
+- Mit einer bestimmten Datenbank verbinden
+```SQL
+mysql> USE mysql;
+```
+
+- Alle Tabellen anzeigen
+```SQL
+mysql> SHOW TABLES;
+```
+
+- Beschreibung (Struktur) einer Tabelle anzeigen  
+```SQL
+mysql> DESCRIBE user;
+mysql> DESC user;
+```

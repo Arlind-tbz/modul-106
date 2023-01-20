@@ -197,52 +197,50 @@ mysql> DESC user;
 ## 1.5. Aufgabe 2.1 ERM des Datenbank Schemas entwerfen
 
 ```SQL
-DROP DATABASE IF EXISTS pizzaKurrier;
-CREATE DATABASE pizzaKurrier;
-USE pizzaKurrier;
+DROP DATABASE IF EXISTS `pizzakurrier`;
+CREATE DATABASE `pizzakurrier`;
+USE `pizzakurrier`;
 
-CREATE TABLE customer (
-    id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(45) NOT NULL,
-    address VARCHAR(45) NOT NULL,
-    areacode TINYINT(4) NOT NULL,
-    area VARCHAR(45) NOT NULL,
-    email VARCHAR(45) NOT NULL UNIQUE,
-    phonenumber VARCHAR(45) NOT NULL UNIQUE,
-    
-    PRIMARY KEY(id)
+CREATE TABLE `customer`(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `firstname` VARCHAR(45) NOT NULL,
+    `lastname` VARCHAR(45) NOT NULL,
+    `postcode` INT NOT NULL,
+    `location` VARCHAR(45) NOT NULL,
+    `email` VARCHAR(255) NOT NULL UNIQUE,
+    `phone_number` VARCHAR(255) NOT NULL UNIQUE,
+    PRIMARY KEY (`id`)
 );
 
-CREATE TABLE orders (
-    id INT NOT NULL AUTO_INCREMENT,
-    amount INT NOT NULL,
-    order_date DATETIME NOT NULL DEFAULT NOW(),
-    delivery_date DATETIME,
-    
-    PRIMARY KEY(id)
+CREATE TABLE `order`(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `amount` INT NOT NULL,
+    `order_date` DATETIME NOT NULL DEFAULT NOW(),
+    `delivery_date` DATETIME,
+    `fk_customer_id` INT NOT NULL,
+    PRIMARY KEY (`id`),
+    FOREIGN KEY (`fk_customer_id`) REFERENCES `customer`(`id`)
 );
 
-CREATE TABLE product (
-    id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(45) NOT NULL,
-    description VARCHAR(20) NOT NULL,
-    price DECIMAL(7,2) NOT NULL,
-    
-    PRIMARY KEY(id)
+CREATE TABLE `product_category`(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(45) NOT NULL,
+    PRIMARY KEY (`id`)
 );
 
-CREATE TABLE productcategory (
-    id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(45) NOT NULL,
-    
-    PRIMARY KEY(id)
+CREATE TABLE product(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `description` TEXT NOT NULL,
+    `price` DECIMAL(5,2),
+    `fk_product_category_id` INT NOT NULL,
+    PRIMARY KEY (`id`),
+    FOREIGN KEY (`fk_product_category_id`) REFERENCES `product_category`(`id`)
 );
 
-CREATE TABLE order_has_product (
-    fk_orderid INT NOT NULL,
-    fk_productid INT NOT NULL,
-    
-    FOREIGN KEY(fk_orderid) REFERENCES orders(id),
-    FOREIGN KEY(fk_productid) REFERENCES product(id)
+CREATE TABLE `order_has_product` (
+  `fk_order_id` INT NOT NULL,
+  `fk_product_id` INT NOT NULL,
+  FOREIGN KEY (`fk_order_id`) REFERENCES `order`(`id`),
+  FOREIGN KEY (`fk_product_id`) REFERENCES `product`(`id`)
 );
 ```

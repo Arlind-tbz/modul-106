@@ -37,15 +37,15 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
 
 ### 1.2.5. Datenbanktheorie
 
-- Speicherung von Daten in Tabellen mit Spalten und Zeilen
-- Verwendung von Schlüsselfeldern zur Verknüpfung von Tabellen
-- Unterstützung von Abfragen in natürlicher Sprache (z.B. SQL)
-- Möglichkeit zur Durchführung von Aktionen wie Einfügen, Aktualisieren und Löschen von Daten
-- Unterstützung von Transaktionen, um die Integrität der Daten sicherzustellen
-- Unterstützung von Indizes zur Beschleunigung von Abfragen
-- Unterstützung von Fremdschlüsselbeziehungen zur Verwaltung von Beziehungen zwischen Tabellen
-- Möglichkeit zur Verwendung von Views, um Daten auf bestimmte Weise darzustellen
-- Unterstützung von mehreren Benutzern und Zugriffssteuerung für Sicherheit.
+    - Speicherung von Daten in Tabellen mit Spalten und Zeilen
+    - Verwendung von Schlüsselfeldern zur Verknüpfung von Tabellen
+    - Unterstützung von Abfragen in natürlicher Sprache (z.B. SQL)
+    - Möglichkeit zur Durchführung von Aktionen wie Einfügen, Aktualisieren und Löschen von Daten
+    - Unterstützung von Transaktionen, um die Integrität der Daten sicherzustellen
+    - Unterstützung von Indizes zur Beschleunigung von Abfragen
+    - Unterstützung von Fremdschlüsselbeziehungen zur Verwaltung von Beziehungen zwischen Tabellen
+    - Möglichkeit zur Verwendung von Views, um Daten auf bestimmte Weise darzustellen
+    - Unterstützung von mehreren Benutzern und Zugriffssteuerung für Sicherheit.
 ### 1.2.6. Datenbanksprache SQL
 
 - **Datendefinition** (**DDL**): Diese Sprachelemente werden verwendet, um Datenbankobjekte wie Tabellen, Views und Indizes zu erstellen, zu ändern oder zu löschen. Die Befehle, die zu diesem Sprachelement gehören, sind CREATE, ALTER, DROP, TRUNCATE und RENAME.

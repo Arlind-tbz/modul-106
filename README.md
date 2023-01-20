@@ -11,7 +11,8 @@
   - [1.2. Aufgabe 1.2 Repetitionsfragen lösen](#12-aufgabe-12-repetitionsfragen-lösen)
 
 
-**Teilnehmer**: Arlind Sulejmani <br>
+**Teilnehmer**: Arlind Sulejmani
+
 **Kursleiter**: Damien Vouillamoz
 
 ## 1.1. Aufgabe 1.1 Datenbankmodelle und Datenbanktheorie

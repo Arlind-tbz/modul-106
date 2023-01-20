@@ -158,7 +158,7 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
     - Integer-Variablen speichern ganzzahlige Werte, während Float-Variablen Gleitkommazahlen speichern.
 
 23. Wozu verwendet man den Datentyp Decimal?
-    - Der Datentyp Decimal wird verwendet, um finanzielle Werte und Gleitkommazahlen mit hoher Genauigkeit zu speichern und zu verarbeiten.
+    - Der Datentyp Decimal wird verwendet, um finanzielle Werte zu speichern.
 
 24. Wie unterscheiden sich die Datentypen Timestamp und Datetime?
     - Der Timestamp-Datentyp speichert eine einzelne Zeitangabe als Ganzzahl, während der Datetime-Datentyp speichert eine kombinierte Datum und Uhrzeitangabe als Zeichenfolge.

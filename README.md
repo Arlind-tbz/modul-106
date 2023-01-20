@@ -228,7 +228,7 @@ CREATE TABLE `product_category`(
     PRIMARY KEY (`id`)
 );
 
-CREATE TABLE product(
+CREATE TABLE `product`(
     `id` INT NOT NULL AUTO_INCREMENT,
     `description` TEXT NOT NULL,
     `price` DECIMAL(5,2),

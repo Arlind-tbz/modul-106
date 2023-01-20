@@ -84,16 +84,25 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
 9.  Was versteht man unter Datenbank Schema?
 
 10. Wozu dient ein Entity Relationship Model (ERM)?
+    - Ein Entity Relationship Model (ERM) dient dazu, die Beziehungen zwischen Entitäten in einer Datenbank zu beschreiben und darzustellen. Es hilft dabei, komplexe Datenstrukturen zu verstehen und zu analysieren.
 
 11. Wie sieht ein Enhanced Entity Relationship (EER) Model aus?
+    - Ein Enhanced Entity Relationship (EER) Model ist ein Modell zur Visualisierung des Konzepts der Datenbankstruktur. Es besteht aus Entitäten, Beziehungen und Attributen, welche darstellen, wie die Entitäten miteinander in Beziehung stehen und wie die Attribute jeder Entität definiert sind.
 
 12. Was bedeuten die Begriffe: Entität, Attribut und Tupel?
+    - **Entität**: Eine Entität ist ein Objekt, eine Person, ein Konzept oder ein Ereignis, das relevantes Wissen oder Daten besitzt und in einer Datenbank oder einem Datenmodell verarbeitet wird.
+    - **Attribut**: Ein Attribut ist ein Merkmal oder ein Eigenschaft einer Entität, das spezifische Informationen über die Entität enthält.
+    - **Tupel**: Ein Tupel ist eine Sammlung von Attributen, die zu einer Entität gehören. Es kann mehrere Attribute enthalten, die zusammenarbeiten, um eine einzelne Entität zu beschreiben.
 
 13. Was versteht man unter Datenkonsistenz?
+    - Datenkonsistenz bezieht sich auf die Richtigkeit und Vollständigkeit von Daten in einer SQL-Datenbank.
+     - Datenkonsistenz bedeutet, dass die Daten in einer Datenbank korrekt und vollständig sind und dass sie sich nicht widersprechen.
 
 14. Was bedeutet Redundanz im Zusammenhang mit einer Datenbank?
+    - Redundanz bedeutet, dass eine Datenbank mehr Daten als nötig speichert, um sicherzustellen, dass jede benötigte Information verfügbar ist und die Integrität der Daten gewährleistet ist.
 
 15. Was versteht man unter Normalform?
+    - Die Normalform ist ein Kriterium für den Aufbau einer relationalen Datenbank. Es beinhaltet die Unterteilung von Tabellen in mehrere kleinere Tabellen, die jeweils ein spezifisches Merkmal enthalten, und die Verknüpfung dieser Tabellen mittels Fremdschlüssel.
 
 16. Wie unterscheiden sich die erste, zweite und dritte Normalform?
 
@@ -106,10 +115,10 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
     - ORM ermöglicht die Abbildung relationaler Datenbanken in objektorientierte Programmiersprachen. Es vereinfacht den Zugriff auf Datenbanken, da keine SQL-Befehle verwendet werden müssen, sondern die Datenbanken direkt über den Code angesprochen werden können.
 
 20. Wie unterscheiden sich die Datentypen Char und Varchar?
-    - Der Datentyp Char speichert konstante Zeichenketten einer festen Länge, während der Datentyp Varchar Variable-Längen-Zeichenketten speichert.  
+    - Der Datentyp Char speichert konstante Zeichenketten einer festen Länge, während der Datentyp Varchar Variable-Längen-Zeichenketten speichert.
 
 21. Was ist ein Character Set und wie unterscheiden sich ASCII, LATIN1 und UTF-8?
-    - Ein Character Set ist eine Sammlung von Symbolen und Zeichen, die einem bestimmten Zweck dienen. 
+    - Ein Character Set ist eine Sammlung von Symbolen und Zeichen, die einem bestimmten Zweck dienen.
 
     - ASCII (American Standard Code for Information Interchange) ist ein 7-bit-Code, der zur Darstellung von Texten in Englisch verwendet wird.
 
@@ -118,13 +127,13 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
     - UTF-8 (Unicode Transformation Format 8-bit) ist ein 8-bit-Code, der für die Darstellung von Texten in verschiedenen Sprachen verwendet wird.
 
 22. Wie unterscheiden sich die Datentypen Integer und Float?
-    - Integer-Variablen speichern ganzzahlige Werte, während Float-Variablen Gleitkommazahlen speichern.  
+    - Integer-Variablen speichern ganzzahlige Werte, während Float-Variablen Gleitkommazahlen speichern.
 
 23. Wozu verwendet man den Datentyp Decimal?
-    - Der Datentyp Decimal wird verwendet, um finanzielle Werte und Gleitkommazahlen mit hoher Genauigkeit zu speichern und zu verarbeiten.  
+    - Der Datentyp Decimal wird verwendet, um finanzielle Werte und Gleitkommazahlen mit hoher Genauigkeit zu speichern und zu verarbeiten.
 
 24. Wie unterscheiden sich die Datentypen Timestamp und Datetime?
-    - Der Timestamp-Datentyp speichert eine einzelne Zeitangabe als Ganzzahl, während der Datetime-Datentyp speichert eine kombinierte Datum und Uhrzeitangabe als Zeichenfolge. 
+    - Der Timestamp-Datentyp speichert eine einzelne Zeitangabe als Ganzzahl, während der Datetime-Datentyp speichert eine kombinierte Datum und Uhrzeitangabe als Zeichenfolge.
 
 25. Wie unterscheiden sich 0 und NULL?
     -  0 ist eine Zahl, die als Wert 0 dargestellt wird, während NULL als leerer Wert in Programmiersprachen verwendet wird. In der Datenbank wird NULL als fehlender Wert definiert, der keinen Wert hat.

@@ -86,11 +86,21 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
    - Allerdings gibt es Unterschiede in der Implementierung von SQL zwischen verschiedenen Datenbanken, insbesondere in Bezug auf erweiterte Funktionen und Erweiterungen.
    - Einige Datenbanken haben ihre eigene Variante der SQL-Sprache, die speziell für die Verwendung mit dieser Datenbank optimiert wurde, wie z.B. T-SQL(Transact-SQL) von Microsoft SQL Server.
 7. Was versteht man unter NoSQL Datenbank?
+   - NoSQL Datenbanken sind Datenbanken, die nicht auf die relationale Datenmodellierung und die Verwendung von SQL als Abfragesprache setzen.
+   - NoSQL Datenbanken verwenden andere Datenmodelle wie Dokument, Schlüssel-Wert, Graf oder Column-Family-basiertes Modell.
+   - NoSQL Datenbanken sind in der Lage, mit großen und unstrukturierten Datenmengen umzugehen und sind somit für Anwendungen mit hohen Anforderungen an Skalierbarkeit und Verfügbarkeit geeignet.
+
 
 8. Nennen Sie drei NoSQL Datenbanksysteme?
+   - MongoDB
+   - Cassandra
+   - Redis
+
 
 9.  Was versteht man unter Datenbank Schema?
-
+   - Ein Datenbank-Schema beschreibt die Struktur und Organisation von Daten in einer Datenbank.
+   - Es enthält die Definitionen von Tabellen, Spalten, Indizes, Beziehungen und anderen Strukturelementen der Datenbank.
+   - Es legt die Regeln und Einschränkungen fest, die die Daten in der Datenbank einhalten müssen, um die Integrität der Daten zu gewährleisten.
 10. Wozu dient ein Entity Relationship Model (ERM)?
     - Ein Entity Relationship Model (ERM) dient dazu, die Beziehungen zwischen Entitäten in einer Datenbank zu beschreiben und darzustellen. Es hilft dabei, komplexe Datenstrukturen zu verstehen und zu analysieren.
 

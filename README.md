@@ -62,109 +62,126 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
 ## 1.3. Aufgabe 1.2 Repetitionsfragen lösen
 
 1. Was ist eine Relationale Datenbank?
-   - Eine relationale Datenbank ist eine Art von Datenbank, die Daten in Tabellen speichert, die über Schlüsselwörter und Verknüpfungen miteinander verbunden sind. Dies ermöglicht ein schnelleres und genaueres Abrufen von Informationen. Stellt referenzierte Integrität sicher. Datentypen müssen bei Einträgen eingehalten werden.
+
+- verwaltet Daten strukturiert und überschaubar
+- regelt den Zugriff auf Datensätze
+- muss flexibel sein um bestehende Daten in anderen Applikationen nutzen zu können
+- speichert Daten nicht redundant
+- gewährleistet die Datenintegrität
 
 2. Nennen Sie drei verschiedene relationale Datenbank Management Systeme DBMS?
-   - MySQL
-   - Microsoft SQL Server
-   - Oracle Database
+
+- MSSQL
+- Oracle
+- MySQL
 
 3. Welche Aufgaben erfüllt ein DBMS für Sie als Entwickler?
-   - Verwaltung und Speicherung von Daten in einer Datenbank
-   - Ermöglicht den Zugriff auf die Datenbank durch Abfragen und Aktionen mittels einer Abfragesprache
-   - Bietet Werkzeuge zur Verwaltung und Verwaltung der Datenbankstruktur, wie z.B. Erstellung, Änderung und Löschen von Tabellen.
+
+- DBMS stellt sicher, dass die Eigenschaften einer Datenbank (Datenkonsistenz, Datenintegrität, ...)
+sichergestellt ist, Verwaltet die Daten strukturiert und ermöglicht mir die Manipulation dieser über
+eine SQL Schnittstelle.
 
 4. Wie greifen Benutzer (keine Entwickler) auf eine Datenbank zu?
-   - Benutzer greifen auf eine Datenbank über eine Benutzeroberfläche (**GUI**) zu, die ihnen ermöglicht, Daten einzugeben, abzufragen, anzuzeigen und zu bearbeiten.
-   - Benutzer können auf die Datenbank über eine Anwendung (z.B. ein Programm oder eine Website) zugreifen, die speziell für den Zugriff auf die Datenbank entwickelt wurde.
-   - Benutzer können auf die Datenbank über Abfragesprachen (z.B. SQL) direkt zugreifen, wenn sie über die notwendigen Kenntnisse und Berechtigungen verfügen.
 
-5. Handelt es sich bei SQL um eine Programmiersprache? **(NEIN)**
-   - SQL (Structured Query Language) ist eine spezielle Abfragesprache, die entwickelt wurde, um Daten in relationalen Datenbanken zu verwalten und abzufragen.
-   - SQL ist keine allgemeine Programmiersprache, sondern eine Domänen-spezifische Sprache, die ausschließlich für die Arbeit mit Datenbanken verwendet wird.
-   - SQL wird verwendet, um Aktionen wie Einfügen, Aktualisieren, Löschen und Abfragen von Daten in einer relationalen Datenbank durchzuführen.
+- Nicht Entwickler greifen mittels Applikationen auf die Datenbank zu, welche im Hintergrund die
+SQL Schnittstelle konsumieren resp. ansteuert.
+
+5. Handelt es sich bei SQL um eine Programmiersprache?
+
+- Nein, es handelt sich bei SQL um eine strukturierte Abfragesprache (Structured Query Language).
 
 6. Ist die Sprache SQL auf allen Datenbanken gleich?
-   - SQL ist eine standardisierte Abfragesprache, die von vielen Datenbankmanagementsystemen unterstützt wird.
-   - Allerdings gibt es Unterschiede in der Implementierung von SQL zwischen verschiedenen Datenbanken, insbesondere in Bezug auf erweiterte Funktionen und Erweiterungen.
-   - Einige Datenbanken haben ihre eigene Variante der SQL-Sprache, die speziell für die Verwendung mit dieser Datenbank optimiert wurde, wie z.B. T-SQL(Transact-SQL) von Microsoft SQL Server.
+
+- Der SQL Standart ist auf allen Datenbanken gleich. Nur existieren je nach Produkt (MSSQL, ...) gewisse Dialekte, welche diese um spezifische Funktionen erweitern.
 
 7. Was versteht man unter NoSQL Datenbank?
-   - NoSQL Datenbanken sind Datenbanken, die nicht auf die relationale Datenmodellierung und die Verwendung von SQL als Abfragesprache setzen.
-   - NoSQL Datenbanken verwenden andere Datenmodelle wie Dokument, Schlüssel-Wert, Graf oder Column-Family-basiertes Modell.
-   - NoSQL Datenbanken sind in der Lage, mit großen und unstrukturierten Datenmengen umzugehen und sind somit für Anwendungen mit hohen Anforderungen an Skalierbarkeit und Verfügbarkeit geeignet.
+
+- NoSQL bezeichnet Datenbanken, die einen nicht-relationalen Ansatz verfolgen und damit mit der langen Geschichte relationaler Datenbanken brechen. Diese Datenspeicher benötigen keine festgelegten Tabellenschemata und versuchen Joins zu vermeiden. Sie skalieren dabei horizontal. Im akademischen Umfeld werden sie häufig als „strukturierte Datenspeicher“ bezeichnet.
 
 8. Nennen Sie drei NoSQL Datenbanksysteme?
-   - MongoDB
-   - Cassandra
-   - Redis
+- CouchDB
+- MongoDB
+- Cassandra
 
 9.  Was versteht man unter Datenbank Schema?
-    - Ein Datenbank-Schema beschreibt die Struktur und Organisation von Daten in einer Datenbank.
-    - Es enthält die Definitionen von Tabellen, Spalten, Indizes, Beziehungen und anderen Strukturelementen der Datenbank.
-    - Es legt die Regeln und Einschränkungen fest, die die Daten in der Datenbank einhalten müssen, um die Integrität der Daten zu gewährleisten.
+
+- Ein Datenbankschema ist eine Skizze einer geplanten Datenbank als Modell dargestellt. Es enthält
+selbst keine Daten.
 
 10. Wozu dient ein Entity Relationship Model (ERM)?
-    - Ein Entity Relationship Model (ERM) dient dazu, die Beziehungen zwischen Entitäten in einer Datenbank zu beschreiben und darzustellen. Es hilft dabei, komplexe Datenstrukturen zu verstehen und zu analysieren.
+
+- Ein ERM dient die Entitäten, dessen Attribute und Relationen in einem Modell einfach und
+standarisiert darzustellen.
 
 11. Wie sieht ein Enhanced Entity Relationship (EER) Model aus?
-    - Ein Enhanced Entity Relationship (EER) Model ist ein Modell zur Visualisierung des Konzepts der Datenbankstruktur. Es besteht aus Entitäten, Beziehungen und Attributen, welche darstellen, wie die Entitäten miteinander in Beziehung stehen und wie die Attribute jeder Entität definiert sind.
+
+- Das erweiterte Entity-Relationship-Modell in der Informatik ist ein übergeordnetes oder konzeptionelles Datenmodell, das Erweiterungen des ursprünglichen Entity-Relationship-Modells enthält, das beim Entwurf von Datenbanken verwendet wird.
 
 12. Was bedeuten die Begriffe: Entität, Attribut und Tupel?
-    - **Entität**: Eine Entität ist ein Objekt, eine Person, ein Konzept oder ein Ereignis, das relevantes Wissen oder Daten besitzt und in einer Datenbank oder einem Datenmodell verarbeitet wird.
-    - **Attribut**: Ein Attribut ist ein Merkmal oder ein Eigenschaft einer Entität, das spezifische Informationen über die Entität enthält.
-    - **Tupel**: Ein Tupel ist eine Sammlung von Attributen, die zu einer Entität gehören. Es kann mehrere Attribute enthalten, die zusammenarbeiten, um eine einzelne Entität zu beschreiben.
+
+- **Entität**: Ist eine logische Sammlung von Attributen gemäss dem gegeben Kontext. Die Entität wird in relationalen Datenbanken mit der Tabelle gleichgestellt.
+- **Attribut**: Attribute beschreiben die verschiedenen Felder/Spalten einer Entität resp. Einer Tabelle.
+- **Tupel**: Ein Tupel beschreibt ein Datensatz in einer Tabelle über sämtliche Spalter.
 
 13. Was versteht man unter Datenkonsistenz?
-    - Datenkonsistenz bezieht sich auf die Richtigkeit und Vollständigkeit von Daten in einer SQL-Datenbank.
-     - Datenkonsistenz bedeutet, dass die Daten in einer Datenbank korrekt und vollständig sind und dass sie sich nicht widersprechen.
+
+- Die „Datenkonsistenz“ beschreibt die Widerspruchsfreiheit innerhalb einer Datenbank bzw. die Korrektheit der dort gespeicherten Daten, z.B. dass alle Replikas eines Datenfelds identisch sind. In relationalen Datenbanken versteht man unter Konsistenz die Integrität von Daten.
 
 14. Was bedeutet Redundanz im Zusammenhang mit einer Datenbank?
-    - Redundanz bedeutet, dass eine Datenbank mehr Daten als nötig speichert, um sicherzustellen, dass jede benötigte Information verfügbar ist und die Integrität der Daten gewährleistet ist.
+
+- Eine Information ist dann Redundant, wenn Sie mehrfach vorkommt. Redundanz im Zusammenhang mit Datenbanken bedeutet, dass gewisse Information demnach mehrfach vorhanden sind.
 
 15. Was versteht man unter Normalform?
-    - Die Normalform ist ein Kriterium für den Aufbau einer relationalen Datenbank. Es beinhaltet die Unterteilung von Tabellen in mehrere kleinere Tabellen, die jeweils ein spezifisches Merkmal enthalten, und die Verknüpfung dieser Tabellen mittels Fremdschlüssel.
+- Es gibt verschiedene Ausmasse, in denen ein Datenbankschema gegen Anomalien gefeit sein kann. Je nachdem spricht man davon, dass es in erster, zweiter, dritter usw. Normalform vorliege. Diese Normalformen sind durch bestimmte formale Anforderungen an das Schema definiert.
 
 16. Wie unterscheiden sich die erste, zweite und dritte Normalform?
 
-    - Die erste Normalform (1NF) besagt, dass alle Elemente in einer Tabelle einzelne Werte enthalten müssen und dass jede Spalte einen einzelnen Wert enthalten muss.
-    - Die zweite Normalform (2NF) erfordert, dass jedes Nicht-Schlüsselfeld in einer Tabelle vollständig durch den Primärschlüssel oder einen eindeutigen Kombinationsschlüssel determiniert wird.
-    - Die dritte Normalform (3NF) erfordert, dass jedes Nicht-Schlüsselfeld in einer Tabelle nur durch den Primärschlüssel determiniert wird und keine anderen Schlüsselfelder referenziert werden.
+- 1. Normalform: Eine Tabelle befindet sich in der 1. Normalform, wenn alle Attribute nur einfache
+Attributwerte aufweisen resp. Atomar/Elementar sind, wobei auch Nullwerte zulässig sind.
+- 2. Normalform: Eine Relation befindet sich in der 2. Normalform, wenn sie in der 1. Normalform ist
+und jedes Nicht-Schlüssel-Attribut vom Primärschlüssel voll funktional abhängig ist.
+- 3. Normalform: Eine Tabelle befindet sich in der 3. Normalform, wenn sie schon in der 2.
+Normalform (bzw. mit einfachem ID-Schlüssel in der 1. Normalform) ist und
+jedes Nichtschlüsselattribute nicht transitiv vom Primärschlüssel abhängig ist, d.h. aus keinem
+Nichtschlüsselattribut folgt ein anderes Nichtschlüsselattribut.
 
 17. Was versteht man unter Primär- und Fremdschlüssel?
 
-    - Der Primärschlüssel ist ein eindeutiger Schlüssel, der jeder Zeile einer Tabelle zugeordnet ist. 
-    - Der Fremdschlüssel ist ein Schlüssel, der eine Zeile in einer Tabelle mit einer Zeile in einer anderen Tabelle verknüpft.
+- Primärschlüssel identifiziert eindeutig ein Tupel in einer Tabelle. Der Fremdschlüssel identifiziert einen Primärschlüssel in einer andere Tabelle.
 
 18. Was ist referentielle Integrität?
-    - Referentielle Integrität ist ein Datenbanksystem, das sicherstellt, dass Daten nicht versehentlich oder absichtlich verändert oder gelöscht werden. Es schützt die Daten vor unerlaubten Änderungen, indem es Verbindungen zwischen Tabellen herstellt und Änderungen an den Daten validiert, bevor sie in der Datenbank gespeichert werden.
+
+- Unter referentieller Integrität (RI) versteht man die Bedingungen, die zur Sicherung der Datenintegrität bei Nutzung relationaler Datenbanken beitragen können. Nach der RI-Regel dürfen Datensätze (über ihre Fremdschlüssel) nur auf existierende Datensätze verweisen.
 
 19. Was bringt Object-Relational Mapping (ORM)?
-    - ORM ermöglicht die Abbildung relationaler Datenbanken in objektorientierte Programmiersprachen. Es vereinfacht den Zugriff auf Datenbanken, da keine SQL-Befehle verwendet werden müssen, sondern die Datenbanken direkt über den Code angesprochen werden können.
+
+- ORM ist eine Technik der Softwareentwicklung, mit der ein in einer objektorientierten Programmiersprache geschriebenes Anwendungsprogramm seine Objekte in einer relationalen Datenbank ablegen kann. Dem Programm erscheint die Datenbank dann als objektorientierte
+Datenbank, was die Programmierung erleichtert.
 
 20. Wie unterscheiden sich die Datentypen Char und Varchar?
-    - Der Datentyp Char speichert konstante Zeichenketten einer festen Länge, während der Datentyp Varchar Variable-Längen-Zeichenketten speichert.
+- Char behält seine fix angegeben Grösse, während Varchar sich auf den effektiv verwendeten Speicherplatz reduziert. Somit is Varchar in jedem Fall sparsamer mit Speicher.
 
 21. Was ist ein Character Set und wie unterscheiden sich ASCII, LATIN1 und UTF-8?
-    - Ein Character Set ist eine Sammlung von Symbolen und Zeichen, die einem bestimmten Zweck dienen.
 
-    - ASCII (American Standard Code for Information Interchange) ist ein 7-bit-Code, der zur Darstellung von Texten in Englisch verwendet wird.
-
-    - LATIN1 (ISO-8859-1) ist ein 8-bit-Code, der zur Darstellung von Texten in Westeuropa verwendet wird.
-
-    - UTF-8 (Unicode Transformation Format 8-bit) ist ein 8-bit-Code, der für die Darstellung von Texten in verschiedenen Sprachen verwendet wird.
+- Ein Character Set definiert welch Zeichen wie in die Daten geschrieben werden müssen. Im Ursprünglichen ASCII Character Set waren keine Umlaute, Kyrillische, Griechiesche, ... - Zeichen vorgehsen. Latin1 unterstützt alle Zeichen von West Europa. Mit ‘SHOW CHARACTER SET;’
+können alle installierten Character Sets angezeigt werden.
 
 22. Wie unterscheiden sich die Datentypen Integer und Float?
-    - Integer-Variablen speichern ganzzahlige Werte, während Float-Variablen Gleitkommazahlen speichern.
+
+- Beide Datentypen speichern Fliesskommazahlen. Während Decimal einen genauen Wert speichert, speichert Float lediglich angenäherte Werte (‘approximate values’). Bei einer Ganzzahl Multiplikation und einer anschliessenden Division mit der gleichen Zahl verliert das Decimal
+Format an Genauigkeit, Float aber nicht.
 
 23. Wozu verwendet man den Datentyp Decimal?
-    - Der Datentyp Decimal wird verwendet, um finanzielle Werte zu speichern.
+
+Zur Darstellung von Fliesskommazahlen. Hierbei müssen die Anzahl von Nachkommastellen und die gesamte Anzahl von Stellen angegeben werden.
 
 24. Wie unterscheiden sich die Datentypen Timestamp und Datetime?
-    - Der Timestamp-Datentyp speichert eine einzelne Zeitangabe als Ganzzahl, während der Datetime-Datentyp speichert eine kombinierte Datum und Uhrzeitangabe als Zeichenfolge.
+
+- Beide Format speichern Datum und Zeitangaben in folgendem Format: YYYY-MM-DD HH:MM:SS. Timestamp speichert die Datums und Zeitangaben im Bereich von 1970-01-01 00:00:01' UTC to '2038-01-19 03:14:07' UTC, während Datetime folgender Bereich speichert '1000-01-01 00:00:00' to '9999-12-31 23:59:59’. Bei einer Abfrage von einer Timestamp werden die Datums und Zeitangaben automatisch von UTC in die aktuell eingestellt Zeitzone umberechnet bevor diese zurückgegeben werden. Bei Datetime passiert dies nicht.
 
 25. Wie unterscheiden sich 0 und NULL?
-    -  0 ist eine Zahl, die als Wert 0 dargestellt wird, während NULL als leerer Wert in Programmiersprachen verwendet wird. In der Datenbank wird NULL als fehlender Wert definiert, der keinen Wert hat.
+
+- NULL steht für ein nicht definierter Wert, während 0 für eine natürliche Zahl (zero) gehalten wird
 
 ## 1.4. Aufgabe 1.3 Erste Schritte mit MariaDB
 

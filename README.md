@@ -55,9 +55,9 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
 
 - **Data Retrieval language** (**DRL**): Diese Sprachelemente werden verwendet, um Daten aus einer Datenbank abzurufen. Die Befehle, die zu diesem Sprachelement gehören, sind SELECT und JOIN.
 
-- **Data query language** (**DCL**): Diese Sprachelemente werden verwendet, um Berechtigungen zu verwalten und zu kontrollieren, wer auf eine Datenbank zugreifen darf. Die Befehle, die zu diesem Sprachelement gehören, sind GRANT und REVOKE.
+- **Data control language** (**DCL**): Diese Sprachelemente werden verwendet, um Berechtigungen zu verwalten und zu kontrollieren, wer auf eine Datenbank zugreifen darf. Die Befehle, die zu diesem Sprachelement gehören, sind GRANT und REVOKE.
 
-- **Transaction Control Languag** (**TCL**): Diese Sprachelemente werden verwendet, um Änderungen an einer Datenbank in einer Transaktion zu verwalten. Die Befehle, die zu diesem Sprachelement gehören, sind COMMIT, ROLLBACK und SAVEPOINT.
+- **Transaction Control Language** (**TCL**): Diese Sprachelemente werden verwendet, um Änderungen an einer Datenbank in einer Transaktion zu verwalten. Die Befehle, die zu diesem Sprachelement gehören, sind COMMIT, ROLLBACK und SAVEPOINT.
 
 ## 1.3. Aufgabe 1.2 Repetitionsfragen lösen
 

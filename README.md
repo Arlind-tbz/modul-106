@@ -83,16 +83,25 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
 9.  Was versteht man unter Datenbank Schema?
 
 10. Wozu dient ein Entity Relationship Model (ERM)?
+   - Ein Entity Relationship Model (ERM) dient dazu, die Beziehungen zwischen Entitäten in einer Datenbank zu beschreiben und darzustellen. Es hilft dabei, komplexe Datenstrukturen zu verstehen und zu analysieren.
 
 11. Wie sieht ein Enhanced Entity Relationship (EER) Model aus?
+   - Ein Enhanced Entity Relationship (EER) Model ist ein Modell zur Visualisierung des Konzepts der Datenbankstruktur. Es besteht aus Entitäten, Beziehungen und Attributen, welche darstellen, wie die Entitäten miteinander in Beziehung stehen und wie die Attribute jeder Entität definiert sind.
 
 12. Was bedeuten die Begriffe: Entität, Attribut und Tupel?
+   - **Entität**: Eine Entität ist ein Objekt, eine Person, ein Konzept oder ein Ereignis, das relevantes Wissen oder Daten besitzt und in einer Datenbank oder einem Datenmodell verarbeitet wird.
+   - **Attribut**: Ein Attribut ist ein Merkmal oder ein Eigenschaft einer Entität, das spezifische Informationen über die Entität enthält.
+   - **Tupel**: Ein Tupel ist eine Sammlung von Attributen, die zu einer Entität gehören. Es kann mehrere Attribute enthalten, die zusammenarbeiten, um eine einzelne Entität zu beschreiben.
 
 13. Was versteht man unter Datenkonsistenz?
+   - Datenkonsistenz bezieht sich auf die Richtigkeit und Vollständigkeit von Daten in einer SQL-Datenbank.
+   - Datenkonsistenz bedeutet, dass die Daten in einer Datenbank korrekt und vollständig sind und dass sie sich nicht widersprechen.
 
 14. Was bedeutet Redundanz im Zusammenhang mit einer Datenbank?
+   - Redundanz bedeutet, dass eine Datenbank mehr Daten als nötig speichert, um sicherzustellen, dass jede benötigte Information verfügbar ist und die Integrität der Daten gewährleistet ist.
 
 15. Was versteht man unter Normalform?
+  - Die Normalform ist ein Kriterium für den Aufbau einer relationalen Datenbank. Es beinhaltet die Unterteilung von Tabellen in mehrere kleinere Tabellen, die jeweils ein spezifisches Merkmal enthalten, und die Verknüpfung dieser Tabellen mittels Fremdschlüssel.
 
 16. Wie unterscheiden sich die erste, zweite und dritte Normalform?
 

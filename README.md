@@ -62,6 +62,9 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
    - Eine relationale Datenbank ist eine Art von Datenbank, die Daten in Tabellen speichert, die über Schlüsselwörter und Verknüpfungen miteinander verbunden sind. Dies ermöglicht ein schnelleres und genaueres Abrufen von Informationen. 
 
 2. Nennen Sie drei verschiedene relationale Datenbank Management Systeme DBMS?
+   - MySQL
+   - Microsoft SQL Server
+   - Oracle Database
 
 3. Welche Aufgaben erfüllt ein DBMS für Sie als Entwickler?
 

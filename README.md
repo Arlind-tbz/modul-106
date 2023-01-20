@@ -173,7 +173,7 @@ Format an Genauigkeit, Float aber nicht.
 
 23. Wozu verwendet man den Datentyp Decimal?
 
-Zur Darstellung von Fliesskommazahlen. Hierbei müssen die Anzahl von Nachkommastellen und die gesamte Anzahl von Stellen angegeben werden.
+- Zur Darstellung von Fliesskommazahlen. Hierbei müssen die Anzahl von Nachkommastellen und die gesamte Anzahl von Stellen angegeben werden.
 
 24. Wie unterscheiden sich die Datentypen Timestamp und Datetime?
 

@@ -113,3 +113,4 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
 24. Wie unterscheiden sich die Datentypen Timestamp und Datetime?
 
 25. Wie unterscheiden sich 0 und NULL?
+    -  0 ist eine Zahl, die als Wert 0 dargestellt wird, während NULL als leerer Wert in Programmiersprachen verwendet wird. In der Datenbank wird NULL als fehlender Wert definiert, der keinen Wert hat.

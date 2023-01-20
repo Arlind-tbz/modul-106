@@ -48,15 +48,15 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
    - Unterstützung von mehreren Benutzern und Zugriffssteuerung für Sicherheit.
 ### 1.2.6. Datenbanksprache SQL
 
-- **Datendefinition** (**DDL**): Diese Sprachelemente werden verwendet, um Datenbankobjekte wie Tabellen, Views und Indizes zu erstellen, zu ändern oder zu löschen. Die Befehle, die zu diesem Sprachelement gehören, sind CREATE, ALTER, DROP, TRUNCATE und RENAME.
+- **Data Definition Language** (**DDL**): Diese Sprachelemente werden verwendet, um Datenbankobjekte wie Tabellen, Views und Indizes zu erstellen, zu ändern oder zu löschen. Die Befehle, die zu diesem Sprachelement gehören, sind CREATE, ALTER, DROP, TRUNCATE und RENAME.
 
-- **Datenmanipulation** (**DML**): Diese Sprachelemente werden verwendet, um Daten in einer Datenbank zu ändern, abzurufen oder zu löschen. Die Befehle, die zu diesem Sprachelement gehören, sind SELECT, INSERT, UPDATE, DELETE und MERGE.
+- **Data manipulation language** (**DML**): Diese Sprachelemente werden verwendet, um Daten in einer Datenbank zu ändern, abzurufen oder zu löschen. Die Befehle, die zu diesem Sprachelement gehören, sind SELECT, INSERT, UPDATE, DELETE und MERGE.
 
 - **Datenabfrage** (**DQL**): Diese Sprachelemente werden verwendet, um Daten aus einer Datenbank abzurufen. Die Befehle, die zu diesem Sprachelement gehören, sind SELECT und JOIN.
 
-- **Datensteuerungssprache** (**DCL**): Diese Sprachelemente werden verwendet, um Berechtigungen zu verwalten und zu kontrollieren, wer auf eine Datenbank zugreifen darf. Die Befehle, die zu diesem Sprachelement gehören, sind GRANT und REVOKE.
+- **Data query language** (**DCL**): Diese Sprachelemente werden verwendet, um Berechtigungen zu verwalten und zu kontrollieren, wer auf eine Datenbank zugreifen darf. Die Befehle, die zu diesem Sprachelement gehören, sind GRANT und REVOKE.
 
-- **Transaktionssteuerung** (**TCL**): Diese Sprachelemente werden verwendet, um Änderungen an einer Datenbank in einer Transaktion zu verwalten. Die Befehle, die zu diesem Sprachelement gehören, sind COMMIT, ROLLBACK und SAVEPOINT.
+- **Transaction Control Languag** (**TCL**): Diese Sprachelemente werden verwendet, um Änderungen an einer Datenbank in einer Transaktion zu verwalten. Die Befehle, die zu diesem Sprachelement gehören, sind COMMIT, ROLLBACK und SAVEPOINT.
 
 ## 1.3. Aufgabe 1.2 Repetitionsfragen lösen
 
@@ -108,18 +108,31 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
 17. Was versteht man unter Primär- und Fremdschlüssel?
 
 18. Was ist referentielle Integrität?
+    - Referentielle Integrität ist ein Datenbanksystem, das sicherstellt, dass Daten nicht versehentlich oder absichtlich verändert oder gelöscht werden. Es schützt die Daten vor unerlaubten Änderungen, indem es Verbindungen zwischen Tabellen herstellt und Änderungen an den Daten validiert, bevor sie in der Datenbank gespeichert werden.
 
 19. Was bringt Object-Relational Mapping (ORM)?
+    - ORM ermöglicht die Abbildung relationaler Datenbanken in objektorientierte Programmiersprachen. Es vereinfacht den Zugriff auf Datenbanken, da keine SQL-Befehle verwendet werden müssen, sondern die Datenbanken direkt über den Code angesprochen werden können.
 
 20. Wie unterscheiden sich die Datentypen Char und Varchar?
+    - Der Datentyp Char speichert konstante Zeichenketten einer festen Länge, während der Datentyp Varchar Variable-Längen-Zeichenketten speichert.  
 
 21. Was ist ein Character Set und wie unterscheiden sich ASCII, LATIN1 und UTF-8?
+    - Ein Character Set ist eine Sammlung von Symbolen und Zeichen, die einem bestimmten Zweck dienen. 
+
+    - ASCII (American Standard Code for Information Interchange) ist ein 7-bit-Code, der zur Darstellung von Texten in Englisch verwendet wird.
+
+    - LATIN1 (ISO-8859-1) ist ein 8-bit-Code, der zur Darstellung von Texten in Westeuropa verwendet wird.
+
+    - UTF-8 (Unicode Transformation Format 8-bit) ist ein 8-bit-Code, der für die Darstellung von Texten in verschiedenen Sprachen verwendet wird.
 
 22. Wie unterscheiden sich die Datentypen Integer und Float?
+    - Integer-Variablen speichern ganzzahlige Werte, während Float-Variablen Gleitkommazahlen speichern.  
 
 23. Wozu verwendet man den Datentyp Decimal?
+    - Der Datentyp Decimal wird verwendet, um finanzielle Werte und Gleitkommazahlen mit hoher Genauigkeit zu speichern und zu verarbeiten.  
 
 24. Wie unterscheiden sich die Datentypen Timestamp und Datetime?
+    - Der Timestamp-Datentyp speichert eine einzelne Zeitangabe als Ganzzahl, während der Datetime-Datentyp speichert eine kombinierte Datum und Uhrzeitangabe als Zeichenfolge. 
 
 25. Wie unterscheiden sich 0 und NULL?
     -  0 ist eine Zahl, die als Wert 0 dargestellt wird, während NULL als leerer Wert in Programmiersprachen verwendet wird. In der Datenbank wird NULL als fehlender Wert definiert, der keinen Wert hat.

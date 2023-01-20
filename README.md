@@ -62,7 +62,7 @@ Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in F
 ## 1.3. Aufgabe 1.2 Repetitionsfragen lösen
 
 1. Was ist eine Relationale Datenbank?
-   - Eine relationale Datenbank ist eine Art von Datenbank, die Daten in Tabellen speichert, die über Schlüsselwörter und Verknüpfungen miteinander verbunden sind. Dies ermöglicht ein schnelleres und genaueres Abrufen von Informationen. Stellt referenzierte Indentität sicher. Datentypen müssen bei Einträgen eingehalten werden.
+   - Eine relationale Datenbank ist eine Art von Datenbank, die Daten in Tabellen speichert, die über Schlüsselwörter und Verknüpfungen miteinander verbunden sind. Dies ermöglicht ein schnelleres und genaueres Abrufen von Informationen. Stellt referenzierte Integrität sicher. Datentypen müssen bei Einträgen eingehalten werden.
 
 2. Nennen Sie drei verschiedene relationale Datenbank Management Systeme DBMS?
    - MySQL

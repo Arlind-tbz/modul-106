@@ -2,6 +2,12 @@
 
 - [1. Modul 106](#1-modul-106)
   - [1.1. Aufgabe 1.1 Datenbankmodelle und Datenbanktheorie](#11-aufgabe-11-datenbankmodelle-und-datenbanktheorie)
+    - [1.1.1. Hierarchische Datenbank](#111-hierarchische-datenbank)
+    - [1.1.2. Relationale Datenbank](#112-relationale-datenbank)
+    - [1.1.3. Objektrelationale Datenbank](#113-objektrelationale-datenbank)
+    - [1.1.4. Objektorientierte Datenbank](#114-objektorientierte-datenbank)
+    - [1.1.5. Datenbanktheorie](#115-datenbanktheorie)
+    - [1.1.6. Datenbanksprache SQL](#116-datenbanksprache-sql)
   - [1.2. Aufgabe 1.2 Repetitionsfragen lösen](#12-aufgabe-12-repetitionsfragen-lösen)
 
 
@@ -10,26 +16,26 @@
 
 ## 1.1. Aufgabe 1.1 Datenbankmodelle und Datenbanktheorie
 
-- Hierarchische Datenbank
+### 1.1.1. Hierarchische Datenbank
 
 Eine hierarchische Datenbank ist ein Datenbankmodell, bei dem die Daten in einer hierarchischen Struktur organisiert sind, ähnlich einer Baumstruktur. Jeder Knoten in der Hierarchie repräsentiert eine bestimmte Entität oder eine Gruppe von Entitäten, und jeder Knoten hat genau einen übergeordneten Knoten und kann mehrere untergeordnete Knoten haben.
 
-- Relationale Datenbank
+### 1.1.2. Relationale Datenbank
 
 Eine relationale Datenbank ist ein Datenbankmodell, bei dem die Daten in Tabellen gespeichert sind und jede Tabelle eine bestimmte Entität oder eine Gruppe von Entitäten repräsentiert. Die Tabellen sind untereinander über bestimmte Schlüsselfelder verknüpft, was es ermöglicht, Daten aus mehreren Tabellen zusammenzuführen. Ein Beispiel für eine relationale Datenbank ist MySQL.
 
-- Objektrelationale Datenbank
+### 1.1.3. Objektrelationale Datenbank
 
 Eine objektrelationale Datenbank ist ein Datenbankmodell, das die Vorteile von relationalen und objektorientierten Datenbanken kombiniert. Es ermöglicht es, sowohl relationale Tabellen als auch objektorientierte Klassen und Objekte zu verwenden. Ein Beispiel für eine objektrelationale Datenbank ist PostgreSQL.
 
-- Objektorientierte Datenbank
+### 1.1.4. Objektorientierte Datenbank
 
 Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in Form von Objekten gespeichert werden, die Eigenschaften und Methoden haben. Es unterstützt die objektorientierte Programmierung und ermöglicht es, Daten in einer Weise zu speichern und abzufragen, die der natürlichen Struktur der Anwendung entspricht. Beispiele für objektorientierte Datenbanken sind ObjectDB und Gemstone.
 
-- Datenbanktheorie
+### 1.1.5. Datenbanktheorie
 
 
-- Datenbanksprache SQL
+### 1.1.6. Datenbanksprache SQL
 
 
 ## 1.2. Aufgabe 1.2 Repetitionsfragen lösen

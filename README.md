@@ -56,7 +56,7 @@ Die Datenbanksprach besitzt vier Elemente:
 1. Datendefinition **(DDL, Data Definition Language)**
 2. Datenmanipulation **(DML, Data Manipulation Language)**
 3. Datenabfrage **(DRL, Data Retrieval Language)**
-4. Datenschutz (**DSL, Data Security Language)** —>
+4. Datenschutz (**DSL, Data Security Language)** —> <br>
 Besteht aus **TCL (Transaction Control Language)** und **DCL (Data Control Language)**
 
 ![Datenbanksprache](images/sql-sprachelemente.png)

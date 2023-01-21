@@ -5,11 +5,10 @@
   - [1.1. Inhaltsverzeichnis](#11-inhaltsverzeichnis)
   - [1.2. Aufgabe 1.1 Datenbankmodelle und Datenbanktheorie](#12-aufgabe-11-datenbankmodelle-und-datenbanktheorie)
     - [1.2.1. Hierarchische Datenbank](#121-hierarchische-datenbank)
-    - [1.2.2. Relationale Datenbank](#122-relationale-datenbank)
-    - [1.2.3. Objektrelationale Datenbank](#123-objektrelationale-datenbank)
-    - [1.2.4. Objektorientierte Datenbank](#124-objektorientierte-datenbank)
-    - [1.2.5. Datenbanktheorie](#125-datenbanktheorie)
-    - [1.2.6. Datenbanksprache SQL](#126-datenbanksprache-sql)
+    - [1.2.2. Relationale und Objektrelationale Datenbanken](#122-relationale-und-objektrelationale-datenbanken)
+    - [1.2.3. Objektorientierte Datenbank](#123-objektorientierte-datenbank)
+    - [1.2.4. Datenbanktheorie zu relationalen Datenbanken](#124-datenbanktheorie-zu-relationalen-datenbanken)
+    - [1.2.5. Datenbanksprache SQL](#125-datenbanksprache-sql)
   - [1.3. Aufgabe 1.2 Repetitionsfragen lösen](#13-aufgabe-12-repetitionsfragen-lösen)
   - [1.4. Aufgabe 1.3 Erste Schritte mit MariaDB](#14-aufgabe-13-erste-schritte-mit-mariadb)
   - [1.5. Aufgabe 2.1 ERM des Datenbank Schemas entwerfen](#15-aufgabe-21-erm-des-datenbank-schemas-entwerfen)
@@ -23,42 +22,46 @@
 
 ### 1.2.1. Hierarchische Datenbank
 
-Eine hierarchische Datenbank ist ein Datenbankmodell, bei dem die Daten in einer hierarchischen Struktur organisiert sind, ähnlich einer Baumstruktur. Jeder Knoten in der Hierarchie repräsentiert eine bestimmte Entität oder eine Gruppe von Entitäten, und jeder Knoten hat genau einen übergeordneten Knoten und kann mehrere untergeordnete Knoten haben.
+- Hierarchische Speicherung der Daten in einem sequenziellen File (Land, Kanton, Ort/Ort, Bezirk, Gemeinde, Strasse, Hausnummer, Name, Vorname, Geburtsdatum
+- Neue Daten erfordern ein umkopieren, sortieren der Daten/File
 
-### 1.2.2. Relationale Datenbank
+### 1.2.2. Relationale und Objektrelationale Datenbanken
 
-Eine relationale Datenbank ist ein Datenbankmodell, bei dem die Daten in Tabellen gespeichert sind und jede Tabelle eine bestimmte Entität oder eine Gruppe von Entitäten repräsentiert. Die Tabellen sind untereinander über bestimmte Schlüsselfelder verknüpft, was es ermöglicht, Daten aus mehreren Tabellen zusammenzuführen. Ein Beispiel für eine relationale Datenbank ist MySQL.
+- Objekt(-relationale) Datenbanken erlauben benutzerdefinierte Datentypen und Objekte - Daten werden in Themenkreisen (Entitäten) in Form von Tabellen gespeichert
+- Flexibler als Hierachische Datenbanken
+- Daten verschiedener Tabellen sind unabhängiger
+- Einfach erweiterbar
+- Unübersichtlicher und schwerfälliger
 
-### 1.2.3. Objektrelationale Datenbank
+### 1.2.3. Objektorientierte Datenbank
 
-Eine objektrelationale Datenbank ist ein Datenbankmodell, das die Vorteile von relationalen und objektorientierten Datenbanken kombiniert. Es ermöglicht es, sowohl relationale Tabellen als auch objektorientierte Klassen und Objekte zu verwenden. Ein Beispiel für eine objektrelationale Datenbank ist PostgreSQL.
+- Objket steht im Zentrum nicht die Tabelle
+- Beinhaltent auf Methoden um Daten zu ändern
+- Immer noch im Nischendasein
 
-### 1.2.4. Objektorientierte Datenbank
+### 1.2.4. Datenbanktheorie zu relationalen Datenbanken
 
-Eine objektorientierte Datenbank ist ein Datenbankmodell, bei dem die Daten in Form von Objekten gespeichert werden, die Eigenschaften und Methoden haben. Es unterstützt die objektorientierte Programmierung und ermöglicht es, Daten in einer Weise zu speichern und abzufragen, die der natürlichen Struktur der Anwendung entspricht. Beispiele für objektorientierte Datenbanken sind ObjectDB und Gemstone.
+Eine relationale Datenbank:
 
-### 1.2.5. Datenbanktheorie
+- verwaltet Daten strukturiert und überschaubar
+- regelt den Zugriff auf Datensätze
+- bietet Schnittellen zur flexiblen Interaktion durch externen Applikationen
+- speichert Daten nicht redundant
+- gewährleistet die Datenintegrität
+- gewährleistet die Referenzielle Integrität
 
-   - Speicherung von Daten in Tabellen mit Spalten und Zeilen
-   - Verwendung von Schlüsselfeldern zur Verknüpfung von Tabellen
-   - Unterstützung von Abfragen in natürlicher Sprache (z.B. SQL)
-   - Möglichkeit zur Durchführung von Aktionen wie Einfügen, Aktualisieren und Löschen von Daten
-   - Unterstützung von Transaktionen, um die Integrität der Daten sicherzustellen
-   - Unterstützung von Indizes zur Beschleunigung von Abfragen
-   - Unterstützung von Fremdschlüsselbeziehungen zur Verwaltung von Beziehungen zwischen Tabellen
-   - Möglichkeit zur Verwendung von Views, um Daten auf bestimmte Weise darzustellen
-   - Unterstützung von mehreren Benutzern und Zugriffssteuerung für Sicherheit.
-### 1.2.6. Datenbanksprache SQL
+![Datenbanktheorie](images/dateinbanktheorie.png)
 
-- **Data Definition Language** (**DDL**): Diese Sprachelemente werden verwendet, um Datenbankobjekte wie Tabellen, Views und Indizes zu erstellen, zu ändern oder zu löschen. Die Befehle, die zu diesem Sprachelement gehören, sind CREATE, ALTER, DROP, TRUNCATE und RENAME.
+### 1.2.5. Datenbanksprache SQL
 
-- **Data manipulation language** (**DML**): Diese Sprachelemente werden verwendet, um Daten in einer Datenbank zu ändern, abzurufen oder zu löschen. Die Befehle, die zu diesem Sprachelement gehören, sind SELECT, INSERT, UPDATE, DELETE und MERGE.
+Die Datenbanksprach besitzt vier Elemente:
 
-- **Data Retrieval language** (**DRL**): Diese Sprachelemente werden verwendet, um Daten aus einer Datenbank abzurufen. Die Befehle, die zu diesem Sprachelement gehören, sind SELECT und JOIN.
+1. Datendefinition (DDL, Data Definition Language)
+2. Datenmanipulation (DML, Data Manipulation Language)
+3. Datenabfrage (DRL, Data Retrieval Language)
+4. Datenschutz (DSL, Data Security Language) —> Besteht aus TCL (Transaction Control Language) und DCL (Data Control Language)
 
-- **Data control language** (**DCL**): Diese Sprachelemente werden verwendet, um Berechtigungen zu verwalten und zu kontrollieren, wer auf eine Datenbank zugreifen darf. Die Befehle, die zu diesem Sprachelement gehören, sind GRANT und REVOKE.
-
-- **Transaction Control Language** (**TCL**): Diese Sprachelemente werden verwendet, um Änderungen an einer Datenbank in einer Transaktion zu verwalten. Die Befehle, die zu diesem Sprachelement gehören, sind COMMIT, ROLLBACK und SAVEPOINT.
+![Datenbanksprache](images/sql-sprachelemente.png)
 
 ## 1.3. Aufgabe 1.2 Repetitionsfragen lösen
 

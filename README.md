@@ -13,7 +13,7 @@
   - [1.3. Aufgabe 1.2 Repetitionsfragen lösen](#13-aufgabe-12-repetitionsfragen-lösen)
   - [1.4. Aufgabe 1.3 Erste Schritte mit MariaDB](#14-aufgabe-13-erste-schritte-mit-mariadb)
   - [1.5. Aufgabe 2.1 ERM des Datenbank Schemas entwerfen](#15-aufgabe-21-erm-des-datenbank-schemas-entwerfen)
-- [Lernziele LB1](#lernziele-lb1)
+  - [1.6. Lernziele LB1](#16-lernziele-lb1)
 
 
 **Teilnehmer**: Arlind Sulejmani, Harun Siyad, Maximilian Kos
@@ -245,7 +245,7 @@ CREATE TABLE `order_has_product` (
   FOREIGN KEY (`fk_product_id`) REFERENCES `product`(`id`)
 );
 ```
-# Lernziele LB1
+## 1.6. Lernziele LB1
 
 - Ich kenne die verschiedenen Arten von Datenbanken und deren hauptsächlichen Unterschiede
 - Ich kenne die Aufgaben eines RDBMS sowie den Aufbau eines Datenbanksystems

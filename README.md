@@ -1,20 +1,5 @@
 # Modul 106 LB1
 
-## Inhaltsverzeichnis
-- [Modul 106 LB1](#modul-106-lb1)
-  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
-  - [1. Aufgabe 1.1 Datenbankmodelle und Datenbanktheorie](#1-aufgabe-11-datenbankmodelle-und-datenbanktheorie)
-    - [1.1. Hierarchische Datenbank](#11-hierarchische-datenbank)
-    - [1.2. Relationale und Objektrelationale Datenbanken](#12-relationale-und-objektrelationale-datenbanken)
-    - [1.3. Objektorientierte Datenbank](#13-objektorientierte-datenbank)
-    - [1.4. Datenbanktheorie zu relationalen Datenbanken](#14-datenbanktheorie-zu-relationalen-datenbanken)
-    - [1.5. Datenbanksprache SQL](#15-datenbanksprache-sql)
-  - [2. Aufgabe 1.2 Repetitionsfragen lösen](#2-aufgabe-12-repetitionsfragen-lösen)
-  - [3. Aufgabe 1.3 Erste Schritte mit MariaDB](#3-aufgabe-13-erste-schritte-mit-mariadb)
-  - [4. Aufgabe 2.1 ERM des Datenbank Schemas entwerfen](#4-aufgabe-21-erm-des-datenbank-schemas-entwerfen)
-  - [5. Aufgabe 2.4 Schema mit SQl/DDL bearbeiten](#5-aufgabe-24-schema-mit-sqlddl-bearbeiten)
-
-
 **Teilnehmer**: Arlind Sulejmani, Harun Siyad, Maximilian Kos
 
 **Kursleiter**: Damien Vouillamoz

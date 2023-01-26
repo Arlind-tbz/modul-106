@@ -345,11 +345,11 @@ CREATE TABLE `order_has_product` (
 1. Erfassen Sie mindestens 3 sinnvolle Produktkategorien
 2. Erfassen Sie mindestens 5 verschiedene Produkte
 ```sql 
-    INSERT INTO products (id, description, price, fk_product_category_id) VALUES (1, 'Smartphone', 500, 1);
-    INSERT INTO products (id, description, price, fk_product_category_id) VALUES (2, 'Laptop', 1500, 2);
-    INSERT INTO products (id, description, price, fk_product_category_id) VALUES (3, 'Tablet', 800, 1);
-    INSERT INTO products (id, description, price, fk_product_category_id) VALUES (4, 'TV', 1000, 3);
-    INSERT INTO products (id, description, price, fk_product_category_id) VALUES (5, 'Printer', 200, 4);
+    INSERT INTO product (id, description, price, fk_product_category_id) VALUES (1, 'Smartphone', 500, 1);
+    INSERT INTO product (id, description, price, fk_product_category_id) VALUES (2, 'Laptop', 1500, 2);
+    INSERT INTO product (id, description, price, fk_product_category_id) VALUES (3, 'Tablet', 800, 1);
+    INSERT INTO product (id, description, price, fk_product_category_id) VALUES (4, 'TV', 1000, 3);
+    INSERT INTO product (id, description, price, fk_product_category_id) VALUES (5, 'Printer', 200, 4);
 ```
 5. Erfassen Sie mindestens 5 vollständige Kunden
 6. Erfassen Sie mindestens 4 vollständige Bestellungen, davon mind 3 die bereits ausgeliefert wurden.

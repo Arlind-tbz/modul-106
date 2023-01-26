@@ -13,9 +13,6 @@
   - [3. Aufgabe 1.3 Erste Schritte mit MariaDB](#3-aufgabe-13-erste-schritte-mit-mariadb)
   - [4. Aufgabe 2.1 ERM des Datenbank Schemas entwerfen](#4-aufgabe-21-erm-des-datenbank-schemas-entwerfen)
   - [5. Aufgabe 2.4 Schema mit SQl/DDL bearbeiten](#5-aufgabe-24-schema-mit-sqlddl-bearbeiten)
-  - [6. Lernziele LB1](#6-lernziele-lb1)
-- [Modul 106 LB2](#modul-106-lb2)
-  - [7. Aufgabe 3.1 Datensätze erfassen](#7-aufgabe-31-datensätze-erfassen)
 
 
 **Teilnehmer**: Arlind Sulejmani, Harun Siyad, Maximilian Kos
@@ -347,8 +344,15 @@ CREATE TABLE `order_has_product` (
 
 1. Erfassen Sie mindestens 3 sinnvolle Produktkategorien
 2. Erfassen Sie mindestens 5 verschiedene Produkte
-3. Erfassen Sie mindestens 5 vollständige Kunden
-4. Erfassen Sie mindestens 4 vollständige Bestellungen, davon mind 3 die bereits ausgeliefert wurden.
-5. Fassen Sie alle INSERT-Statements in einer Transaktion zusammen
-6. Stellen Sie sicher, dass Sie mindestens eine Produktkategorie haben, die kein Produkt besitzt
-7. Stellen Sie sicher, dass Sie mindestens ein Produkt haben, dass nie bestellt wurde
+```sql 
+    INSERT INTO products (id, description, price, fk_product_category_id) VALUES (1, 'Smartphone', 500, 1);
+    INSERT INTO products (id, description, price, fk_product_category_id) VALUES (2, 'Laptop', 1500, 2);
+    INSERT INTO products (id, description, price, fk_product_category_id) VALUES (3, 'Tablet', 800, 1);
+    INSERT INTO products (id, description, price, fk_product_category_id) VALUES (4, 'TV', 1000, 3);
+    INSERT INTO products (id, description, price, fk_product_category_id) VALUES (5, 'Printer', 200, 4);
+```
+5. Erfassen Sie mindestens 5 vollständige Kunden
+6. Erfassen Sie mindestens 4 vollständige Bestellungen, davon mind 3 die bereits ausgeliefert wurden.
+7. Fassen Sie alle INSERT-Statements in einer Transaktion zusammen
+8. Stellen Sie sicher, dass Sie mindestens eine Produktkategorie haben, die kein Produkt besitzt
+9. Stellen Sie sicher, dass Sie mindestens ein Produkt haben, dass nie bestellt wurde

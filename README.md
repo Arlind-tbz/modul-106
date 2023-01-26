@@ -257,6 +257,10 @@ CREATE TABLE `order_has_product` (
 ## 5. Aufgabe 2.4 Schema mit SQl/DDL bearbeiten
 
 1. Sie wollen in der Kundentabelle auch die mobile Telefonnummer speichern. Fügen Sie eine entsprechende Spalte hinzu
+```SQL
+ALTER TABLE `customer`
+ADD `phone_number` varchar(255) NOT NULL;
+```
 2. Ändern Sie den Namen der Spalte für die Produktbezeichung
     ```sql
     ALTER TABLE Produkte MODIFY Preis DECIMAL(6,2) UNSIGNED;

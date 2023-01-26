@@ -202,7 +202,7 @@ mysql> DESC user;
 ```
 ## 4. Aufgabe 2.1 ERM des Datenbank Schemas entwerfen
 SQL Script einfügen mit MariaDB mit <br>
-`source C:/Users/User/Documents/scipt.sql`
+`SOURCE C:/Users/User/Documents/scipt.sql`
 
 ```SQL
 DROP DATABASE IF EXISTS `pizzakurrier`;

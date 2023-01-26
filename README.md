@@ -392,3 +392,25 @@ INSERT INTO `order` (`amount`, `order_date`, `delivery_date`, `fk_customer_id`) 
 ```
 6. Stellen Sie sicher, dass Sie mindestens eine Produktkategorie haben, die kein Produkt besitzt
 7. Stellen Sie sicher, dass Sie mindestens ein Produkt haben, dass nie bestellt wurde
+
+## 8. Benutzer erstllen 
+
+```sql
+CREATE USER backup@'localhost' IDENTIFIED BY '123';
+SET PASSWORD FOR backup@'localhost' = PASSWORD('B4ckU9u3er');
+GRANT SELECT ON pizzashop.* to backup@'localhost';
+
+CREATE USER backoffice@'%' IDENTIFIED BY '123';
+GRANT SELECT ON pizzashop.* to backoffice@'%';
+GRANT ALL PRIVILEGES ON pizzashop.customer to backoffice@'%';
+GRANT ALL PRIVILEGES ON pizzashop.product to backoffice@'%';
+GRANT ALL PRIVILEGES ON pizzashop.product_category to backoffice@'%';
+
+CREATE USER sales@'%' IDENTIFIED BY '123';
+SET PASSWORD FOR sales@'%' = PASSWORD('B4ckU9u3er');
+GRANT SELECT ON pizzashop.customer to sales@'%';
+GRANT SELECT ON pizzashop.product_category to sales@'%';
+GRANT SELECT ON pizzashop.order_has_product to sales@'%';
+GRANT ALL PRIVILEGES ON pizzashop.`order` to sales@'%';
+GRANT ALL PRIVILEGES ON pizzashop.product_category to sales@'%';
+```

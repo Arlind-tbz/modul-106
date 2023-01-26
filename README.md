@@ -15,6 +15,7 @@
   - [5. Aufgabe 2.4 Schema mit SQl/DDL bearbeiten](#5-aufgabe-24-schema-mit-sqlddl-bearbeiten)
   - [6. Lernziele LB1](#6-lernziele-lb1)
 - [Modul 106 LB2](#modul-106-lb2)
+  - [7. Aufgabe 3.1 Datensätze erfassen](#7-aufgabe-31-datensätze-erfassen)
 
 
 **Teilnehmer**: Arlind Sulejmani, Harun Siyad, Maximilian Kos
@@ -341,3 +342,5 @@ CREATE TABLE `order_has_product` (
   - Mit CREATE, ALTER und DROP können Änderungen an Tabellenstrukturen vorgenommen werden. CREATE ermöglicht das Erstellen einer neuen Tabelle, ALTER erlaubt es, bestehende Tabellen zu bearbeiten und DROP kann eine Tabelle löschen.
 
 # Modul 106 LB2
+
+## 7. Aufgabe 3.1 Datensätze erfassen

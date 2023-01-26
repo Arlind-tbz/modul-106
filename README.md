@@ -262,6 +262,10 @@ CREATE TABLE `order_has_product` (
     - ALTER TABLE Produkte MODIFY Preis DECIMAL(6,2) UNSIGNED;
 3. Ändern Sie den Datentyp des Produktpreises auf DECIMAL(6,2) UNSIGNED
 4. Setzten Sie nachträglich NOT NULL für den Produktpreis
+   ```sql
+    ALTER TABLE Kunden
+    ADD CONSTRAINT Preis_NotNull
+    CHECK (Preis IS NOT NULL);```
 5. Fügen Sie ein neues Attribut (created_at, DATETIME) in die Produkttabelle ein und stellen Sie sicher, dass dieses Feld automatisch mit dem aktuellen Zeitpunkt bei einem INSERT befüllt wird.
 6. Entfernen Sie die Spalte für die mobile Telefonnummer wieder
 7. Entfernen Sie den Foreign Key Constraint vom Postleitzahlen Fremdschlüssel aus der Kundentabelle

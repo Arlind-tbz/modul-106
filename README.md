@@ -258,12 +258,12 @@ CREATE TABLE `order_has_product` (
 
 1. Sie wollen in der Kundentabelle auch die mobile Telefonnummer speichern. Fügen Sie eine entsprechende Spalte hinzu
     ```sql
-    ALTER TABLE `customer`
-    ADD `phone_number` varchar(255) NOT NULL;
+    ALTER TABLE `customer` ADD `mobile` VARCHAR(255);
     ```
 2. Ändern Sie den Namen der Spalte für die Produktbezeichung
     ```sql
-    ALTER TABLE `product` RENAME COLUMN `description` to `test`;
+    ALTER TABLE `product` CHANGE `name` `product_name` VARCHAR(255) NOT NULL;
+    ALTER TABLE `product` CHANGE `product_name` `name` VARCHAR(255) NOT NULL;
     ```
 3. Ändern Sie den Datentyp des Produktpreises auf DECIMAL(6,2) UNSIGNED
     ```sql
@@ -271,28 +271,24 @@ CREATE TABLE `order_has_product` (
     ```
 4. Setzten Sie nachträglich NOT NULL für den Produktpreis
    ```sql
-    ALTER TABLE `product`
-    ADD CONSTRAINT price_NotNull
-    CHECK (`price` IS NOT NULL);
+    ALTER TABLE `product` MODIFY `price` DECIMAL(6,2) NOT NULL;
     ```
 5. Fügen Sie ein neues Attribut (created_at, DATETIME) in die Produkttabelle ein und stellen Sie sicher, dass dieses Feld automatisch mit dem aktuellen Zeitpunkt bei einem INSERT befüllt wird.
    ```sql
-    ALTER TABLE `product`
-    ADD `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP;
+    ALTER TABLE `product` ADD `created_at` DATETIME NOT NULL DEFAULT NOW();
    ```
 6. Entfernen Sie die Spalte für die mobile Telefonnummer wieder
     ```sql
-    ALTER TABLE `customer` DROP COLUMN `phone_number;`
+    ALTER TABLE `customer` DROP `mobile`;
     ```
 7. Entfernen Sie den Foreign Key Constraint vom Postleitzahlen Fremdschlüssel aus der Kundentabelle
    ```sql
-    ALTER TABLE `customer`
-    DROP FOREIGN KEY `fk_postalcode`;
+    SHOW CREATE TABLE `customer`; -- Name des CONSTRAINTs herausfinden (z.B. customer_ibfk_1)
+    ALTER TABLE `customer` DROP CONSTRAINT `customer_ibfk_1`;
    ```
 8. Fügen Sie den Foreign Key Constraint wieder hinzu
    ```sql
-    ALTER TABLE `customer`
-    ADD CONSTRAINT `fk_id` FOREIGN KEY (`id`) REFERENCES `customer`(`id`);
+    ALTER TABLE `customer` ADD foreign key(`fk_zip_id`) REFERENCES `zip`(`id`);
     ```
 
 ## 6. Lernziele LB1

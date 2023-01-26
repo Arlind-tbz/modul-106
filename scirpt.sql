@@ -12,19 +12,6 @@ CREATE TABLE `customer`(
     `phone_number` VARCHAR(255) NOT NULL UNIQUE,
     PRIMARY KEY (`id`)
 );
-
-CREATE TABLE `order`(
-    `id` INT NOT NULL AUTO_INCREMENT,
-    `amount` INT NOT NULL,
-    `order_date` DATETIME NOT NULL DEFAULT NOW(),
-    `delivery_date` DATETIME,
-    `fk_customer_id` INT NOT NULL,
-    `fk_product_id` INT NOT NULL,
-    PRIMARY KEY (`id`),
-    FOREIGN KEY (`fk_customer_id`) REFERENCES `customer`(`id`)
-    FOREIGN KEY (`fk_product_id`) REFERENCES `product`(`id`)
-);
-
 CREATE TABLE `product_category`(
     `id` INT NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(45) NOT NULL,
@@ -38,6 +25,18 @@ CREATE TABLE `product`(
     `fk_product_category_id` INT NOT NULL, 
     PRIMARY KEY (`id`),
     FOREIGN KEY (`fk_product_category_id`) REFERENCES `product_category`(`id`)
+);
+
+CREATE TABLE `order`(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `amount` INT NOT NULL,
+    `order_date` DATETIME NOT NULL DEFAULT NOW(),
+    `delivery_date` DATETIME,
+    `fk_customer_id` INT NOT NULL,
+    `fk_product_id` INT NOT NULL,
+    PRIMARY KEY (`id`),
+    FOREIGN KEY (`fk_customer_id`) REFERENCES `customer`(`id`),
+    FOREIGN KEY (`fk_product_id`) REFERENCES `product`(`id`)
 );
 
 CREATE TABLE `order_has_product` (

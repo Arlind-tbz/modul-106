@@ -47,7 +47,7 @@ CREATE TABLE `order_has_product` (
 
 BEGIN;
 
-INSERT INTO `customer` (`firstname`, `lastname`, `postcode`, `location`, `email`, `phone_number`) VALUES
+INSERT INTO `customer` (`firstname`, `lastname`, `zip`, `location`, `email`, `phone_number`) VALUES
 ('Arlind', 'Sulejmani', '8055', 'Zuerich', 'sulejmaniarlind5@gmail.com', '+41 76 222 22 22'),
 ('Harun', 'Siyad', '8050', 'Zuerich', 'harunsiyad@gmail.com', '+41 76 333 33 33'),
 ('Maximilian', 'Kos', '8912', 'Obfelnden', 'maxkos@gmail.com', '+41 76 444 44 44'),

@@ -353,6 +353,14 @@ INSERT INTO `customer` (`firstname`, `lastname`, `postcode`, `location`, `email`
 ('Max', 'Kos', '8912', 'Obfelnden', 'maxos@gmail.com', '+41 76 666 666 66');
 ```
 4. Erfassen Sie mindestens 4 vollständige Bestellungen, davon mind 3 die bereits ausgeliefert wurden.
+```sql
+INSERT INTO `order` (`amount`, `order_date`, `delivery_date`, `fk_customer_id`) VALUES
+(1, '2022-01-20 19:00:00', '2022-01-20 21:00:00', 1),
+(2, '2022-01-20 09:00:00', '2022-01-20 12:00:00', 2),
+(3, '2022-01-20 01:00:00', '2022-01-20 06:00:00', 3),
+(4, '2022-01-20 05:00:00', NULL, 4);
+```
+
 5. Fassen Sie alle INSERT-Statements in einer Transaktion zusammen
 ```sql
 BEGIN;
@@ -375,6 +383,12 @@ INSERT INTO `product` (`id`, `description`, `price`, `fk_product_category_id`) V
 (3, 'Tablet', 800, 3),
 (4, 'TV', 1000, 1),
 (5, 'Printer', 200, 2);
+
+INSERT INTO `order` (`amount`, `order_date`, `delivery_date`, `fk_customer_id`) VALUES
+(1, '2022-01-20 19:00:00', '2022-01-20 21:00:00', 1),
+(2, '2022-01-20 09:00:00', '2022-01-20 12:00:00', 2),
+(3, '2022-01-20 01:00:00', '2022-01-20 06:00:00', 3),
+(4, '2022-01-20 05:00:00', NULL, 4);
 ```
 6. Stellen Sie sicher, dass Sie mindestens eine Produktkategorie haben, die kein Produkt besitzt
 7. Stellen Sie sicher, dass Sie mindestens ein Produkt haben, dass nie bestellt wurde

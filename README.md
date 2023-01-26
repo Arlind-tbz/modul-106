@@ -1,32 +1,33 @@
-# 1. Modul 106
+# Modul 106 LB1
 
-## 1.1. Inhaltsverzeichnis
-- [1. Modul 106](#1-modul-106)
-  - [1.1. Inhaltsverzeichnis](#11-inhaltsverzeichnis)
-  - [1.2. Aufgabe 1.1 Datenbankmodelle und Datenbanktheorie](#12-aufgabe-11-datenbankmodelle-und-datenbanktheorie)
-    - [1.2.1. Hierarchische Datenbank](#121-hierarchische-datenbank)
-    - [1.2.2. Relationale und Objektrelationale Datenbanken](#122-relationale-und-objektrelationale-datenbanken)
-    - [1.2.3. Objektorientierte Datenbank](#123-objektorientierte-datenbank)
-    - [1.2.4. Datenbanktheorie zu relationalen Datenbanken](#124-datenbanktheorie-zu-relationalen-datenbanken)
-    - [1.2.5. Datenbanksprache SQL](#125-datenbanksprache-sql)
-  - [1.3. Aufgabe 1.2 Repetitionsfragen lösen](#13-aufgabe-12-repetitionsfragen-lösen)
-  - [1.4. Aufgabe 1.3 Erste Schritte mit MariaDB](#14-aufgabe-13-erste-schritte-mit-mariadb)
-  - [1.5. Aufgabe 2.1 ERM des Datenbank Schemas entwerfen](#15-aufgabe-21-erm-des-datenbank-schemas-entwerfen)
-  - [1.6. Lernziele LB1](#16-lernziele-lb1)
+## 1. Inhaltsverzeichnis
+- [Modul 106 LB1](#modul-106-lb1)
+  - [1. Inhaltsverzeichnis](#1-inhaltsverzeichnis)
+  - [1. Aufgabe 1.1 Datenbankmodelle und Datenbanktheorie](#1-aufgabe-11-datenbankmodelle-und-datenbanktheorie)
+    - [1.1. Hierarchische Datenbank](#11-hierarchische-datenbank)
+    - [1.2. Relationale und Objektrelationale Datenbanken](#12-relationale-und-objektrelationale-datenbanken)
+    - [1.3. Objektorientierte Datenbank](#13-objektorientierte-datenbank)
+    - [1.4. Datenbanktheorie zu relationalen Datenbanken](#14-datenbanktheorie-zu-relationalen-datenbanken)
+    - [1.5. Datenbanksprache SQL](#15-datenbanksprache-sql)
+  - [2. Aufgabe 1.2 Repetitionsfragen lösen](#2-aufgabe-12-repetitionsfragen-lösen)
+  - [3. Aufgabe 1.3 Erste Schritte mit MariaDB](#3-aufgabe-13-erste-schritte-mit-mariadb)
+  - [4. Aufgabe 2.1 ERM des Datenbank Schemas entwerfen](#4-aufgabe-21-erm-des-datenbank-schemas-entwerfen)
+  - [5. Lernziele LB1](#5-lernziele-lb1)
+- [Modul 106 LB2](#modul-106-lb2)
 
 
 **Teilnehmer**: Arlind Sulejmani, Harun Siyad, Maximilian Kos
 
 **Kursleiter**: Damien Vouillamoz
 
-## 1.2. Aufgabe 1.1 Datenbankmodelle und Datenbanktheorie
+## 1. Aufgabe 1.1 Datenbankmodelle und Datenbanktheorie
 
-### 1.2.1. Hierarchische Datenbank
+### 1.1. Hierarchische Datenbank
 
 - Hierarchische Speicherung der Daten in einem sequenziellen File (Land, Kanton, Ort/Ort, Bezirk, Gemeinde, Strasse, Hausnummer, Name, Vorname, Geburtsdatum
 - Neue Daten erfordern ein umkopieren, sortieren der Daten/File
 
-### 1.2.2. Relationale und Objektrelationale Datenbanken
+### 1.2. Relationale und Objektrelationale Datenbanken
 
 - Objekt(-relationale) Datenbanken erlauben benutzerdefinierte Datentypen und Objekte - Daten werden in Themenkreisen (Entitäten) in Form von Tabellen gespeichert
 - Flexibler als Hierachische Datenbanken
@@ -34,13 +35,13 @@
 - Einfach erweiterbar
 - Unübersichtlicher und schwerfälliger
 
-### 1.2.3. Objektorientierte Datenbank
+### 1.3. Objektorientierte Datenbank
 
 - Objket steht im Zentrum nicht die Tabelle
 - Beinhaltent auf Methoden um Daten zu ändern
 - Immer noch im Nischendasein
 
-### 1.2.4. Datenbanktheorie zu relationalen Datenbanken
+### 1.4. Datenbanktheorie zu relationalen Datenbanken
 
 Eine relationale Datenbank:
 
@@ -53,7 +54,7 @@ Eine relationale Datenbank:
 
 ![Datenbanktheorie](images/dateinbanktheorie.png)
 
-### 1.2.5. Datenbanksprache SQL
+### 1.5. Datenbanksprache SQL
 
 Die Datenbanksprach besitzt vier Elemente:
 
@@ -65,7 +66,7 @@ Besteht aus **TCL (Transaction Control Language)** und **DCL (Data Control Langu
 
 ![Datenbanksprache](images/sql-sprachelemente.png)
 
-## 1.3. Aufgabe 1.2 Repetitionsfragen lösen
+## 2. Aufgabe 1.2 Repetitionsfragen lösen
 
 1. Was ist eine Relationale Datenbank?
    - Eine relationale Datenbank ist eine Art von Datenbank, die Daten in Tabellen speichert, die über Schlüsselwörter und Verknüpfungen miteinander verbunden sind. Dies ermöglicht ein schnelleres und genaueres Abrufen von Informationen. Stellt referenzierte Integrität sicher. Datentypen müssen bei Einträgen eingehalten werden.
@@ -172,7 +173,7 @@ Besteht aus **TCL (Transaction Control Language)** und **DCL (Data Control Langu
 25. Wie unterscheiden sich 0 und NULL?
     -  0 ist eine Zahl, die als Wert 0 dargestellt wird, während NULL als leerer Wert in Programmiersprachen verwendet wird. In der Datenbank wird NULL als fehlender Wert definiert, der keinen Wert hat.
 
-## 1.4. Aufgabe 1.3 Erste Schritte mit MariaDB
+## 3. Aufgabe 1.3 Erste Schritte mit MariaDB
 
 - Hilfe anzeigen
 ```SQL
@@ -199,7 +200,7 @@ mysql> SHOW TABLES;
 mysql> DESCRIBE user;
 mysql> DESC user;
 ```
-## 1.5. Aufgabe 2.1 ERM des Datenbank Schemas entwerfen
+## 4. Aufgabe 2.1 ERM des Datenbank Schemas entwerfen
 
 ```SQL
 DROP DATABASE IF EXISTS `pizzakurrier`;
@@ -249,7 +250,7 @@ CREATE TABLE `order_has_product` (
   FOREIGN KEY (`fk_product_id`) REFERENCES `product`(`id`)
 );
 ```
-## 1.6. Lernziele LB1
+## 5. Lernziele LB1
 
 - Ich kenne die verschiedenen Arten von Datenbanken und deren hauptsächlichen Unterschiede
 - Ich kenne die Aufgaben eines RDBMS sowie den Aufbau eines Datenbanksystems
@@ -264,3 +265,5 @@ CREATE TABLE `order_has_product` (
 - Ich kann Datenbanken und Tabellen mit SQL erzeugen
 - Ich kann Datenbanken und Tabellen mit SQL löschen
 - Ich kann die Tabellenstruktur mit SQL ändern
+
+# Modul 106 LB2

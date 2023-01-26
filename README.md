@@ -402,15 +402,15 @@ GRANT SELECT ON pizzashop.* to backup@'localhost';
 
 CREATE USER backoffice@'%' IDENTIFIED BY '123';
 GRANT SELECT ON pizzashop.* to backoffice@'%';
-GRANT SELECT, UPDATE, INSERT DELETE ON pizzashop.customer to backoffice@'%';
-GRANT SELECT, UPDATE, INSERT DELETE ON pizzashop.product to backoffice@'%';
-GRANT SELECT, UPDATE, INSERT DELETE ON pizzashop.product_category to backoffice@'%';
+GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.customer to backoffice@'%';
+GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product to backoffice@'%';
+GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to backoffice@'%';
 
 CREATE USER sales@'%' IDENTIFIED BY '123';
 SET PASSWORD FOR sales@'%' = PASSWORD('B4ckU9u3er');
 GRANT SELECT ON pizzashop.customer to sales@'%';
 GRANT SELECT ON pizzashop.product_category to sales@'%';
 GRANT SELECT ON pizzashop.order_has_product to sales@'%';
-GRANT SELECT, UPDATE, INSERT DELETE ON pizzashop.`order` to sales@'%';
-GRANT SELECT, UPDATE, INSERT DELETE ON pizzashop.product_category to sales@'%';
+GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.`order` to sales@'%';
+GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
 ```

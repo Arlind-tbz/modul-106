@@ -276,6 +276,10 @@ CREATE TABLE `order_has_product` (
     CHECK (`price` IS NOT NULL);
     ```
 5. Fügen Sie ein neues Attribut (created_at, DATETIME) in die Produkttabelle ein und stellen Sie sicher, dass dieses Feld automatisch mit dem aktuellen Zeitpunkt bei einem INSERT befüllt wird.
+   ```sql
+    ALTER TABLE Produkte
+    ADD created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP;
+   ```
 6. Entfernen Sie die Spalte für die mobile Telefonnummer wieder
     ```sql
     ALTER TABLE `customer` DROP COLUMN `phone_number;`

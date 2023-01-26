@@ -262,6 +262,9 @@ CREATE TABLE `order_has_product` (
     ADD `phone_number` varchar(255) NOT NULL;
     ```
 2. Ändern Sie den Namen der Spalte für die Produktbezeichung
+    ```sql
+    ALTER TABLE `product` RENAME COLUMN `description` to `test`;
+    ```
 3. Ändern Sie den Datentyp des Produktpreises auf DECIMAL(6,2) UNSIGNED
     ```sql
     ALTER TABLE `product` MODIFY `price` DECIMAL(6,2) UNSIGNED;

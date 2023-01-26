@@ -344,3 +344,11 @@ CREATE TABLE `order_has_product` (
 # Modul 106 LB2
 
 ## 7. Aufgabe 3.1 Datensätze erfassen
+
+   1. Erfassen Sie mindestens 3 sinnvolle Produktkategorien
+   2. Erfassen Sie mindestens 5 verschiedene Produkte
+   3. Erfassen Sie mindestens 5 vollständige Kunden
+   4. Erfassen Sie mindestens 4 vollständige Bestellungen, davon mind 3 die bereits ausgeliefert wurden.
+   5. Fassen Sie alle INSERT-Statements in einer Transaktion zusammen
+   6. Stellen Sie sicher, dass Sie mindestens eine Produktkategorie haben, die kein Produkt besitzt
+   7. Stellen Sie sicher, dass Sie mindestens ein Produkt haben, dass nie bestellt wurde

@@ -66,8 +66,18 @@ INSERT INTO `product` (`id`, `description`, `price`, `fk_product_category_id`) V
 (4, 'TV', 1000, 1),
 (5, 'Printer', 200, 2);
 
-INSERT INTO `order` (`amount`, `order_date`, `delivery_date`, `fk_customer_id`) VALUES
-(1, '2022-01-20 19:00:00', '2022-01-20 21:00:00', 1),
-(2, '2022-01-20 09:00:00', '2022-01-20 12:00:00', 2),
-(3, '2022-01-20 01:00:00', '2022-01-20 06:00:00', 3),
+INSERT INTO `order` (`amount`, `order_date`, `delivery_date`, `fk_customer_id`, `fk_product_id`) VALUES
+(1, '2022-01-20 19:00:00', '2022-01-20 21:00:00', 1, 1),
+(2, '2022-01-20 09:00:00', '2022-01-20 12:00:00', 2, 2),
+(3, '2022-01-20 01:00:00', '2022-01-20 06:00:00', 3, 3),
 (4, '2022-01-20 05:00:00', NULL, 4);
+
+-- Aufgabe 3.2
+UPDATE `customer` SET `firstname` = 'yuh' WHERE `firstname` = 'Max';
+UPDATE `customer` SET `lastname` = 'yuh2' WHERE `lastname` = 'Sulejmani';
+
+UPDATE `Product` SET `price` = 10.50, Description = 'This is a great product' WHERE id = 1;
+
+UPDATE `products` SET `price` = price * 1.1;
+
+UPDATE `order` SET `fk_customer_id` = 2, `fk_product_id` = '2' WHERE order_id = '789';

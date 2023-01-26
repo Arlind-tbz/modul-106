@@ -343,15 +343,15 @@ CREATE TABLE `order_has_product` (
 ## 7. Aufgabe 3.1 Datensätze erfassen
 
 1. Erfassen Sie mindestens 3 sinnvolle Produktkategorien
-```sql 
-INSERT INTO `product_category` (`name`) VALUES  
+```sql
+INSERT INTO `product_category` (`name`) VALUES
 ("Pizza Margherita"),
 ("Schinken"),
 ("Vegan");
 ```
 2. Erfassen Sie mindestens 5 verschiedene Produkte
-```sql 
-INSERT INTO `product` (`id`, `name`, `description`, `price`, `fk_product_category_id`) VALUES 
+```sql
+INSERT INTO `product` (`id`, `name`, `description`, `price`, `fk_product_category_id`) VALUES
 (1, 'Smartphone', 500, 1, 1),
 (2, 'Laptop', 1500, 2, 2),
 (3, 'Tablet', 800, 1, 3),
@@ -360,7 +360,7 @@ INSERT INTO `product` (`id`, `name`, `description`, `price`, `fk_product_categor
 ```
 3. Erfassen Sie mindestens 5 vollständige Kunden
 ```sql
-INSERT INTO `customer` (`firstname`, `lastname`, `postcode`, `location`, `email`, `phone_number`) VALUES 
+INSERT INTO `customer` (`firstname`, `lastname`, `postcode`, `location`, `email`, `phone_number`) VALUES
 ('Arlind', 'Sulejmani', '8055', 'Zuerich', 'sulejmaniarlind5@gmail.com', '+41 76 222 22 22'),
 ('Harun', 'Siyad', '8050', 'Zuerich', 'harunsiyad@gmail.com', '+41 76 333 33 33'),
 ('Maximilian', 'Kos', '8912', 'Obfelnden', 'maxkos@gmail.com', '+41 76 444 44 44'),

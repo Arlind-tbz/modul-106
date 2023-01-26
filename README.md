@@ -259,6 +259,7 @@ CREATE TABLE `order_has_product` (
 1. Sie wollen in der Kundentabelle auch die mobile Telefonnummer speichern. Fügen Sie eine entsprechende Spalte hinzu
     - 
 2. Ändern Sie den Namen der Spalte für die Produktbezeichung
+    - ALTER TABLE Produkte MODIFY Preis DECIMAL(6,2) UNSIGNED;
 3. Ändern Sie den Datentyp des Produktpreises auf DECIMAL(6,2) UNSIGNED
 4. Setzten Sie nachträglich NOT NULL für den Produktpreis
 5. Fügen Sie ein neues Attribut (created_at, DATETIME) in die Produkttabelle ein und stellen Sie sicher, dass dieses Feld automatisch mit dem aktuellen Zeitpunkt bei einem INSERT befüllt wird.

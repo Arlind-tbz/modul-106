@@ -351,11 +351,12 @@ INSERT INTO `product_category` (`name`) VALUES
 ```
 2. Erfassen Sie mindestens 5 verschiedene Produkte
 ```sql 
-    INSERT INTO product (id, description, price, fk_product_category_id) VALUES (1, 'Smartphone', 500, 1);
-    INSERT INTO product (id, description, price, fk_product_category_id) VALUES (2, 'Laptop', 1500, 2);
-    INSERT INTO product (id, description, price, fk_product_category_id) VALUES (3, 'Tablet', 800, 1);
-    INSERT INTO product (id, description, price, fk_product_category_id) VALUES (4, 'TV', 1000, 3);
-    INSERT INTO product (id, description, price, fk_product_category_id) VALUES (5, 'Printer', 200, 4);
+INSERT INTO product (id, name, description, price) VALUES 
+(1, 'Smartphone', 500, 1),
+(2, 'Laptop', 1500, 2),
+(3, 'Tablet', 800, 1),
+(4, 'TV', 1000, 3),
+(5, 'Printer', 200, 4);
 ```
 3. Erfassen Sie mindestens 5 vollständige Kunden
 ```sql

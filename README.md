@@ -269,6 +269,9 @@ CREATE TABLE `order_has_product` (
 6. Entfernen Sie die Spalte für die mobile Telefonnummer wieder
 7. Entfernen Sie den Foreign Key Constraint vom Postleitzahlen Fremdschlüssel aus der Kundentabelle
 8. Fügen Sie den Foreign Key Constraint wieder hinzu
+   ```sql
+    ALTER TABLE Kunden
+    ADD CONSTRAINT FK_Kunden_Id FOREIGN KEY (Kunden_Id) REFERENCES Kunden(Kunden_Id);```
 
 ## 6. Lernziele LB1
 

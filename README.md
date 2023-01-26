@@ -275,7 +275,7 @@ ADD `phone_number` varchar(255) NOT NULL;
 6. Entfernen Sie die Spalte für die mobile Telefonnummer wieder
 7. Entfernen Sie den Foreign Key Constraint vom Postleitzahlen Fremdschlüssel aus der Kundentabelle
    ```sql
-    ALTER TABLE Customer 
+    ALTER TABLE customer 
     DROP FOREIGN KEY fk_postalcode;
    ```
 8. Fügen Sie den Foreign Key Constraint wieder hinzu

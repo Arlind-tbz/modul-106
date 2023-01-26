@@ -277,6 +277,9 @@ CREATE TABLE `order_has_product` (
     ```
 5. Fügen Sie ein neues Attribut (created_at, DATETIME) in die Produkttabelle ein und stellen Sie sicher, dass dieses Feld automatisch mit dem aktuellen Zeitpunkt bei einem INSERT befüllt wird.
 6. Entfernen Sie die Spalte für die mobile Telefonnummer wieder
+    ```sql
+    ALTER TABLE `customer` DROP COLUMN `phone_number;`
+    ```
 7. Entfernen Sie den Foreign Key Constraint vom Postleitzahlen Fremdschlüssel aus der Kundentabelle
    ```sql
     ALTER TABLE `customer`

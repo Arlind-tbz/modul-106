@@ -12,7 +12,8 @@
   - [2. Aufgabe 1.2 Repetitionsfragen lösen](#2-aufgabe-12-repetitionsfragen-lösen)
   - [3. Aufgabe 1.3 Erste Schritte mit MariaDB](#3-aufgabe-13-erste-schritte-mit-mariadb)
   - [4. Aufgabe 2.1 ERM des Datenbank Schemas entwerfen](#4-aufgabe-21-erm-des-datenbank-schemas-entwerfen)
-  - [5. Lernziele LB1](#5-lernziele-lb1)
+  - [5. Aufgabe 2.4 Schema mit SQl/DDL bearbeiten](#5-aufgabe-24-schema-mit-sqlddl-bearbeiten)
+  - [6. Lernziele LB1](#6-lernziele-lb1)
 - [Modul 106 LB2](#modul-106-lb2)
 
 
@@ -252,7 +253,19 @@ CREATE TABLE `order_has_product` (
   FOREIGN KEY (`fk_product_id`) REFERENCES `product`(`id`)
 );
 ```
-## 5. Lernziele LB1
+
+## 5. Aufgabe 2.4 Schema mit SQl/DDL bearbeiten
+
+1. Sie wollen in der Kundentabelle auch die mobile Telefonnummer speichern. Fügen Sie eine entsprechende Spalte hinzu
+2. Ändern Sie den Namen der Spalte für die Produktbezeichung
+3. Ändern Sie den Datentyp des Produktpreises auf DECIMAL(6,2) UNSIGNED
+4. Setzten Sie nachträglich NOT NULL für den Produktpreis
+5. Fügen Sie ein neues Attribut (created_at, DATETIME) in die Produkttabelle ein und stellen Sie sicher, dass dieses Feld automatisch mit dem aktuellen Zeitpunkt bei einem INSERT befüllt wird.
+6. Entfernen Sie die Spalte für die mobile Telefonnummer wieder
+7. Entfernen Sie den Foreign Key Constraint vom Postleitzahlen Fremdschlüssel aus der Kundentabelle
+8. Fügen Sie den Foreign Key Constraint wieder hinzu
+
+## 6. Lernziele LB1
 
 - Ich kenne die verschiedenen Arten von Datenbanken und deren hauptsächlichen Unterschiede
   - Relationale Datenbanken: Speichern Daten in Tabellen mit Beziehungen zwischen ihnen.

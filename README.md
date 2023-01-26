@@ -201,6 +201,8 @@ mysql> DESCRIBE user;
 mysql> DESC user;
 ```
 ## 4. Aufgabe 2.1 ERM des Datenbank Schemas entwerfen
+SQL Script einfügen mit MariaDB mit <br>
+`source C:/Users/User/Documents/scipt.sql`
 
 ```SQL
 DROP DATABASE IF EXISTS `pizzakurrier`;
@@ -261,7 +263,7 @@ CREATE TABLE `order_has_product` (
   - **RDBMS**: Ein Relationales Datenbankmanagementsystem (RDBMS) ist ein Programm, mit dem Daten in einer relationalen Datenbank organisiert und gespeichert werden können. Das RDBMS ermöglicht es Benutzern, Daten zu erfassen, abzurufen, zu bearbeiten und zu ändern.
   - **Aufbau eines Datenbanksystems**: Ein Datenbanksystem besteht aus einer relationalen Datenbank, einer Datenbankmanagementsystem-Software (RDBMS) und einer Benutzer-Schnittstelle. Die relationale Datenbank ist eine Sammlung von Tabellen, in denen Daten gespeichert werden. Die RDBMS-Software verwaltet die Datenbank und stellt verschiedene Funktionen zur Verfügung, mit denen Benutzer auf die Daten zugreifen und sie verwalten können. Die Ben
 - Ich kenne die verschiedenen Elemente der strukturierten Abfragesprache SQL
- 
+
   - **SELECT** - Der SELECT-Befehl wird verwendet, um Daten aus einer Datenbank abzurufen.
 
   - **FROM** - Der FROM-Befehl wird verwendet, um eine Tabelle oder mehrere Tabellen auszuwählen, aus denen Daten abgerufen werden sollen.
@@ -297,7 +299,6 @@ CREATE TABLE `order_has_product` (
 - Ich kann Datenbanken und Tabellen mit SQL löschen
   - ``DELETE FROM table_name WHERE condition;``
 - Ich kann die Tabellenstruktur mit SQL ändern
-  - Es lassen sich Tabellenstrukturen mit CREATE, ALTER und DROP Befehlen ändern. Mit dem CREATE-Befehl lässt sich eine neue Tabelle erstellen, mit ALTER lassen sich bestehende Tabellen ändern und mit dem DROP-Befehl lassen sich Tabellen löschen.
+  - Mit CREATE, ALTER und DROP können Änderungen an Tabellenstrukturen vorgenommen werden. CREATE ermöglicht das Erstellen einer neuen Tabelle, ALTER erlaubt es, bestehende Tabellen zu bearbeiten und DROP kann eine Tabelle löschen.
 
 # Modul 106 LB2
-

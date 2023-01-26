@@ -206,9 +206,9 @@ SQL Script einfügen mit MariaDB mit <br>
 `SOURCE C:/Users/User/Documents/scipt.sql`
 
 ```SQL
-DROP DATABASE IF EXISTS `pizzakurier`;
-CREATE DATABASE `pizzakurier`;
-USE `pizzakurier`;
+DROP DATABASE IF EXISTS `pizzashop`;
+CREATE DATABASE `pizzashop`;
+USE `pizzashop`;
 
 CREATE TABLE `customer`(
     `id` INT NOT NULL AUTO_INCREMENT,

@@ -354,5 +354,25 @@ INSERT INTO `customer` (`firstname`, `lastname`, `postcode`, `location`, `email`
 ```
 4. Erfassen Sie mindestens 4 vollständige Bestellungen, davon mind 3 die bereits ausgeliefert wurden.
 5. Fassen Sie alle INSERT-Statements in einer Transaktion zusammen
+```sql
+BEGIN TRANSACTION;
+INSERT INTO `customer` (`firstname`, `lastname`, `postcode`, `location`, `email`, `phone_number`) VALUES
+('Arlind', 'Sulejmani', '8055', 'Zuerich', 'sulejmaniarlind5@gmail.com', '+41 76 222 22 22'),
+('Harun', 'Siyad', '8050', 'Zuerich', 'harunsiyad@gmail.com', '+41 76 333 33 33'),
+('Maximilian', 'Kos', '8912', 'Obfelnden', 'maxkos@gmail.com', '+41 76 444 44 44'),
+('Maxi', 'Kos', '8912', 'Obfelnden', 'maxikos@gmail.com', '+41 76 555 55 55'),
+('Max', 'Kos', '8912', 'Obfelnden', 'maxos@gmail.com', '+41 76 666 666 66');
+INSERT INTO `product` (`id`, `name`, `description`, `price`, `fk_product_category_id`) VALUES
+(1, 'Smartphone', 500, 1, 1),
+(2, 'Laptop', 1500, 2, 2),
+(3, 'Tablet', 800, 1, 3),
+(4, 'TV', 1000, 3, 2),
+(5, 'Printer', 200, 4, 1);
+INSERT INTO `product_category` (`name`) VALUES
+("Pizza Margherita"),
+("Schinken"),
+("Vegan");
+COMMIT;
+```
 6. Stellen Sie sicher, dass Sie mindestens eine Produktkategorie haben, die kein Produkt besitzt
 7. Stellen Sie sicher, dass Sie mindestens ein Produkt haben, dass nie bestellt wurde

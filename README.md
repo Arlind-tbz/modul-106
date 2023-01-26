@@ -271,7 +271,8 @@ CREATE TABLE `order_has_product` (
 8. Fügen Sie den Foreign Key Constraint wieder hinzu
    ```sql
     ALTER TABLE Kunden
-    ADD CONSTRAINT FK_Kunden_Id FOREIGN KEY (Kunden_Id) REFERENCES Kunden(Kunden_Id);```
+    ADD CONSTRAINT FK_Kunden_Id FOREIGN KEY (Kunden_Id) REFERENCES Kunden(Kunden_Id);
+    ```
 
 ## 6. Lernziele LB1
 

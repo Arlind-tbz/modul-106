@@ -19,8 +19,10 @@ CREATE TABLE `order`(
     `order_date` DATETIME NOT NULL DEFAULT NOW(),
     `delivery_date` DATETIME,
     `fk_customer_id` INT NOT NULL,
+    `fk_product_id` INT NOT NULL,
     PRIMARY KEY (`id`),
     FOREIGN KEY (`fk_customer_id`) REFERENCES `customer`(`id`)
+    FOREIGN KEY (`fk_product_id`) REFERENCES `product`(`id`)
 );
 
 CREATE TABLE `product_category`(

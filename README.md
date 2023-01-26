@@ -262,24 +262,24 @@ CREATE TABLE `order_has_product` (
     ADD `phone_number` varchar(255) NOT NULL;
     ```
 2. Ändern Sie den Namen der Spalte für die Produktbezeichung
+3. Ändern Sie den Datentyp des Produktpreises auf DECIMAL(6,2) UNSIGNED
     ```sql
     ALTER TABLE `product` MODIFY `price` DECIMAL(6,2) UNSIGNED;
     ```
-3. Ändern Sie den Datentyp des Produktpreises auf DECIMAL(6,2) UNSIGNED
-4. Setzten Sie nachträglich NOT NULL für den Produktpreis
+1. Setzten Sie nachträglich NOT NULL für den Produktpreis
    ```sql
     ALTER TABLE `product`
     ADD CONSTRAINT price_NotNull
     CHECK (`price` IS NOT NULL);
     ```
-5. Fügen Sie ein neues Attribut (created_at, DATETIME) in die Produkttabelle ein und stellen Sie sicher, dass dieses Feld automatisch mit dem aktuellen Zeitpunkt bei einem INSERT befüllt wird.
-6. Entfernen Sie die Spalte für die mobile Telefonnummer wieder
-7. Entfernen Sie den Foreign Key Constraint vom Postleitzahlen Fremdschlüssel aus der Kundentabelle
+2. Fügen Sie ein neues Attribut (created_at, DATETIME) in die Produkttabelle ein und stellen Sie sicher, dass dieses Feld automatisch mit dem aktuellen Zeitpunkt bei einem INSERT befüllt wird.
+3. Entfernen Sie die Spalte für die mobile Telefonnummer wieder
+4. Entfernen Sie den Foreign Key Constraint vom Postleitzahlen Fremdschlüssel aus der Kundentabelle
    ```sql
     ALTER TABLE `customer`
     DROP FOREIGN KEY `fk_postalcode`;
    ```
-8. Fügen Sie den Foreign Key Constraint wieder hinzu
+5. Fügen Sie den Foreign Key Constraint wieder hinzu
    ```sql
     ALTER TABLE `customer`
     ADD CONSTRAINT `fk_id` FOREIGN KEY (`id`) REFERENCES `customer`(`id`);

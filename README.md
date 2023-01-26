@@ -252,15 +252,48 @@ CREATE TABLE `order_has_product` (
 ## 1.6. Lernziele LB1
 
 - Ich kenne die verschiedenen Arten von Datenbanken und deren hauptsächlichen Unterschiede
+  - Relationale Datenbanken: Speichern Daten in Tabellen mit Beziehungen zwischen ihnen.
+  - NoSQL-Datenbanken: Speichern Daten in Dokumenten, die keine Beziehungen zu anderen Dokumenten haben.
+  - Objektorientierte Datenbanken: Speichern Daten in Objekten, die miteinander verknüpft sind.
+  - Grafische Datenbanken: Speichern Daten in einem Netzwerk von Knoten und Kanten.
 - Ich kenne die Aufgaben eines RDBMS sowie den Aufbau eines Datenbanksystems
+  - **RDBMS**: Ein Relationales Datenbankmanagementsystem (RDBMS) ist ein Programm, mit dem Daten in einer relationalen Datenbank organisiert und gespeichert werden können. Das RDBMS ermöglicht es Benutzern, Daten zu erfassen, abzurufen, zu bearbeiten und zu ändern.
+  - **Aufbau eines Datenbanksystems**: Ein Datenbanksystem besteht aus einer relationalen Datenbank, einer Datenbankmanagementsystem-Software (RDBMS) und einer Benutzer-Schnittstelle. Die relationale Datenbank ist eine Sammlung von Tabellen, in denen Daten gespeichert werden. Die RDBMS-Software verwaltet die Datenbank und stellt verschiedene Funktionen zur Verfügung, mit denen Benutzer auf die Daten zugreifen und sie verwalten können. Die Ben
 - Ich kenne die verschiedenen Elemente der strukturierten Abfragesprache SQL
+ 
+  - **SELECT** - Der SELECT-Befehl wird verwendet, um Daten aus einer Datenbank abzurufen.
+
+  - **FROM** - Der FROM-Befehl wird verwendet, um eine Tabelle oder mehrere Tabellen auszuwählen, aus denen Daten abgerufen werden sollen.
+
+  - **WHERE** - Der WHERE-Befehl wird verwendet, um bestimmte Kriterien für die Datenabfrage auszuwählen.
+
+  - **ORDER BY** - Der ORDER BY-Befehl wird verwendet, um die Ergebnisse einer Abfrage zu sortieren.
+
+  - **GROUP BY** - Der GROUP BY-Befehl wird verwendet, um die Ergebnisse einer Abfrage zu gruppieren.
+
+  - **HAVING** - Der HAVING-Befehl wird verwendet, um eine Bedingung auf die abgerufenen Gruppen anzuwenden.
+
+  - **UPDATE** - Der UPDATE-Befehl wird verwendet, um Daten in einer Datenbank zu aktualisieren.
+
+  - **INSERT** - Der INSERT-Befehl wird verwendet, um Daten in einer Datenbank einzufügen.
+
+  - **DELETE** - Der DELETE-Befehl wird verwendet, um Daten aus einer Datenbank zu löschen.
 - Ich kann MariaDB installieren
 - Ich kann die Datenbank-Konsole öffnen und SQL Statements eingeben
 - Ich kann alle Datenbanken im System anzeigen
+  - ``SHOW DATABASES``
 - Ich kann mich mit einer Datenbank verbinden
 - Ich kann die Datenbank Struktur anzeigen
+  - ``SHOW TABLES``
 - Ich kann ein Datenbank Schema in der 3. Normalform entwerfen
 - Ich kenne dies SQL Befehle die zur Data Definition Language (DDL) gehören
+  - **CREATE**: Erstellung einer neuen Tabelle, View, Index, etc.
+  - **ALTER**: Ändern einer vorhandenen Tabelle, View, Index, etc.
+  - **DROP**: Löschen einer vorhandenen Tabelle, View, Index, etc.
+  - **TRUNCATE**: Löschen aller Datensätze aus einer Tabelle.
 - Ich kann Datenbanken und Tabellen mit SQL erzeugen
+  - ``CREATE DATABASE databasename;``
 - Ich kann Datenbanken und Tabellen mit SQL löschen
+  - ``DELETE FROM table_name WHERE condition;``
 - Ich kann die Tabellenstruktur mit SQL ändern
+  - Mit SQL lassen sich Tabellenstrukturen mithilfe von CREATE, ALTER und DROP Befehlen ändern. Mit dem CREATE-Befehl lässt sich eine neue Tabelle erstellen, mit ALTER lassen sich bestehende Tabellen ändern und mit dem DROP-Befehl lassen sich Tabellen löschen.

@@ -351,7 +351,7 @@ INSERT INTO `product_category` (`name`) VALUES
 ```
 2. Erfassen Sie mindestens 5 verschiedene Produkte
 ```sql 
-INSERT INTO product (id, name, description, price) VALUES 
+INSERT INTO product (`id`, `name`, `description`, `price`) VALUES 
 (1, 'Smartphone', 500, 1),
 (2, 'Laptop', 1500, 2),
 (3, 'Tablet', 800, 1),

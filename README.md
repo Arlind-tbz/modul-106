@@ -343,6 +343,14 @@ CREATE TABLE `order_has_product` (
 ## 7. Aufgabe 3.1 Datensätze erfassen
 
 1. Erfassen Sie mindestens 3 sinnvolle Produktkategorien
+```sql
+INSERT INTO `customer` (`firstname`, `lastname`, `postcode`, `location`, `email`, `phone_number`) VALUES 
+('Arlind', 'Sulejmani', '8055', 'Zuerich', 'sulejmaniarlind5@gmail.com', '+41 76 222 22 22'),
+('Harun', 'Siyad', '8050', 'Zuerich', 'harunsiyad@gmail.com', '+41 76 333 33 33'),
+('Maximilian', 'Kos', '8912', 'Obfelnden', 'maxkos@gmail.com', '+41 76 444 44 44'),
+('Maxi', 'Kos', '8912', 'Obfelnden', 'maxikos@gmail.com', '+41 76 555 55 55'),
+('Max', 'Kos', '8912', 'Obfelnden', 'maxos@gmail.com', '+41 76 666 666 66');
+```
 2. Erfassen Sie mindestens 5 verschiedene Produkte
 ```sql 
     INSERT INTO product (id, description, price, fk_product_category_id) VALUES (1, 'Smartphone', 500, 1);

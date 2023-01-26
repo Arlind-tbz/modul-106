@@ -1,8 +1,8 @@
 # Modul 106 LB1
 
-## 1. Inhaltsverzeichnis
+## Inhaltsverzeichnis
 - [Modul 106 LB1](#modul-106-lb1)
-  - [1. Inhaltsverzeichnis](#1-inhaltsverzeichnis)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [1. Aufgabe 1.1 Datenbankmodelle und Datenbanktheorie](#1-aufgabe-11-datenbankmodelle-und-datenbanktheorie)
     - [1.1. Hierarchische Datenbank](#11-hierarchische-datenbank)
     - [1.2. Relationale und Objektrelationale Datenbanken](#12-relationale-und-objektrelationale-datenbanken)

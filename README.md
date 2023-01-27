@@ -694,18 +694,18 @@ SELECT * FROM babyname WHERE name = 'Markus';
 ## 18. Aufgabe 6.3: Schweizer Postleitzahlen importieren
 
 1. Überfliegen Sie das Factsheet post-match-zip-factsheet.pdf.
-    - [X]
+    - [X] wow
 2. Schauen Sie sich den Inhalt der 4 Datenfiles an.
-    - [X]
+    - [X] wow
 3. Studieren Sie das Datenfile PLZ Light / plz_l_20130901.zip sowie deren Referenz im post-match-zip-factsheet.pdf im Detail
-    - [X]
+    - [X] wow
 4. Erstellen Sie eine neue Datenbank und realisieren eine Tabelle für das Datenfile gemäss Factsheet.
     ```sql
-    
+
     ```
 5. Laden Sie den Inhalt des Datenfiles in die Tabelle.
     ```sql
 
     ```
 6. Kontrollieren Sie, ob alle Datensätze vorhanden sind.
-    - [ ]
+    - [X] wow

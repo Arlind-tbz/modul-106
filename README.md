@@ -558,3 +558,46 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     - asdf
 4. Welchen Geschäftsprozess bildet die Datenbank Sakila ab?
     - Die Datenbank Sakila bildet ein Geschäftsprozess des Verleihs von Filmen ab. Sie enthält Datensätze für Kunden, Filme, Verleihe, Mietgebühren, Zahlungen und andere. Mit Sakila können Kunden Filme ausleihen, verfolgen, wie lange sie den Film ausgeliehen haben, wann sie ihn zurückgeben müssen, wie viel sie bezahlen müssen, ob sie ihren Verleih aktualisieren müssen, und mehr.
+
+## 14. Aufgabe 5.2: SQL Abfragen machen
+
+1. Anzahl Datensätze in der Tabelle payment
+    ```sql
+
+    ```
+2. Anzahl Schauspieler mit dem Namen Julia
+    ```sql
+    
+    ```
+3. Anzahl inaktive Kunden
+    ```sql
+    
+    ```
+4. Durchschnittliche Länge der Filme mit Rating "PG"
+    ```sql
+    
+    ```
+5. Ausleihen, die noch nicht zurück gebracht wurden, sortiert nach Ausleihdatum (Format: dd.mm.YYYY)
+    ```sql
+    
+    ```
+6. Berechnen Sie die durchschnittliche Ausleihdauer in Tagen
+    ```sql
+    
+    ```
+7. Liste der Vornamen von Schauspielern, deren Vorname nur 3 Buchstaben lang ist. Zeigen Sie keine doppelten Vornamen an
+    ```sql
+    
+    ```
+8. Erstellen Sie eine Liste der Schauspieler, deren Nachname mit 'B' beginnt und an zweitletzter Stelle ein 'e' haben. Zeigen Sie keine doppelten Namen an
+    ```sql
+    
+    ```
+9. Zählen Sie bei allen Datensätzen der Tabelle "rental" 12 Jahre zu Ausleih- und Rückgabedatum dazu
+    ```sql
+    
+    ```
+10. Erstellen Sie eine neue Kategorie namens "Art"
+    ```sql
+    
+    ```

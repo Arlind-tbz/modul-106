@@ -572,7 +572,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 3. Anzahl inaktive Kunden
     ```sql
-    
+    SELECT COUNT(*) FROM customer WHERE active LIKE "0";
     ```
 4. Durchschnittliche Länge der Filme mit Rating "PG"
     ```sql
@@ -580,7 +580,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 5. Ausleihen, die noch nicht zurück gebracht wurden, sortiert nach Ausleihdatum (Format: dd.mm.YYYY)
     ```sql
-    de mach ich no cap
+    
     ```
 6. Berechnen Sie die durchschnittliche Ausleihdauer in Tagen
     ```sql

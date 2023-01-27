@@ -312,3 +312,6 @@ COMMIT;
 -- SELECT * FROM customer WHERE id IN (1, 3, 5, 6);
 -- SELECT * FROM order_entry WHERE delivered_at IS NULL;
 -- SELECT * FROM product WHERE price > (SELECT AVG(price) FROM product);
+
+SELECT * FROM customer WHERE firstname LIKE 'f%';
+SELECT * FROM customer WHERE lastname LIKE '%r';

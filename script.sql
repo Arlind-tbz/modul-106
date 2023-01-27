@@ -290,28 +290,3 @@ UPDATE
 
 -- Transaktion abschliessen
 COMMIT;
-
-
--- SELECT description FROM product;
--- SELECT name FROM product_category;
--- SELECT firstname, lastname, email FROM customer;
--- SELECT * FROM `order` ORDER BY `order_date`;
--- SELECT * FROM `product` ORDER BY `price` DESC;
--- SELECT price FROM product ORDER BY price DESC LIMIT 3;
--- SELECT price FROM product ORDER BY price ASC LIMIT 3;
-
--- SELECT SQRT(price) FROM product;
--- SELECT MONTH(ordered_at) FROM order_entry;
-
--- SELECT ROUND(price * 0.08, 2) FROM product;
-
--- SELECT * FROM product WHERE id = 5;
--- SELECT * FROM customer WHERE id < 3;
--- SELECT * FROM customer WHERE id < 3 OR id > 8;
--- SELECT * FROM order_entry WHERE id BETWEEN 3 AND 7;
--- SELECT * FROM customer WHERE id IN (1, 3, 5, 6);
--- SELECT * FROM order_entry WHERE delivered_at IS NULL;
--- SELECT * FROM product WHERE price > (SELECT AVG(price) FROM product);
-
--- SELECT * FROM customer WHERE firstname LIKE 'f%';
--- SELECT * FROM customer WHERE lastname LIKE '%r';

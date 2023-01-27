@@ -527,11 +527,11 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 3. Kunden deren Nachname ein "e" enthält
     ```sql
-   
+   SELECT * FROM `customer` WHERE `lastname` LIKE "%e%";
     ```
 4. Kunden deren Vorname aus 5 Buchstaben besteht
     ```sql
-   
+   SELECT * FROM `customer` WHERE `firstname` LIKE "_____";
     ```
 5. Kunden deren Nachname an der zweitletzter Stelle ein "e" haben
     ```sql

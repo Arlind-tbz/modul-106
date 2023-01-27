@@ -474,9 +474,9 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 7. Geben Sie die Anzahl Datensätze ihrer Produkttabelle aus.
     ```sql
-SELECT COUNT(*) FROM product;
+   SELECT COUNT(*) FROM product;
     ```
 8. Berechnen Sie Mindest-, Höchst- und Durchschnittspreis aller Produkte
     ```sql
-SELECT MIN(price), MAX(price), AVG(price) FROM product;
+   SELECT MIN(price), MAX(price), AVG(price) FROM product;
     ```

@@ -583,7 +583,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 6. Berechnen Sie die durchschnittliche Ausleihdauer in Tagen
     ```sql
-    
+    SELECT AVG(DATEDIFF(return_date,rental_date)) AS avg_rental_days FROM rental;
     ```
 7. Liste der Vornamen von Schauspielern, deren Vorname nur 3 Buchstaben lang ist. Zeigen Sie keine doppelten Vornamen an
     ```sql

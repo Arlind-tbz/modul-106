@@ -393,7 +393,7 @@ INSERT INTO `order` (`amount`, `order_date`, `delivery_date`, `fk_customer_id`) 
 6. Stellen Sie sicher, dass Sie mindestens eine Produktkategorie haben, die kein Produkt besitzt
 7. Stellen Sie sicher, dass Sie mindestens ein Produkt haben, dass nie bestellt wurde
 
-## 8. Benutzer erstllen 
+## 8. Benutzer erstllen
 
 ```sql
 CREATE USER backup@'localhost' IDENTIFIED BY '123';
@@ -462,13 +462,13 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 4. Liste der Email Adressen aller Kunden. Teilen Sie die Adresse in zwei Spalten auf Account und Domain.  z.B. hans@muster.com: hans, muster.com
     ```sql
-   SELECT SUBSTRING_INDEX(email, '@', 1) AS account, 
-   SUBSTRING_INDEX(email, '@', -1) AS domain 
+   SELECT SUBSTRING_INDEX(email, '@', 1) AS account,
+   SUBSTRING_INDEX(email, '@', -1) AS domain
    FROM customer;
     ```
 5. Geben Sie die Initialen der Kunden in einer Spalte aus. z.B. Hans Muster: HM
     ```sql
-    SELECT CONCAT(LEFT(firstname, 1), LEFT(lastname, 1)) AS Initialen 
+    SELECT CONCAT(LEFT(firstname, 1), LEFT(lastname, 1)) AS Initialen
     FROM customer;
     ```
 6. Berechnen Sie die 8% Mehrwertsteuer, die in den Preisen inbegriffen ist (Optional: Runden Sie die MwSt auf 5 Rappen)
@@ -551,10 +551,10 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
         film_actor - Mit den Fremdschlüsseln film_id und actor_id verbunden. <br>
         film_category - Mit den Fremdschlüsseln film_id und category_id verbunden. <br>
         film_text - Mit dem Primärschlüssel film_id verbunden. <br>
-        inventory - Mit dem Primärschlüssel 
+        inventory - Mit dem Primärschlüssel
 2. Was wird in dieser Datenbank reps. in den einzelnen Tabellen gespeichert?
     - Recht selbstverständlich sobald man die Tabellen Namen liest.
 3. Was ist der Umfang der in der Datenbank gespeicherten Daten?
-    - asdf
+    - Die Sakila-Datenbank ist eine Beispiel-Datenbank, die von MySQL entwickelt wurde. Sie enthält Daten zu Filmen, Kunden, Mieten und anderen Aspekten eines fiktiven Videostores.
 4. Welchen Geschäftsprozess bildet die Datenbank Sakila ab?
     - Die Datenbank Sakila bildet ein Geschäftsprozess des Verleihs von Filmen ab. Sie enthält Datensätze für Kunden, Filme, Verleihe, Mietgebühren, Zahlungen und andere. Mit Sakila können Kunden Filme ausleihen, verfolgen, wie lange sie den Film ausgeliehen haben, wann sie ihn zurückgeben müssen, wie viel sie bezahlen müssen, ob sie ihren Verleih aktualisieren müssen, und mehr.

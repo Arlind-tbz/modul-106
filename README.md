@@ -439,9 +439,9 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 6. Liste der teuersten 3 Produkte
     ```sql
-
+    SELECT price FROM product ORDER BY price DESC LIMIT 3
     ```
 7. Liste der günstigsten 3 Produkte
     ```sql
-
+    SELECT price FROM product ORDER BY price ASC LIMIT 3
     ```

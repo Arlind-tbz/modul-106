@@ -470,7 +470,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 6. Berechnen Sie die 8% Mehrwertsteuer, die in den Preisen inbegriffen ist (Optional: Runden Sie die MwSt auf 5 Rappen)
     ```sql
-    
+    SELECT ROUND(price * 0.08, 2) FROM product;
     ```
 7. Geben Sie die Anzahl Datensätze ihrer Produkttabelle aus.
     ```sql

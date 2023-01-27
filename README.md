@@ -458,15 +458,18 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 3. Zählen Sie die Anzahl Buchstaben in den Vornamen der Kunden.
     ```sql
-    
+    SELECT LENGTH(firstname) FROM customer;
     ```
 4. Liste der Email Adressen aller Kunden. Teilen Sie die Adresse in zwei Spalten auf Account und Domain.  z.B. hans@muster.com: hans, muster.com
     ```sql
-    
+   SELECT SUBSTRING_INDEX(email, '@', 1) AS account, 
+   SUBSTRING_INDEX(email, '@', -1) AS domain 
+   FROM customer;
     ```
 5. Geben Sie die Initialen der Kunden in einer Spalte aus. z.B. Hans Muster: HM
     ```sql
-    
+    SELECT CONCAT(LEFT(firstname, 1), LEFT(lastname, 1)) AS Initialen 
+    FROM customer;
     ```
 6. Berechnen Sie die 8% Mehrwertsteuer, die in den Preisen inbegriffen ist (Optional: Runden Sie die MwSt auf 5 Rappen)
     ```sql

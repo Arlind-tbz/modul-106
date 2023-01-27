@@ -642,3 +642,14 @@ SELECT * FROM babyname WHERE name = 'Markus';
 -- Ohne index: 94 rows in set (0.186 sec)
 -- mit index: 94 rows in set (0.002 sec)
 ```
+
+## 16. Aufgabe 6.1: CSV Dateien exportieren
+
+1. Erstellen Sie eine Liste aller Kunden und speichern Sie sie als CSV Datei ab. Folgende Felder müssen exportiert werden:
+    1. `customer.customer_id`
+    2. `customer.first_name`
+    3. `customer.last_name`
+    4. `customer.email`
+    5. `customer.create_at (Format DD.MM.YYYY)`
+2. Öffnen Sie die Adressliste in Excel.
+3. Wiederholen Sie den Vorgang. Nehmen Sie diesmal den ; als Feldtrenner und " als Feld-Enclosing.

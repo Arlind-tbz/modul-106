@@ -612,8 +612,10 @@ CREATE TABLE babyname (
   name VARCHAR(11),
   percent FLOAT,
   gender VARCHAR(5));
+
 -- kopiere baby-names.csv zu C:\Program Files\MariaDB 10.6\data\baby-names.csv
 LOAD DATA INFILE './baby-names.csv' INTO TABLE babyname FIELDS TERMINATED BY ',';
+
 -- SELECT * FROM babyname;
 -- SELECT * FROM babyname WHERE name = 'Markus';
 
@@ -636,5 +638,7 @@ SELECT * FROM babyname WHERE name = 'Markus';
 -- +------+-------------+----------+------+---------------+------------+---------+-------+------+-----------------------+
 -- |    1 | SIMPLE      | babyname | ref  | index_name    | index_name | 36      | const | 94   | Using index condition |
 -- +------+-------------+----------+------+---------------+------------+---------+-------+------+-----------------------+
--- 1 row in set (0.001 sec)
+
+-- Ohne index: 94 rows in set (0.186 sec)
+-- mit index: 94 rows in set (0.002 sec)
 ```

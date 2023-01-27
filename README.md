@@ -682,7 +682,7 @@ SELECT * FROM babyname WHERE name = 'Markus';
     ```sql
 
     ```
-3. Erstellen Sie einen SQL-Dump aller Datenbanken auf Ihrem Server als Backup.```sql
+3. Erstellen Sie einen SQL-Dump aller Datenbanken auf Ihrem Server als Backup.
     ```sql
-    
+
     ```

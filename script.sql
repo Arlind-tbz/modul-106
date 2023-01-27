@@ -300,5 +300,5 @@ COMMIT;
 -- SELECT price FROM product ORDER BY price DESC LIMIT 3;
 -- SELECT price FROM product ORDER BY price ASC LIMIT 3;
 
-SELECT SQRT(price) FROM product;
-SELECT MONTH(ordered_at) FROM order_entry;
+-- SELECT SQRT(price) FROM product;
+-- SELECT MONTH(ordered_at) FROM order_entry;

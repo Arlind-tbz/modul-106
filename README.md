@@ -651,5 +651,23 @@ SELECT * FROM babyname WHERE name = 'Markus';
     3. `customer.last_name`
     4. `customer.email`
     5. `customer.create_at (Format DD.MM.YYYY)`
+    ```sql
+    -- use sakila;
+    SELECT customer.customer_id, customer.first_name, customer.last_name, customer.email, DATE_FORMAT(customer.create_date, '%d.%m.%Y') AS create_at
+    FROM customer
+    INTO OUTFILE 'C:/Program Files/MariaDB 10.6/data/sakila.csv'
+    FIELDS TERMINATED BY ','
+    ENCLOSED BY "'"
+    LINES TERMINATED BY '\n';
+    ```
 2. Öffnen Sie die Adressliste in Excel.
+    - [X] wow
 3. Wiederholen Sie den Vorgang. Nehmen Sie diesmal den ; als Feldtrenner und " als Feld-Enclosing.
+```sql
+    SELECT customer.customer_id, customer.first_name, customer.last_name, customer.email, DATE_FORMAT(customer.create_date, '%d.%m.%Y') AS create_at
+    FROM customer
+    INTO OUTFILE 'C:/Program Files/MariaDB 10.6/data/sakila2.csv'
+    FIELDS TERMINATED BY ';'
+    ENCLOSED BY '"'
+    LINES TERMINATED BY '\n';
+```

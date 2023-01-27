@@ -537,3 +537,13 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```sql
    SELECT * FROM `customer` WHERE `lastname` LIKE "%e_";
     ```
+
+## 13. Aufgabe 5.1: Datenbank analysieren
+
+1. Welche Tabellen sind in der Datenbank vorhanden und wie sind diese mit Primär- und Fremdschlüssel verbunden?
+
+2. Was wird in dieser Datenbank reps. in den einzelnen Tabellen gespeichert?
+
+3. Was ist der Umfang der in der Datenbank gespeicherten Daten?
+
+4. Welchen Geschäftsprozess bildet die Datenbank Sakila ab?

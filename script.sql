@@ -76,14 +76,13 @@ INSERT INTO `order` (`amount`, `order_date`, `delivery_date`, `fk_customer_id`, 
 (4, '2022-01-20 05:00:00', NULL, 4, 2);
 
 -- Aufgabe 3.2
-UPDATE `customer` SET `firstname` = 'yuh' WHERE `firstname` = 'Max';
-UPDATE `customer` SET `lastname` = 'yuh2' WHERE `lastname` = 'Sulejmani';
+-- UPDATE `customer` SET `firstname` = 'yuh' WHERE `firstname` = 'Max';
+-- UPDATE `customer` SET `lastname` = 'yuh2' WHERE `lastname` = 'Sulejmani';
+-- UPDATE `product` SET `price` = price * 1.1;
+-- UPDATE `order` SET `fk_customer_id` = 2, `fk_product_id` = '2' WHERE id = '1';
 
-UPDATE `product` SET `price` = 10.50, Description = 'This is a great product' WHERE id = 1;
+-- SELECT description FROM product;
 
-UPDATE `product` SET `price` = price * 1.1;
+-- SELECT name FROM product_category;
 
-UPDATE `order` SET `fk_customer_id` = 2, `fk_product_id` = '2' WHERE id = '1';
-
-
-SELECT id FROM product_category;
+SELECT firstname, lastname, email FROM customer;

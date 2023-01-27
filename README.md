@@ -599,7 +599,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 10. Erstellen Sie eine neue Kategorie namens "Art"
     ```sql
-    
+    INSERT INTO `category` (name) VALUES ('Art');
     ```
 
 ## 15. Aufgabe 5.3: Indizes erstellen und testen

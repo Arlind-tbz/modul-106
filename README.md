@@ -601,3 +601,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```sql
     
     ```
+
+## 15. Aufgabe 5.3: Indizes erstellen und testen
+
+uere viel zmache

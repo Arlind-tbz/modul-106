@@ -468,7 +468,8 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 5. Geben Sie die Initialen der Kunden in einer Spalte aus. z.B. Hans Muster: HM
     ```sql
-    
+    SELECT CONCAT(LEFT(firstname, 1), LEFT(lastname, 1)) AS Initialen 
+    FROM customer;
     ```
 6. Berechnen Sie die 8% Mehrwertsteuer, die in den Preisen inbegriffen ist (Optional: Runden Sie die MwSt auf 5 Rappen)
     ```sql

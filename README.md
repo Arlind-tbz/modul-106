@@ -596,7 +596,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 9. Zählen Sie bei allen Datensätzen der Tabelle "rental" 12 Jahre zu Ausleih- und Rückgabedatum dazu
     ```sql
-    
+    SELECT COUNT(*)FROM rental WHERE DATE_ADD(rental_date, INTERVAL 12 YEAR) > return_date;
     ```
 10. Erstellen Sie eine neue Kategorie namens "Art"
     ```sql

@@ -563,19 +563,19 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
 
 1. Anzahl Datensätze in der Tabelle payment
     ```sql
-    SELECT COUNT(*) FROM payment;
+    SELECT COUNT(*) FROM `payment`;
     ```
 2. Anzahl Schauspieler mit dem Namen Julia
     ```sql
-    SELECT * FROM actor WHERE first_name LIKE 'Julia';
+    SELECT * FROM `actor` WHERE `first_name` LIKE 'Julia';
     ```
 3. Anzahl inaktive Kunden
     ```sql
-    SELECT COUNT(*) FROM customer WHERE active LIKE "0";
+    SELECT COUNT(*) FROM `customer` WHERE `active` LIKE "0";
     ```
 4. Durchschnittliche Länge der Filme mit Rating "PG"
     ```sql
-    SELECT AVG(length) FROM film WHERE rating = 'PG';
+    SELECT AVG(length) FROM `film` WHERE `rating` = 'PG';
     ```
 5. Ausleihen, die noch nicht zurück gebracht wurden, sortiert nach Ausleihdatum (Format: dd.mm.YYYY)
     ```sql
@@ -583,7 +583,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 6. Berechnen Sie die durchschnittliche Ausleihdauer in Tagen
     ```sql
-    SELECT AVG(DATEDIFF(return_date,rental_date)) AS avg_rental_days FROM rental;
+    SELECT AVG(DATEDIFF(`return_date`,`rental_date`)) AS avg_rental_days FROM rental;
     ```
 7. Liste der Vornamen von Schauspielern, deren Vorname nur 3 Buchstaben lang ist. Zeigen Sie keine doppelten Vornamen an
     ```sql
@@ -591,11 +591,11 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 8. Erstellen Sie eine Liste der Schauspieler, deren Nachname mit 'B' beginnt und an zweitletzter Stelle ein 'e' haben. Zeigen Sie keine doppelten Namen an
     ```sql
-    SELECT first_name, last_name FROM actor WHERE first_name LIKE 'B%' AND last_name LIKE '_e%';
+    SELECT `first_name`, `last_name` FROM `actor` WHERE `first_name` LIKE 'B%' AND `last_name` LIKE '_e%';
     ```
 9. Zählen Sie bei allen Datensätzen der Tabelle "rental" 12 Jahre zu Ausleih- und Rückgabedatum dazu
     ```sql
-    SELECT COUNT(*)FROM rental WHERE DATE_ADD(rental_date, INTERVAL 12 YEAR) > return_date;
+    SELECT COUNT(*)FROM `rental` WHERE DATE_ADD(`rental_date`, INTERVAL 12 YEAR) > `return_date`;
     ```
 10. Erstellen Sie eine neue Kategorie namens "Art"
     ```sql

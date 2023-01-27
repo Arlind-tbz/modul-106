@@ -460,31 +460,23 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```sql
     
     ```
-4. Liste der Email Adressen aller Kunden. Teilen Sie die Adresse in zwei Spalten auf Account und Domain.
+4. Liste der Email Adressen aller Kunden. Teilen Sie die Adresse in zwei Spalten auf Account und Domain.  z.B. hans@muster.com: hans, muster.com
     ```sql
     
     ```
-5. z.B. hans@muster.com: hans, muster.com
+5. Geben Sie die Initialen der Kunden in einer Spalte aus. z.B. Hans Muster: HM
     ```sql
     
     ```
-6. Geben Sie die Initialen der Kunden in einer Spalte aus.
+6. Berechnen Sie die 8% Mehrwertsteuer, die in den Preisen inbegriffen ist (Optional: Runden Sie die MwSt auf 5 Rappen)
     ```sql
     
     ```
-7. z.B. Hans Muster: HM
+7. Geben Sie die Anzahl Datensätze ihrer Produkttabelle aus.
     ```sql
     
     ```
-8. Berechnen Sie die 8% Mehrwertsteuer, die in den Preisen inbegriffen ist (Optional: Runden Sie die MwSt auf 5 Rappen)
-    ```sql
-    
-    ```
-9. Geben Sie die Anzahl Datensätze ihrer Produkttabelle aus.
-    ```sql
-    
-    ```
-10. Berechnen Sie Mindest-, Höchst- und Durchschnittspreis aller Produkte
+8. Berechnen Sie Mindest-, Höchst- und Durchschnittspreis aller Produkte
     ```sql
     
     ```

@@ -76,3 +76,6 @@ UPDATE `product` SET `price` = 10.50, Description = 'This is a great product' WH
 UPDATE `product` SET `price` = price * 1.1;
 
 UPDATE `order` SET `fk_customer_id` = 2, `fk_product_id` = '2' WHERE id = '1';
+
+
+SELECT id FROM product_category;

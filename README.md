@@ -414,3 +414,31 @@ GRANT SELECT ON pizzashop.order_has_product to sales@'%';
 GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.`order` to sales@'%';
 GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
 ```
+
+## 9. Aufgabe 4.1: Einfache Datenabfragen
+
+1. Liste aller Produkte
+        ```sql
+
+        ```
+2. Liste aller Kategorien
+        ```sql
+        SELECT name FROM product_category;
+        ```
+3. Liste aller Kunden. Geben Sie nur Vorname, Nachname und Emailadresse aus
+        ```sql
+
+        ```
+4. Liste aller Bestellungen sortiert nach Bestelldatum
+        ```sql
+
+        ```
+5. Liste aller Produkte absteigend sortiert nach Preis
+        ```sql
+
+        ```
+6. Liste der teuersten 3 Produkte
+        ```sql
+        
+        ```
+7. Liste der günstigsten 3 Produkte

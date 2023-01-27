@@ -675,16 +675,18 @@ SELECT * FROM babyname WHERE name = 'Markus';
 ## 17. Aufgabe 6.2: SQL-Dumps erzeugen und einlesen
 
 1. Erstellen Sie einen SQL-Dump ihrer Sakila Datenbank.
-    ```sql
+    ```
     mysqldump.exe -u root -p sakila > c:/users/user/desktop/dumps/dump-sakila.sql
     ```
 2. Laden Sie den SQL-Dump in eine neue Datenbank namens sakila_copy.
     ```sql
     CREATE DATABASE sakila_copy
     exit
+    ```
+    ```
     mysql.exe -u root -p sakila_copy < c:/users/user/desktop/dumps/dump-sakila.sql
     ```
 3. Erstellen Sie einen SQL-Dump aller Datenbanken auf Ihrem Server als Backup.
-    ```sql
+    ```
     mysqldump.exe -u root -p --all-databases > c:/users/user/desktop/dumps/dump-alldatabases.sql
     ```

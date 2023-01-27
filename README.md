@@ -462,7 +462,9 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 4. Liste der Email Adressen aller Kunden. Teilen Sie die Adresse in zwei Spalten auf Account und Domain.  z.B. hans@muster.com: hans, muster.com
     ```sql
-    
+   SELECT SUBSTRING_INDEX(email, '@', 1) AS account, 
+   SUBSTRING_INDEX(email, '@', -1) AS domain 
+   FROM customer;
     ```
 5. Geben Sie die Initialen der Kunden in einer Spalte aus. z.B. Hans Muster: HM
     ```sql

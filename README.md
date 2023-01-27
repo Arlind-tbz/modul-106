@@ -450,7 +450,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
 
 1. Berechnen Sie die Quadratwurzel aller Produktpreise.
     ```sql
-
+    
     ```
 2. Geben Sie den Namen des Monats aus dem Datum der Bestellungen aus.
     ```sql

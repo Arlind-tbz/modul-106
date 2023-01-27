@@ -576,7 +576,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 4. Durchschnittliche Länge der Filme mit Rating "PG"
     ```sql
-    
+    SELECT AVG(length) FROM film WHERE rating = 'PG';
     ```
 5. Ausleihen, die noch nicht zurück gebracht wurden, sortiert nach Ausleihdatum (Format: dd.mm.YYYY)
     ```sql

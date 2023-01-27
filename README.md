@@ -680,7 +680,7 @@ SELECT * FROM babyname WHERE name = 'Markus';
     ```
 2. Laden Sie den SQL-Dump in eine neue Datenbank namens sakila_copy.
     ```sql
-    CREATE DATABASE sakila_copy
+    CREATE DATABASE sakila_copy;
     exit
     ```
     ```

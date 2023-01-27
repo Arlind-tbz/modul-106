@@ -568,7 +568,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 2. Anzahl Schauspieler mit dem Namen Julia
     ```sql
-    
+    SELECT * FROM actor WHERE first_name LIKE 'Julia';
     ```
 3. Anzahl inaktive Kunden
     ```sql

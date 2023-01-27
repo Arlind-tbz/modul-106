@@ -701,7 +701,9 @@ SELECT * FROM babyname WHERE name = 'Markus';
     - [X] wow
 4. Erstellen Sie eine neue Datenbank und realisieren eine Tabelle für das Datenfile gemäss Factsheet.
     ```sql
+    CREATE DATABASE post;
 
+    CREATE TABLE und so wart han grad kei bock
     ```
 5. Laden Sie den Inhalt des Datenfiles in die Tabelle.
     ```sql

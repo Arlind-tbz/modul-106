@@ -553,8 +553,8 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
         film_text - Mit dem Primärschlüssel film_id verbunden. <br>
         inventory - Mit dem Primärschlüssel 
 2. Was wird in dieser Datenbank reps. in den einzelnen Tabellen gespeichert?
-    - 
+    - asdf
 3. Was ist der Umfang der in der Datenbank gespeicherten Daten?
-    - Sakila ist wahrscheinlich ein Service, wie Netflix, das Filme vermietet.
+    - asdf
 4. Welchen Geschäftsprozess bildet die Datenbank Sakila ab?
-    - 
+    - asdf

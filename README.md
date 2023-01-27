@@ -442,3 +442,6 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
 
     ```
 7. Liste der günstigsten 3 Produkte
+    ```sql
+
+    ```

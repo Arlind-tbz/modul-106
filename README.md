@@ -418,27 +418,27 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
 ## 9. Aufgabe 4.1: Einfache Datenabfragen
 
 1. Liste aller Produkte
-        ```sql
+    ```sql
 
-        ```
+    ```
 2. Liste aller Kategorien
-        ```sql
-        SELECT name FROM product_category;
-        ```
+    ```sql
+    SELECT name FROM product_category;
+    ```
 3. Liste aller Kunden. Geben Sie nur Vorname, Nachname und Emailadresse aus
-        ```sql
+    ```sql
 
-        ```
+    ```
 4. Liste aller Bestellungen sortiert nach Bestelldatum
-        ```sql
+    ```sql
 
-        ```
+    ```
 5. Liste aller Produkte absteigend sortiert nach Preis
-        ```sql
+    ```sql
 
-        ```
+    ```
 6. Liste der teuersten 3 Produkte
-        ```sql
-        
-        ```
+    ```sql
+
+    ```
 7. Liste der günstigsten 3 Produkte

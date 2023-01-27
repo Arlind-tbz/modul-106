@@ -541,9 +541,10 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
 ## 13. Aufgabe 5.1: Datenbank analysieren
 
 1. Welche Tabellen sind in der Datenbank vorhanden und wie sind diese mit Primär- und Fremdschlüssel verbunden?
-
+    - actor, actor_info, address, category, city, country, customer, customer_list, film, film_actor, film_category, film_list, film_text, inventory, language, nicer_but_slower_film_list, payment, rental, sales_by_film_category, sales_by_store, staff, staff_list, store
 2. Was wird in dieser Datenbank reps. in den einzelnen Tabellen gespeichert?
-
+    - ka
 3. Was ist der Umfang der in der Datenbank gespeicherten Daten?
-
+    - asdf
 4. Welchen Geschäftsprozess bildet die Datenbank Sakila ab?
+    - asdf

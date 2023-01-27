@@ -458,7 +458,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 3. Zählen Sie die Anzahl Buchstaben in den Vornamen der Kunden.
     ```sql
-    
+    SELECT LENGTH(firstname) FROM customer;
     ```
 4. Liste der Email Adressen aller Kunden. Teilen Sie die Adresse in zwei Spalten auf Account und Domain.  z.B. hans@muster.com: hans, muster.com
     ```sql

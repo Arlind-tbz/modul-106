@@ -663,11 +663,26 @@ SELECT * FROM babyname WHERE name = 'Markus';
 2. Öffnen Sie die Adressliste in Excel.
     - [X] wow
 3. Wiederholen Sie den Vorgang. Nehmen Sie diesmal den ; als Feldtrenner und " als Feld-Enclosing.
-```sql
+    ```sql
     SELECT customer.customer_id, customer.first_name, customer.last_name, customer.email, DATE_FORMAT(customer.create_date, '%d.%m.%Y') AS create_at
     FROM customer
     INTO OUTFILE 'C:/Program Files/MariaDB 10.6/data/sakila2.csv'
     FIELDS TERMINATED BY ';'
     ENCLOSED BY '"'
     LINES TERMINATED BY '\n';
-```
+    ```
+
+## 17. Aufgabe 6.2: SQL-Dumps erzeugen und einlesen
+
+1. Erstellen Sie einen SQL-Dump ihrer Sakila Datenbank.
+    ```sql
+
+    ```
+2. Laden Sie den SQL-Dump in eine neue Datenbank namens sakila_copy.
+    ```sql
+
+    ```
+3. Erstellen Sie einen SQL-Dump aller Datenbanken auf Ihrem Server als Backup.```sql
+    ```sql
+    
+    ```

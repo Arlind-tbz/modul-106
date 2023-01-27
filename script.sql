@@ -82,7 +82,5 @@ INSERT INTO `order` (`amount`, `order_date`, `delivery_date`, `fk_customer_id`, 
 -- UPDATE `order` SET `fk_customer_id` = 2, `fk_product_id` = '2' WHERE id = '1';
 
 -- SELECT description FROM product;
-
 -- SELECT name FROM product_category;
-
-SELECT firstname, lastname, email FROM customer;
+-- SELECT firstname, lastname, email FROM customer;

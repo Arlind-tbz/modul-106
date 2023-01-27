@@ -302,3 +302,5 @@ COMMIT;
 
 -- SELECT SQRT(price) FROM product;
 -- SELECT MONTH(ordered_at) FROM order_entry;
+
+SELECT ROUND(price * 0.08, 2) FROM product;

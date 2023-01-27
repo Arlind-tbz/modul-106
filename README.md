@@ -563,8 +563,8 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
 
 1. Anzahl Datensätze in der Tabelle payment
     ```sql
-    select rental_id from payment
-    -- 16049 rows in set (0.006 sec)
+    SELECT COUNT(*) FROM payment;
+    -- 1 row in set (0.004 sec))
     ```
 2. Anzahl Schauspieler mit dem Namen Julia
     ```sql

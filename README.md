@@ -604,4 +604,37 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
 
 ## 15. Aufgabe 5.3: Indizes erstellen und testen
 
-uere viel zmache
+```sql
+CREATE DATABASE INDEX_TEST;
+USE INDEX_TEST;
+CREATE TABLE babyname (
+  year INT(4),
+  name VARCHAR(11),
+  percent FLOAT,
+  gender VARCHAR(5));
+-- kopiere baby-names.csv zu C:\Program Files\MariaDB 10.6\data\baby-names.csv
+LOAD DATA INFILE './baby-names.csv' INTO TABLE babyname FIELDS TERMINATED BY ',';
+-- SELECT * FROM babyname;
+-- SELECT * FROM babyname WHERE name = 'Markus';
+
+-- MariaDB [INDEX_TEST]> EXPLAIN SELECT * FROM babyname WHERE name = 'Markus';
+-- +------+-------------+----------+------+---------------+------+---------+------+--------+-------------+
+-- | id   | select_type | table    | type | possible_keys | key  | key_len | ref  | rows   | Extra       |
+-- +------+-------------+----------+------+---------------+------+---------+------+--------+-------------+
+-- |    1 | SIMPLE      | babyname | ALL  | NULL          | NULL | NULL    | NULL | 516000 | Using where |
+-- +------+-------------+----------+------+---------------+------+---------+------+--------+-------------+
+
+
+-- jetzt schneller 
+
+CREATE INDEX index_name ON babyname(name);
+SELECT * FROM babyname WHERE name = 'Markus';
+
+-- MariaDB [INDEX_TEST]> EXPLAIN SELECT * FROM babyname WHERE name = 'Markus';
+-- +------+-------------+----------+------+---------------+------------+---------+-------+------+-----------------------+
+-- | id   | select_type | table    | type | possible_keys | key        | key_len | ref   | rows | Extra                 |
+-- +------+-------------+----------+------+---------------+------------+---------+-------+------+-----------------------+
+-- |    1 | SIMPLE      | babyname | ref  | index_name    | index_name | 36      | const | 94   | Using index condition |
+-- +------+-------------+----------+------+---------------+------------+---------+-------+------+-----------------------+
+-- 1 row in set (0.001 sec)
+```

@@ -483,3 +483,34 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```sql
    SELECT MIN(price), MAX(price), AVG(price) FROM product;
     ```
+
+# 11. Aufgabe 4.3: WHERE Bedingungen
+
+1. Produkt mit dem Primärschlüssel 5
+    ```sql
+   
+    ```
+2. Kunden deren Primärschlüssel kleiner ist als 3
+    ```sql
+   
+    ```
+3. Kunden deren Primärschlüssel kleiner ist als 3 oder grösser als 8
+    ```sql
+   
+    ```
+4. Bestellungen mit Primärschlüssel zwischen 3 und 7
+    ```sql
+   
+    ```
+5. Kunden mit den Primärschlüsseln 1,3,5 und 6
+    ```sql
+   
+    ```
+6. Bestellungen deren Lieferdatum NULL ist
+    ```sql
+   
+    ```
+7. Produkte die mehr kosten als der Durchschnitt _Hinweis: Berechnen Sie zuerst den Durchschnittspreis mit der Funktion AVG()_ 
+    ```sql
+   
+    ```

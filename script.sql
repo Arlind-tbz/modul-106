@@ -313,5 +313,5 @@ COMMIT;
 -- SELECT * FROM order_entry WHERE delivered_at IS NULL;
 -- SELECT * FROM product WHERE price > (SELECT AVG(price) FROM product);
 
-SELECT * FROM customer WHERE firstname LIKE 'f%';
-SELECT * FROM customer WHERE lastname LIKE '%r';
+-- SELECT * FROM customer WHERE firstname LIKE 'f%';
+-- SELECT * FROM customer WHERE lastname LIKE '%r';

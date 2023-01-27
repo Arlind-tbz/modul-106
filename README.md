@@ -514,3 +514,26 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```sql
    SELECT * FROM product WHERE price > (SELECT AVG(price) FROM product);
     ```
+
+## 12. Aufgabe 4.4: LIKE Patterns
+
+1. Kunden deren Vorname mit "f" beginnt
+    ```sql
+   
+    ```
+2. Kunden deren Nachname mit dem Buchstaben "r" endet
+    ```sql
+   
+    ```
+3. Kunden deren Nachname ein "e" enthält
+    ```sql
+   
+    ```
+4. Kunden deren Vorname aus 5 Buchstaben besteht
+    ```sql
+   
+    ```
+5. Kunden deren Nachname an der zweitletzter Stelle ein "e" haben
+    ```sql
+   
+    ```

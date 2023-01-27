@@ -591,7 +591,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 8. Erstellen Sie eine Liste der Schauspieler, deren Nachname mit 'B' beginnt und an zweitletzter Stelle ein 'e' haben. Zeigen Sie keine doppelten Namen an
     ```sql
-    SELECT `first_name`, `last_name` FROM `actor` WHERE `first_name` LIKE 'B%' AND `last_name` LIKE '_e%';
+    SELECT DISTINCT `first_name`, `last_name` FROM `actor` WHERE `first_name` LIKE 'B%' AND `last_name` LIKE '_e%';
     ```
 9. Zählen Sie bei allen Datensätzen der Tabelle "rental" 12 Jahre zu Ausleih- und Rückgabedatum dazu
     ```sql

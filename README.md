@@ -701,7 +701,7 @@ SELECT * FROM babyname WHERE name = 'Markus';
     - [X]
 4. Erstellen Sie eine neue Datenbank und realisieren eine Tabelle für das Datenfile gemäss Factsheet.
     ```sql
-
+    
     ```
 5. Laden Sie den Inhalt des Datenfiles in die Tabelle.
     ```sql

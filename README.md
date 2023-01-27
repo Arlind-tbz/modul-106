@@ -431,11 +431,11 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 4. Liste aller Bestellungen sortiert nach Bestelldatum
     ```sql
-    SELECT * FROM `order` ORDER BY `order_date`;
+    SELECT * FROM `order` ORDER BY `order_date` ASC;
     ```
 5. Liste aller Produkte absteigend sortiert nach Preis
     ```sql
-
+    SELECT * FROM `product` ORDER BY `price` DESC;
     ```
 6. Liste der teuersten 3 Produkte
     ```sql

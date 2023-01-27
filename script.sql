@@ -61,6 +61,14 @@ INSERT INTO `product_category` (`name`) VALUES
 ("Pasta"),
 ("Getraenke");
 
+INSERT INTO `product` (`description`, `price`, `fk_product_category_id`) VALUES
+('Cola', 500, 6),
+('Margherita', 1500, 1),
+('Spinat', 800, 2),
+('Bolognese', 1000, 5),
+('Salat', 200, 3),
+('Kopfsalat', 50, 4); 
+
 INSERT INTO `order` (`amount`, `order_date`, `delivery_date`, `fk_customer_id`, `fk_product_id`) VALUES
 (1, '2022-01-20 19:00:00', '2022-01-20 21:00:00', 1, 1),
 (2, '2022-01-20 09:00:00', '2022-01-20 12:00:00', 2, 2),

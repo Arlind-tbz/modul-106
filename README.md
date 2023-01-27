@@ -541,8 +541,17 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
 ## 13. Aufgabe 5.1: Datenbank analysieren
 
 1. Welche Tabellen sind in der Datenbank vorhanden und wie sind diese mit Primär- und Fremdschlüssel verbunden?
-    - actor, actor_info, address, category, city, country, customer, customer_list, film, film_actor, film_category, film_list, film_text, inventory, language, nicer_but_slower_film_list, payment, rental, sales_by_film_category, sales_by_store, staff, staff_list, store
-    - 
+    -   actor - Mit dem Primärschlüssel actor_id verbunden.
+        address - Mit dem Primärschlüssel address_id verbunden.
+        category - Mit dem Primärschlüssel category_id verbunden.
+        city - Mit dem Primärschlüssel city_id verbunden.
+        country - Mit dem Primärschlüssel country_id verbunden.
+        customer - Mit dem Primärschlüssel customer_id verbunden.
+        film - Mit dem Primärschlüssel film_id verbunden.
+        film_actor - Mit den Fremdschlüsseln film_id und actor_id verbunden.
+        film_category - Mit den Fremdschlüsseln film_id und category_id verbunden.
+        film_text - Mit dem Primärschlüssel film_id verbunden.
+        inventory - Mit dem Primärschlüssel
 2. Was wird in dieser Datenbank reps. in den einzelnen Tabellen gespeichert?
     - 
 3. Was ist der Umfang der in der Datenbank gespeicherten Daten?

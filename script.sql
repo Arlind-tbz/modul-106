@@ -303,4 +303,12 @@ COMMIT;
 -- SELECT SQRT(price) FROM product;
 -- SELECT MONTH(ordered_at) FROM order_entry;
 
-SELECT ROUND(price * 0.08, 2) FROM product;
+-- SELECT ROUND(price * 0.08, 2) FROM product;
+
+-- SELECT * FROM product WHERE id = 5;
+-- SELECT * FROM customer WHERE id < 3;
+-- SELECT * FROM customer WHERE id < 3 OR id > 8;
+-- SELECT * FROM order_entry WHERE id BETWEEN 3 AND 7;
+-- SELECT * FROM customer WHERE id IN (1, 3, 5, 6);
+-- SELECT * FROM order_entry WHERE delivered_at IS NULL;
+-- SELECT * FROM product WHERE price > (SELECT AVG(price) FROM product);

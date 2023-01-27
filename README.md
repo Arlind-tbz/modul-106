@@ -419,7 +419,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
 
 1. Liste aller Produkte
     ```sql
-
+    SELECT description FROM product;
     ```
 2. Liste aller Kategorien
     ```sql
@@ -427,7 +427,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 3. Liste aller Kunden. Geben Sie nur Vorname, Nachname und Emailadresse aus
     ```sql
-
+    SELECT firstname, lastname, email FROM customer;
     ```
 4. Liste aller Bestellungen sortiert nach Bestelldatum
     ```sql

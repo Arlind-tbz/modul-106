@@ -580,7 +580,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     ```
 5. Ausleihen, die noch nicht zurück gebracht wurden, sortiert nach Ausleihdatum (Format: dd.mm.YYYY)
     ```sql
-    
+    SELECT * FROM `rental` WHERE `return_date` IS NULL ORDER BY `rental_date` ASC;
     ```
 6. Berechnen Sie die durchschnittliche Ausleihdauer in Tagen
     ```sql

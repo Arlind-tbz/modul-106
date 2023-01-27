@@ -85,5 +85,6 @@ INSERT INTO `order` (`amount`, `order_date`, `delivery_date`, `fk_customer_id`, 
 -- SELECT name FROM product_category;
 -- SELECT firstname, lastname, email FROM customer;
 -- SELECT * FROM `order` ORDER BY `order_date`;
+-- SELECT * FROM `product` ORDER BY `price` DESC;
 -- SELECT price FROM product ORDER BY price DESC LIMIT 3
 -- SELECT price FROM product ORDER BY price ASC LIMIT 3

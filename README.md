@@ -488,29 +488,29 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
 
 1. Produkt mit dem Primärschlüssel 5
     ```sql
-   
+   SELECT * FROM product WHERE id = 5;
     ```
 2. Kunden deren Primärschlüssel kleiner ist als 3
     ```sql
-   
+   SELECT * FROM customer WHERE id < 3;
     ```
 3. Kunden deren Primärschlüssel kleiner ist als 3 oder grösser als 8
     ```sql
-   
+   SELECT * FROM customer WHERE id < 3 OR id > 8;
     ```
 4. Bestellungen mit Primärschlüssel zwischen 3 und 7
     ```sql
-   
+   SELECT * FROM order_entry WHERE id BETWEEN 3 AND 7;
     ```
 5. Kunden mit den Primärschlüsseln 1,3,5 und 6
     ```sql
-   
+   SELECT * FROM customer WHERE id IN (1, 3, 5, 6);
     ```
 6. Bestellungen deren Lieferdatum NULL ist
     ```sql
-   
+   SELECT * FROM order_entry WHERE delivered_at IS NULL;
     ```
 7. Produkte die mehr kosten als der Durchschnitt _Hinweis: Berechnen Sie zuerst den Durchschnittspreis mit der Funktion AVG()_ 
     ```sql
-   
+   SELECT * FROM product WHERE price > (SELECT AVG(price) FROM product);
     ```

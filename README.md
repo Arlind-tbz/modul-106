@@ -553,8 +553,8 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
         film_text - Mit dem Primärschlüssel film_id verbunden. <br>
         inventory - Mit dem Primärschlüssel 
 2. Was wird in dieser Datenbank reps. in den einzelnen Tabellen gespeichert?
-    - asdf
+    - Recht selbstverständlich sobald man die Tabellen Namen liest.
 3. Was ist der Umfang der in der Datenbank gespeicherten Daten?
     - asdf
 4. Welchen Geschäftsprozess bildet die Datenbank Sakila ab?
-    - asdf
+    - Die Datenbank Sakila bildet ein Geschäftsprozess des Verleihs von Filmen ab. Sie enthält Datensätze für Kunden, Filme, Verleihe, Mietgebühren, Zahlungen und andere. Mit Sakila können Kunden Filme ausleihen, verfolgen, wie lange sie den Film ausgeliehen haben, wann sie ihn zurückgeben müssen, wie viel sie bezahlen müssen, ob sie ihren Verleih aktualisieren müssen, und mehr.

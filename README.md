@@ -860,12 +860,17 @@ WHERE CustomerID = 1;
     WHERE product_order_entry.id IS NULL; 
     ```
 
+    cooles Beispiel 
+    
+    ```sql
+    SELECT tmp.nummer FROM (SELECT COUNT(*) AS nummer From actor) as tmp;
+    ``` 
+    
 ## 23. Aufgabe 7.4: Subqueries
 
 1. Produkte die mehr kosten als der Durchschnitt
     ```sql
     SELECT * FROM product WHERE price > (SELECT AVG(price) FROM product);
-
     ```
 2. Produkte die weniger kosten als der Durchschnitt
     ```sql

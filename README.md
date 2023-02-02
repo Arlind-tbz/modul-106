@@ -822,7 +822,9 @@ WHERE CustomerID = 1;
 *Hinweis: Zeigen Sie auch die Kategorien an, die keine Produkte haben.*
 
     ```sql
-   
+    SELECT product.name, category.category
+    FROM product
+    LEFT JOIN category ON product.id = category.id;
     ```
 
 2. Liste aller Produktkategorien und Anzahl darin enthaltener Produkte. Zeigen Sie alle Kategorien an und verwenden Sie COUNT().

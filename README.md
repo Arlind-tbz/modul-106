@@ -864,11 +864,12 @@ WHERE CustomerID = 1;
 
 1. Produkte die mehr kosten als der Durchschnitt
     ```sql
-    
+    SELECT * FROM product WHERE price > (SELECT AVG(price) FROM product);
+
     ```
 2. Produkte die weniger kosten als der Durchschnitt
     ```sql
-    
+    SELECT * FROM product WHERE price < (SELECT AVG(price) FROM product);
     ```
 3. Bezeichnung und Preis des teuersten Produktes
     ```sql

@@ -772,6 +772,7 @@ WHERE CustomerID = 1;
     ```
 4. Alle Bestellungen mit Email des Kunden, Bestelldatum, Produktbezeichnung, Anzahl, Preis und Summe
 *Hinweis: Die Summe einer Bestellung müssen Sie aus Anzahl und Preis berechnen*
+
     ```sql 
    SELECT c.email, oe.ordered_at, p.name, poe.amount, poe.price, poe.amount * poe.price AS `sum`
    FROM customer c

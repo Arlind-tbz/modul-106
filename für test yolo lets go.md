@@ -1,3 +1,5 @@
+[mariadb cheatsheet](https://mariadb.com/wp-content/uploads/2021/08/mariadb-standard-developer_cheat-sheet_1113.pdf)
+
 ### INSERT
 ###### SYNTAX
 ```sql

@@ -747,7 +747,7 @@ WHERE CustomerID = 1;
     ```
 4. Höchst-, Mindest- und Durchschnittspreis aller Produktkategorien
     ```sql
-    
+    select AVG(price), MIN(price), MAX(price) from product GROUP BY price;
     ```
 5. Durchschnittspreis der Produktkategorie mit Fremdschlüssel 2
     ```sql

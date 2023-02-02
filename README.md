@@ -853,5 +853,9 @@ WHERE CustomerID = 1;
     ```
 5. Liste der Produkte, die noch nie bestellt wurden
     ```sql
-      
+      SELECT product.name
+      FROM product
+      LEFT JOIN product_order_entry
+      ON product.id =product_order_entry.fk_product_id
+      WHERE product_order_entry.id IS NULL; 
     ```

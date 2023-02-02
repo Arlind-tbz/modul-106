@@ -723,6 +723,6 @@ WHERE CustomerID = 1;
 ## 20. delete sql example
 
 ```sql
-DELETE FROM table_name
-WHERE condition;
+DELETE FROM Customers
+WHERE CustomerID = 1;
 ```

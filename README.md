@@ -889,3 +889,46 @@ WHERE CustomerID = 1;
       GROUP BY fk_customer_id
     ) AS customer_orders;
     ```
+
+## 24.
+
+1. Adressliste der Kunden mit Adresse, Stadt und Land
+    ```sql
+
+    ```
+2. Vorname und Nachname aller Schauspieler des Films "HARRY IDAHO"
+    ```sql
+
+    ```
+3. Namen aller Kategorien und Anzahl Filme
+    ```sql
+
+    ```
+4. Namen der Kategorien die weniger als 60 Filme enthalten
+    ```sql
+
+    ```
+5. Länder mit mehr als 30 Städten
+    ```sql
+
+    ```
+6. Durchschnittliche Länge der Filme in der Kategorie "Comedy", welche "PG-13" geratet sind
+    ```sql
+
+    ```
+7. Umsatz des Unternehmens (Payments) mit Filmen, die als "NC-17" geratet wurden
+    ```sql
+
+    ```
+8. Tammy Sanders aus Changhwa hat alle Filme zurückgebracht. Erfassen Sie alle notwendigen Änderungen in der Datenbank
+    ```sql
+
+    ```
+9. Entfernen Sie alle Filme, in welchen "Dan Torn" mitspielt, aus der Kategorie Drama
+    ```sql
+
+    ```
+10. Titel der Filme mit der längsten Spieldauer
+    ```sql
+
+    ```

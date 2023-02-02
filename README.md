@@ -625,8 +625,8 @@ LOAD DATA INFILE './baby-names.csv' INTO TABLE babyname FIELDS TERMINATED BY ','
 -- +------+-------------+----------+------+---------------+------+---------+------+--------+-------------+
 -- |    1 | SIMPLE      | babyname | ALL  | NULL          | NULL | NULL    | NULL | 516000 | Using where |
 -- +------+-------------+----------+------+---------------+------+---------+------+--------+-------------+
-W
--- jetzt schneller 
+
+-- jetzt schneller
 
 CREATE INDEX index_name ON babyname(name);
 SELECT * FROM babyname WHERE name = 'Markus';
@@ -735,7 +735,7 @@ WHERE CustomerID = 1;
     select AVG(price) from product;
     ```
 2. Anzahl Produkte pro Produktkategorie
-*Hinweis: verwenden Sie den Fremdschlüssel für die Gruppierung* 
+*Hinweis: verwenden Sie den Fremdschlüssel für die Gruppierung*
     ```sql
     SELECT COUNT(*) AS `Anzahl Kategorien` FROM product GROUP BY fk_category_id;
     ```
@@ -747,7 +747,7 @@ WHERE CustomerID = 1;
     ```sql
     select AVG(price), MIN(price), MAX(price) from product GROUP BY price;
     ```
-5. Durchschnittspreis der Produktkategorie mit Fremdschlüssel 2 
+5. Durchschnittspreis der Produktkategorie mit Fremdschlüssel 2
     ```sql
     SELECT AVG(price) FROM product WHERE fk_category_id = 2;
     ```
@@ -760,27 +760,27 @@ WHERE CustomerID = 1;
 
 1. Adressliste aller Kunden mit Postleitzahl und Ort
     ```sql
-    SELECT customer.firstname, customer.lastname, customer.address, zip.zip, zip.city 
-    FROM customer 
+    SELECT customer.firstname, customer.lastname, customer.address, zip.zip, zip.city
+    FROM customer
     JOIN zip ON customer.fk_zip_id = zip.id;
     ```
 2. Alle Produkte mit Beschreibung und Name der Kategorie
     ```sql
-    SELECT product.name, product.description, category.category as category_name 
-    FROM product 
+    SELECT product.name, product.description, category.category as category_name
+    FROM product
     JOIN category ON product.fk_category_id = category.id;
     ```
 3. Alle Bestellungen mit Adresse, Postleitzahl, Bestell- und Lieferdatum
     ```sql
-    SELECT customer.address, zip.zip, order_entry.ordered_at, order_entry.delivered_at 
-    FROM customer 
-    JOIN order_entry ON customer.id = order_entry.fk_customer_id 
+    SELECT customer.address, zip.zip, order_entry.ordered_at, order_entry.delivered_at
+    FROM customer
+    JOIN order_entry ON customer.id = order_entry.fk_customer_id
     JOIN zip ON zip.id = customer.fk_zip_id;
     ```
 4. Alle Bestellungen mit Email des Kunden, Bestelldatum, Produktbezeichnung, Anzahl, Preis und Summe
 *Hinweis: Die Summe einer Bestellung müssen Sie aus Anzahl und Preis berechnen*
 
-    ```sql 
+    ```sql
    SELECT customer.email, order_entry.ordered_at, product.name, product_order_entry.amount, product_order_entry.price, product_order_entry.amount * product_order_entry.price AS `sum`
    FROM customer
    INNER JOIN order_entry ON order_entry.fk_customer_id = customer.id
@@ -789,9 +789,9 @@ WHERE CustomerID = 1;
     ```
 5. Kategorienamen mit Anzahl darin enthaltener Produkte
     ```sql
-    SELECT category.category AS category, COUNT(product.id) AS product_count 
-    FROM category 
-    INNER JOIN product ON category.id = product.fk_category_id 
+    SELECT category.category AS category, COUNT(product.id) AS product_count
+    FROM category
+    INNER JOIN product ON category.id = product.fk_category_id
     GROUP BY category.id;
     ```
 6. Kundennamen mit Anzahl Bestellungen
@@ -803,20 +803,22 @@ WHERE CustomerID = 1;
     ```
 7. Erhöhen Sie den Preis aller Produkte, die einer bestimmten Kategorie zugeordnet sind. Verwenden Sie einen Join im Update Statement.
     ```sql
-    
+    UPDATE product
+    SET price = price + (price * 0.1)
+    WHERE id = (SELECT id FROM category WHERE category = 'Dessert');
     ```
 8. Löschen Sie alle Bestellungen, die von Kunden an einer bestimmten Postleitzahl getätigt wurden. Verwenden Sie einen Join im Delete Statement.
     ```sql
-   DELETE order_entry 
-   FROM order_entry 
-   JOIN customer ON order_entry.fk_customer_id = customer.id 
+   DELETE order_entry
+   FROM order_entry
+   JOIN customer ON order_entry.fk_customer_id = customer.id
    JOIN zip ON customer.fk_zip_id = zip.id WHERE zip.zip = 8049;
     ```
 
 ## 22. Aufgabe 7.3: Outer Joins
 
 1. Liste aller Produkte mit Produktkategorien
-*Hinweis: Zeigen Sie auch die Kategorien an, die keine Produkte haben.* 
+*Hinweis: Zeigen Sie auch die Kategorien an, die keine Produkte haben.*
 
     ```sql
    

@@ -845,7 +845,11 @@ WHERE CustomerID = 1;
     ```
 4. Liste der Produktkategorien, die keine Produkte enthalten
     ```sql
-   
+    SELECT category.category
+    FROM category
+    LEFT JOIN product
+    ON category.id = product.fk_category_id
+    WHERE product.id IS NULL;
     ```
 5. Liste der Produkte, die noch nie bestellt wurden
     ```sql

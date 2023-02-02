@@ -730,14 +730,17 @@ WHERE CustomerID = 1;
 
 1. Durchschnittspreis alle Produkte
 *Ohne GROUP BY*
+
     ```sql
-    
+    select AVG(price) from product;
     ```
 2. Anzahl Produkte pro Produktkategorie
 *Hinweis: verwenden Sie den Fremdschlüssel für die Gruppierung* 
+
     ```sql
-    
+    SELECT COUNT(*) AS `Anzahl Kategorien` FROM product GROUP BY fk_category_id;
     ```
+
 3. Anzahl Kunden pro Postleitzahl-ID
     ```sql
     

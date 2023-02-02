@@ -829,7 +829,11 @@ WHERE CustomerID = 1;
 
 2. Liste aller Produktkategorien und Anzahl darin enthaltener Produkte. Zeigen Sie alle Kategorien an und verwenden Sie COUNT().
     ```sql
-   
+    SELECT category.category, COUNT(product.id) AS product_count
+    FROM category
+    LEFT JOIN product
+    ON category.id = product.fk_category_id
+    GROUP BY category.category;
     ```
 3. Liste der Namen aller Kunden und Anzahl Bestellungen aller Kunden.
     ```sql

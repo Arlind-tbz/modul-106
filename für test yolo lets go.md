@@ -4,7 +4,7 @@
 
 ### Tabelle erstellen
 
-```
+```sql
 CREATE TABLE `order`(
     `id` INT NOT NULL AUTO_INCREMENT,
     `amount` INT NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE `product`(
 
 ###### SYNTAX
 
-```
+```sql
 CREATE TABLE `table_name` (
   `fk_name_id` INT NOT NULL,
   `fk_name_id` INT NOT NULL,

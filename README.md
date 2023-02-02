@@ -781,7 +781,7 @@ WHERE CustomerID = 1;
     ```
 5. Kategorienamen mit Anzahl darin enthaltener Produkte
     ```sql
-    
+    SELECT category.category AS category, COUNT(product.id) AS product_count FROM category INNER JOIN product ON category.id = product.fk_category_id GROUP BY category.id;
     ```
 6. Kundennamen mit Anzahl Bestellungen
     ```sql

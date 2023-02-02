@@ -760,15 +760,22 @@ WHERE CustomerID = 1;
 
 1. Adressliste aller Kunden mit Postleitzahl und Ort
     ```sql
-    SELECT customer.firstname, customer.lastname, customer.address, zip.zip, zip.city FROM customer JOIN zip ON customer.fk_zip_id = zip.id;
+    SELECT customer.firstname, customer.lastname, customer.address, zip.zip, zip.city 
+    FROM customer 
+    JOIN zip ON customer.fk_zip_id = zip.id;
     ```
 2. Alle Produkte mit Beschreibung und Name der Kategorie
     ```sql
-    SELECT product.name, product.description, category.category as category_name FROM product JOIN category ON product.fk_category_id = category.id;
+    SELECT product.name, product.description, category.category as category_name 
+    FROM product 
+    JOIN category ON product.fk_category_id = category.id;
     ```
 3. Alle Bestellungen mit Adresse, Postleitzahl, Bestell- und Lieferdatum
     ```sql
-    SELECT customer.address, zip.zip, order_entry.ordered_at, order_entry.delivered_at FROM customer JOIN order_entry ON customer.id = order_entry.fk_customer_id JOIN zip ON zip.id = customer.fk_zip_id;
+    SELECT customer.address, zip.zip, order_entry.ordered_at, order_entry.delivered_at 
+    FROM customer 
+    JOIN order_entry ON customer.id = order_entry.fk_customer_id 
+    JOIN zip ON zip.id = customer.fk_zip_id;
     ```
 4. Alle Bestellungen mit Email des Kunden, Bestelldatum, Produktbezeichnung, Anzahl, Preis und Summe
 *Hinweis: Die Summe einer Bestellung müssen Sie aus Anzahl und Preis berechnen*
@@ -782,14 +789,16 @@ WHERE CustomerID = 1;
     ```
 5. Kategorienamen mit Anzahl darin enthaltener Produkte
     ```sql
-    SELECT category.category AS category, COUNT(product.id) AS product_count FROM category INNER JOIN product ON category.id = product.fk_category_id GROUP BY category.id;
+    SELECT category.category AS category, COUNT(product.id) AS product_count 
+    FROM category 
+    INNER JOIN product ON category.id = product.fk_category_id 
+    GROUP BY category.id;
     ```
 6. Kundennamen mit Anzahl Bestellungen
     ```sql
     SELECT customer.firstname, customer.lastname, COUNT(order_entry.fk_customer_id) AS order_count
     FROM customer
-    JOIN order_entry
-    ON customer.id = order_entry.fk_customer_id
+    JOIN order_entry ON customer.id = order_entry.fk_customer_id
     GROUP BY customer.firstname, customer.lastname;
     ```
 7. Erhöhen Sie den Preis aller Produkte, die einer bestimmten Kategorie zugeordnet sind. Verwenden Sie einen Join im Update Statement.
@@ -798,5 +807,8 @@ WHERE CustomerID = 1;
     ```
 8. Löschen Sie alle Bestellungen, die von Kunden an einer bestimmten Postleitzahl getätigt wurden. Verwenden Sie einen Join im Delete Statement.
     ```sql
-   DELETE oe FROM order_entry oe JOIN customer c ON oe.fk_customer_id = c.id JOIN zip z ON c.fk_zip_id = z.id WHERE z.zip = 8049;
+   DELETE oe 
+   FROM order_entry oe 
+   JOIN customer c ON oe.fk_customer_id = c.id 
+   JOIN zip z ON c.fk_zip_id = z.id WHERE z.zip = 8049;
     ```

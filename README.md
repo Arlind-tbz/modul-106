@@ -625,8 +625,7 @@ LOAD DATA INFILE './baby-names.csv' INTO TABLE babyname FIELDS TERMINATED BY ','
 -- +------+-------------+----------+------+---------------+------+---------+------+--------+-------------+
 -- |    1 | SIMPLE      | babyname | ALL  | NULL          | NULL | NULL    | NULL | 516000 | Using where |
 -- +------+-------------+----------+------+---------------+------+---------+------+--------+-------------+
-
-
+W
 -- jetzt schneller 
 
 CREATE INDEX index_name ON babyname(name);
@@ -726,3 +725,5 @@ WHERE CustomerID = 1;
 DELETE FROM Customers
 WHERE CustomerID = 1;
 ```
+
+## 20. Aufgabe 7.1: Datensätze Gruppieren

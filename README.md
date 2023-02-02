@@ -768,7 +768,17 @@ WHERE CustomerID = 1;
     ```
 3. Alle Bestellungen mit Adresse, Postleitzahl, Bestell- und Lieferdatum
     ```sql
-    
+    SELECT
+customer.address,
+zip.zip,
+order_entry.ordered_at,
+order_entry.delivered_at
+FROM
+customer
+JOIN
+order_entry ON customer.id = order_entry.fk_customer_id
+JOIN
+zip ON zip.id = customer.fk_zip_id;
     ```
 4. Alle Bestellungen mit Email des Kunden, Bestelldatum, Produktbezeichnung, Anzahl, Preis und Summe
 *Hinweis: Die Summe einer Bestellung müssen Sie aus Anzahl und Preis berechnen*

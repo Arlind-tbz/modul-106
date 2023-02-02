@@ -760,7 +760,7 @@ WHERE CustomerID = 1;
 
 1. Adressliste aller Kunden mit Postleitzahl und Ort
     ```sql
-    
+    SELECT customer.firstname, customer.lastname, customer.address, zip.zip, zip.city FROM customer JOIN zip ON customer.fk_zip_id = zip.id;
     ```
 2. Alle Produkte mit Beschreibung und Name der Kategorie
     ```sql

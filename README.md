@@ -804,8 +804,9 @@ WHERE CustomerID = 1;
 7. Erhöhen Sie den Preis aller Produkte, die einer bestimmten Kategorie zugeordnet sind. Verwenden Sie einen Join im Update Statement.
     ```sql
     UPDATE product
-    SET price = price + (price * 0.1)
-    WHERE id = (SELECT id FROM category WHERE category = 'Dessert');
+    INNER JOIN category ON product.id = category.id
+    SET product.price = product.price + (product.price * 0.1)
+    WHERE category.category = 'Dessert';
     ```
 8. Löschen Sie alle Bestellungen, die von Kunden an einer bestimmten Postleitzahl getätigt wurden. Verwenden Sie einen Join im Delete Statement.
     ```sql

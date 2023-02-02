@@ -890,7 +890,7 @@ WHERE CustomerID = 1;
     ) AS customer_orders;
     ```
 
-## 24.
+## 24. Aufgabe 8.1: Komplexe SQL Queries
 
 1. Adressliste der Kunden mit Adresse, Stadt und Land
     ```sql

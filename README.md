@@ -873,7 +873,7 @@ WHERE CustomerID = 1;
     ```
 3. Bezeichnung und Preis des teuersten Produktes
     ```sql
-    
+    SELECT name, price FROM product ORDER BY price DESC LIMIT 1;
     ```
 4. Durchschnittliche Anzahl der Bestellungen pro Kunde
     ```sql

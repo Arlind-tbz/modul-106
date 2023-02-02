@@ -882,5 +882,11 @@ WHERE CustomerID = 1;
     ```
 4. Durchschnittliche Anzahl der Bestellungen pro Kunde
     ```sql
-    
+    SELECT AVG(num_orders)
+FROM (
+  SELECT fk_customer_id, COUNT(id) AS num_orders
+  FROM order_entry
+  GROUP BY fk_customer_id
+) AS customer_orders;
+
     ```

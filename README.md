@@ -446,7 +446,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
     SELECT price FROM product ORDER BY price ASC LIMIT 3
     ```
 
-# 10. Aufgabe 4.2: Funktionen anwenden
+## 10. Aufgabe 4.2: Funktionen anwenden
 
 1. Berechnen Sie die Quadratwurzel aller Produktpreise.
     ```sql
@@ -484,7 +484,7 @@ GRANT SELECT, UPDATE, INSERT, DELETE ON pizzashop.product_category to sales@'%';
    SELECT MIN(price), MAX(price), AVG(price) FROM product;
     ```
 
-# 11. Aufgabe 4.3: WHERE Bedingungen
+## 11. Aufgabe 4.3: WHERE Bedingungen
 
 1. Produkt mit dem Primärschlüssel 5
     ```sql

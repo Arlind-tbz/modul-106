@@ -1,6 +1,6 @@
 # Modul 106 LB1
 
-**Teilnehmer**: Arlind Sulejmani, Harun Siyad, Maximilian Kos
+**Teilnehmer**: Arlind Sulejmani, Harun Siyad, Maximilian Kos, Mustafa Goat, Rilind Haradini
 
 **Kursleiter**: Damien Vouillamoz
 

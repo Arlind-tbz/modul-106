@@ -725,4 +725,4 @@ WHERE CustomerID = 1;
 ```sql
 DELETE FROM table_name
 WHERE condition;
-```sql
+```

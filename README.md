@@ -764,7 +764,7 @@ WHERE CustomerID = 1;
     ```
 2. Alle Produkte mit Beschreibung und Name der Kategorie
     ```sql
-    
+    SELECT product.name, product.description, category.category as category_name FROM product JOIN category ON product.fk_category_id = category.id;
     ```
 3. Alle Bestellungen mit Adresse, Postleitzahl, Bestell- und Lieferdatum
     ```sql

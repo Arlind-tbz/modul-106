@@ -772,8 +772,12 @@ WHERE CustomerID = 1;
     ```
 4. Alle Bestellungen mit Email des Kunden, Bestelldatum, Produktbezeichnung, Anzahl, Preis und Summe
 *Hinweis: Die Summe einer Bestellung müssen Sie aus Anzahl und Preis berechnen*
-    ```sql
-    
+    ```sql 
+SELECT c.email, oe.ordered_at, p.name, poe.amount, poe.price, poe.amount * poe.price AS `sum`
+   FROM customer c
+   INNER JOIN order_entry oe ON oe.fk_customer_id = c.id
+   INNER JOIN product_order_entry poe ON poe.fk_order_entry_id = oe.id
+   INNER JOIN product p ON poe.fk_product_id = p.id;
     ```
 5. Kategorienamen mit Anzahl darin enthaltener Produkte
     ```sql

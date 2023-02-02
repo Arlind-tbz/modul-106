@@ -727,3 +727,30 @@ WHERE CustomerID = 1;
 ```
 
 ## 20. Aufgabe 7.1: Datensätze Gruppieren
+
+1. Durchschnittspreis alle Produkte
+*Ohne GROUP BY*
+    ```sql
+    
+    ```
+2. Anzahl Produkte pro Produktkategorie
+*Hinweis: verwenden Sie den Fremdschlüssel für die Gruppierung* 
+    ```sql
+    
+    ```
+3. Anzahl Kunden pro Postleitzahl-ID
+    ```sql
+    
+    ```
+4. Höchst-, Mindest- und Durchschnittspreis aller Produktkategorien
+    ```sql
+    
+    ```
+5. Durchschnittspreis der Produktkategorie mit Fremdschlüssel 2
+    ```sql
+    
+    ```
+6. Produktkategorien mit einem Durchschnittspreis grösser als das Resultat von Aufgabe 1
+    ```sql
+    
+    ```

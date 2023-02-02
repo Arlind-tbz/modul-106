@@ -42,7 +42,7 @@ CREATE TABLE `table_name` (
 
 ###### EXAMPLE
 
-```
+```sql
 CREATE TABLE `order_has_product` (
   `fk_order_id` INT NOT NULL,
   `fk_product_id` INT NOT NULL,

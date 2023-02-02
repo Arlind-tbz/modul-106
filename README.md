@@ -853,5 +853,5 @@ WHERE CustomerID = 1;
     ```
 5. Liste der Produkte, die noch nie bestellt wurden
     ```sql
-   
+      harun du dreckige fettsack
     ```

@@ -859,3 +859,22 @@ WHERE CustomerID = 1;
     ON product.id =product_order_entry.fk_product_id
     WHERE product_order_entry.id IS NULL; 
     ```
+
+## 23. Aufgabe 7.4: Subqueries
+
+1. Produkte die mehr kosten als der Durchschnitt
+    ```sql
+    
+    ```
+2. Produkte die weniger kosten als der Durchschnitt
+    ```sql
+    
+    ```
+3. Bezeichnung und Preis des teuersten Produktes
+    ```sql
+    
+    ```
+4. Durchschnittliche Anzahl der Bestellungen pro Kunde
+    ```sql
+    
+    ```

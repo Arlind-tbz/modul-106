@@ -800,3 +800,29 @@ WHERE CustomerID = 1;
     ```sql
    DELETE oe FROM order_entry oe JOIN customer c ON oe.fk_customer_id = c.id JOIN zip z ON c.fk_zip_id = z.id WHERE z.zip = 8049;
     ```
+
+## 22. Aufgabe 7.3: Outer Joins
+
+1. Liste aller Produkte mit Produktkategorien
+*Hinweis: Zeigen Sie auch die Kategorien an, die keine Produkte haben.* 
+
+    ```sql
+   
+    ```
+
+2. Liste aller Produktkategorien und Anzahl darin enthaltener Produkte. Zeigen Sie alle Kategorien an und verwenden Sie COUNT().
+    ```sql
+   
+    ```
+3. Liste der Namen aller Kunden und Anzahl Bestellungen aller Kunden.
+    ```sql
+   
+    ```
+4. Liste der Produktkategorien, die keine Produkte enthalten
+    ```sql
+   
+    ```
+5. Liste der Produkte, die noch nie bestellt wurden
+    ```sql
+   
+    ```

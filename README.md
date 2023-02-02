@@ -736,11 +736,9 @@ WHERE CustomerID = 1;
     ```
 2. Anzahl Produkte pro Produktkategorie
 *Hinweis: verwenden Sie den Fremdschlüssel für die Gruppierung* 
-
     ```sql
     SELECT COUNT(*) AS `Anzahl Kategorien` FROM product GROUP BY fk_category_id;
     ```
-
 3. Anzahl Kunden pro Postleitzahl-ID
     ```sql
     SELECT COUNT(*) AS `KUNDEN PRO POSTLEIZAHL` FROM customer GROUP BY id;
@@ -749,11 +747,47 @@ WHERE CustomerID = 1;
     ```sql
     select AVG(price), MIN(price), MAX(price) from product GROUP BY price;
     ```
-5. Durchschnittspreis der Produktkategorie mit Fremdschlüssel 2
+5. Durchschnittspreis der Produktkategorie mit Fremdschlüssel 2 
+    ```sql
+    SELECT AVG(price) FROM product WHERE fk_category_id = 2;
+    ```
+6. Produktkategorien mit einem Durchschnittspreis grösser als das Resultat von Aufgabe 1
+    ```sql
+    SELECT price FROM product WHERE price > 13.1;
+    ```
+
+## 21. Aufgabe 7.2: Tabellen verbinden
+
+1. Adressliste aller Kunden mit Postleitzahl und Ort
     ```sql
     
     ```
-6. Produktkategorien mit einem Durchschnittspreis grösser als das Resultat von Aufgabe 1
+2. Alle Produkte mit Beschreibung und Name der Kategorie
+    ```sql
+    
+    ```
+3. Alle Bestellungen mit Adresse, Postleitzahl, Bestell- und Lieferdatum
+    ```sql
+    
+    ```
+4. Alle Bestellungen mit Email des Kunden, Bestelldatum, Produktbezeichnung, Anzahl, Preis und Summe
+*Hinweis: Die Summe einer Bestellung müssen Sie aus Anzahl und Preis berechnen*
+    ```sql
+    
+    ```
+5. Kategorienamen mit Anzahl darin enthaltener Produkte
+    ```sql
+    
+    ```
+6. Kundennamen mit Anzahl Bestellungen
+    ```sql
+    
+    ```
+7. Erhöhen Sie den Preis aller Produkte, die einer bestimmten Kategorie zugeordnet sind. Verwenden Sie einen Join im Update Statement.
+    ```sql
+    
+    ```
+8. Löschen Sie alle Bestellungen, die von Kunden an einer bestimmten Postleitzahl getätigt wurden. Verwenden Sie einen Join im Delete Statement.
     ```sql
     
     ```

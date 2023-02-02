@@ -807,10 +807,10 @@ WHERE CustomerID = 1;
     ```
 8. Löschen Sie alle Bestellungen, die von Kunden an einer bestimmten Postleitzahl getätigt wurden. Verwenden Sie einen Join im Delete Statement.
     ```sql
-   DELETE oe 
-   FROM order_entry oe 
-   JOIN customer c ON oe.fk_customer_id = c.id 
-   JOIN zip z ON c.fk_zip_id = z.id WHERE z.zip = 8049;
+   DELETE order_entry 
+   FROM order_entry 
+   JOIN customer ON order_entry.fk_customer_id = customer.id 
+   JOIN zip ON customer.fk_zip_id = zip.id WHERE zip.zip = 8049;
     ```
 
 ## 22. Aufgabe 7.3: Outer Joins

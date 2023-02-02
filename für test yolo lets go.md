@@ -159,6 +159,14 @@ FROM table_name
 WHERE condition;
 ```
 
+### SUM()
+###### SYNTAX
+```sql
+SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
+```
+
 ---
 
 ### CONCAT()

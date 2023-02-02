@@ -711,5 +711,3 @@ SELECT * FROM babyname WHERE name = 'Markus';
     ```
 6. Kontrollieren Sie, ob alle Datensätze vorhanden sind.
     - [X] wow
-
-test

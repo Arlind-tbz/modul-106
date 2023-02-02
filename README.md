@@ -743,7 +743,7 @@ WHERE CustomerID = 1;
 
 3. Anzahl Kunden pro Postleitzahl-ID
     ```sql
-    
+    SELECT COUNT(*) AS `KUNDEN PRO POSTLEIZAHL` FROM customer GROUP BY id;
     ```
 4. Höchst-, Mindest- und Durchschnittspreis aller Produktkategorien
     ```sql

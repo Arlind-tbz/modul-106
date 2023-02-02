@@ -837,7 +837,11 @@ WHERE CustomerID = 1;
     ```
 3. Liste der Namen aller Kunden und Anzahl Bestellungen aller Kunden.
     ```sql
-   
+    SELECT customer.firstname, customer.lastname, COUNT(order_entry.fk_customer_id) AS order_count
+    FROM customer
+    LEFT JOIN order_entry
+    ON customer.id = order_entry.fk_customer_id
+    GROUP BY customer.firstname, customer.lastname;
     ```
 4. Liste der Produktkategorien, die keine Produkte enthalten
     ```sql

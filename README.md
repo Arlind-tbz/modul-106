@@ -778,6 +778,7 @@ FROM customer c
 INNER JOIN order_entry oe ON oe.fk_customer_id = c.id
 INNER JOIN product_order_entry poe ON poe.fk_order_entry_id = oe.id
 INNER JOIN product p ON poe.fk_product_id = p.id;
+
     ```
 5. Kategorienamen mit Anzahl darin enthaltener Produkte
     ```sql

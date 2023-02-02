@@ -719,3 +719,10 @@ UPDATE Customers
 SET ContactName = 'Juan', City = 'Madrid'
 WHERE CustomerID = 1;
 ```
+
+## 20. delete sql example
+
+```sql
+DELETE FROM table_name
+WHERE condition;
+```sql

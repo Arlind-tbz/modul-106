@@ -786,7 +786,11 @@ WHERE CustomerID = 1;
     ```
 6. Kundennamen mit Anzahl Bestellungen
     ```sql
-    
+    SELECT customer.firstname, customer.lastname, COUNT(order_entry.fk_customer_id) AS order_count
+    FROM customer
+    JOIN order_entry
+    ON customer.id = order_entry.fk_customer_id
+    GROUP BY customer.firstname, customer.lastname;
     ```
 7. Erhöhen Sie den Preis aller Produkte, die einer bestimmten Kategorie zugeordnet sind. Verwenden Sie einen Join im Update Statement.
     ```sql

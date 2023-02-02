@@ -102,6 +102,15 @@ IGNORE 1 ROWS
 
 ---
 
+### GRANT
+###### SYNTAX
+```sql
+GRANT EXECUTE ON TestProc TO TesterRole WITH GRANT OPTION;  
+EXEC sp_addrolemember TesterRole, User1;  
+```
+
+---
+
 ### MAX()
 ###### SYNTAX
 ```sql

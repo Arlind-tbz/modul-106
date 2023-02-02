@@ -711,3 +711,11 @@ SELECT * FROM babyname WHERE name = 'Markus';
     ```
 6. Kontrollieren Sie, ob alle Datensätze vorhanden sind.
     - [X] wow
+
+## 19. Update sql example
+
+```sql
+UPDATE Customers
+SET ContactName = 'Juan', City = 'Madrid'
+WHERE CustomerID = 1;
+```

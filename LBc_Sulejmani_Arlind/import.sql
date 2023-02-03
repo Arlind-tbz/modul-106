@@ -147,6 +147,6 @@ ORDER BY COUNT(person_course_execution.fk_course_execution_id) DESC, REVERSE(fir
 
 
 -- 7. Löschen Sie den Schüler Heinz Heeb aus der Datenbank
-DELETE FROM person WHERE lastname = 'Hebb', firstname = 'Heinz'; 
+DELETE FROM person WHERE firstname = 'Heinz';
 
 -- 8. Erstellen Sie einen Ordner mit den Namen "LBc_Vorname_Nachname" und verschieben Sie alle Ihre "aufgabe_x.sql" Dateien rein. Hinweiss: Ersetzten Sie Vorname und Nachname mit Ihren Angaben. Zippen Sie diesen Ordner und laden Sie ihn hier hoch.

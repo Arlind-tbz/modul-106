@@ -138,9 +138,9 @@ ON person.id = course_execution.fk_course_id
 WHERE course_execution.room = 'Red';
 
 -- 6. Schreiben Sie den SQL Query, welchen folgende Ausgabe erzielt:
-
+asdf
 
 -- 7. Löschen Sie den Schüler Heinz Heeb aus der Datenbank
-
+DELETE FROM person WHERE firstname = 'Heinz'; 
 
 -- 8. Erstellen Sie einen Ordner mit den Namen "LBc_Vorname_Nachname" und verschieben Sie alle Ihre "aufgabe_x.sql" Dateien rein. Hinweiss: Ersetzten Sie Vorname und Nachname mit Ihren Angaben. Zippen Sie diesen Ordner und laden Sie ihn hier hoch.

@@ -3,6 +3,24 @@
 
 ---
 
+### ZUERST DIESEN COMMAND AUSFÜHREN
+
+```sql
+BEGIN;
+```
+Falls fehler:
+
+```sql
+ROLLBACK;
+```
+
+Falls alles richtig:
+
+```sql
+COMMIT;
+```
+
+
 ###### SYNTAX
 
 ###### EXAMPLE
@@ -10,23 +28,27 @@
 ### Tabelle erstellen
 
 ```sql
-CREATE TABLE `order`(
-    `id` INT NOT NULL AUTO_INCREMENT,
-    `amount` INT NOT NULL,
-    `order_date` DATETIME NOT NULL DEFAULT NOW(),
-    `delivery_date` DATETIME,
-    `fk_customer_id` INT NOT NULL,
-    PRIMARY KEY (`id`),
-    FOREIGN KEY (`fk_customer_id`) REFERENCES `customer`(`id`)
+CREATE TABLE `zip` (
+ `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, -- bigint UNSIGNED NOT NULL auto_increment
+ `zip` SMALLINT(4) UNSIGNED NOT NULL,
+ `city` VARCHAR(255) NOT NULL,
+
+ PRIMARY KEY(`id`),
+ UNIQUE(`zip`, `city`)
 );
 
-CREATE TABLE `product`(
-    `id` INT NOT NULL AUTO_INCREMENT,
-    `description` TEXT NOT NULL,
-    `price` DECIMAL(5,2),
-    `fk_product_category_id` INT NOT NULL,
-    PRIMARY KEY (`id`),
-    FOREIGN KEY (`fk_product_category_id`) REFERENCES `product_category`(`id`)
+CREATE TABLE `customer` (
+ `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+ `fk_zip_id` INT UNSIGNED NOT NULL,
+ `firstname` VARCHAR(255) NOT NULL,
+ `lastname`	VARCHAR(255) NOT NULL,
+ `address` VARCHAR(255) NOT NULL,
+ `email` VARCHAR(384) NOT NULL UNIQUE,
+ `password` VARCHAR(255) NOT NULL,
+ `phone` VARCHAR(255),
+
+ PRIMARY KEY(`id`),
+ FOREIGN KEY(`fk_zip_id`) REFERENCES `zip`(`id`) ON UPDATE CASCADE ON DELETE CASCADE
 );
 ```
 

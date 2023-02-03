@@ -452,3 +452,11 @@ select concat(' Hello, ', 'my name is ', 'Paul');
 ```sql
 SELECT SQRT(64);
 ```
+### ...
+
+```sql
+SELECT person.firstname, person.lastname, COUNT(person_course_execution.fk_course_execution_id) AS Anzahl_Anmeldumgen
+FROM person
+JOIN person_course_execution ON person.id = person_course_execution.fk_course_execution_id
+GROUP BY firstname;
+```

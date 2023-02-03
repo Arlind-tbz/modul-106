@@ -931,7 +931,11 @@ WHERE CustomerID = 1;
     ```
 5. Länder mit mehr als 30 Städten
     ```sql
-
+   SELECT country
+   FROM city
+   JOIN country ON city.country_id = country.country_id
+   GROUP BY country
+   HAVING COUNT(*) > 30;
     ```
 6. Durchschnittliche Länge der Filme in der Kategorie "Comedy", welche "PG-13" geratet sind
     ```sql
@@ -951,5 +955,5 @@ WHERE CustomerID = 1;
     ```
 10. Titel der Filme mit der längsten Spieldauer
     ```sql
-
+   
     ```

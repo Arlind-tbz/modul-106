@@ -138,9 +138,15 @@ ON person.id = course_execution.fk_course_id
 WHERE course_execution.room = 'Red';
 
 -- 6. Schreiben Sie den SQL Query, welchen folgende Ausgabe erzielt:
-asdf
+SELECT person.firstname AS "Vorname", person.lastname AS "Nachname", COUNT(person_course_execution.fk_course_execution_id) AS "Anzahl Anmeldungen"
+FROM person
+JOIN person_course_execution on person.id = person_course_execution.fk_participant_id
+GROUP BY person.id
+HAVING COUNT(person_course_execution.fk_course_execution_id) < 3
+ORDER BY COUNT(person_course_execution.fk_course_execution_id) DESC, REVERSE(firstname) ASC;
+
 
 -- 7. Löschen Sie den Schüler Heinz Heeb aus der Datenbank
-DELETE FROM person WHERE firstname = 'Heinz'; 
+DELETE FROM person WHERE lastname = 'Hebb', firstname = 'Heinz'; 
 
 -- 8. Erstellen Sie einen Ordner mit den Namen "LBc_Vorname_Nachname" und verschieben Sie alle Ihre "aufgabe_x.sql" Dateien rein. Hinweiss: Ersetzten Sie Vorname und Nachname mit Ihren Angaben. Zippen Sie diesen Ordner und laden Sie ihn hier hoch.

@@ -3,24 +3,6 @@
 
 ---
 
-### ZUERST DIESEN COMMAND AUSFÜHREN
-
-```sql
-BEGIN;
-```
-Falls fehler:
-
-```sql
-ROLLBACK;
-```
-
-Falls alles richtig:
-
-```sql
-COMMIT;
-```
-
-
 ###### SYNTAX
 
 ###### EXAMPLE

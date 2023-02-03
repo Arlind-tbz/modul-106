@@ -463,3 +463,55 @@ JOIN person_course_execution on person.id = person_course_execution.fk_participa
 GROUP BY firstname ="Ernst", "Heinz", lastname = "Lorbeer"
 ORDER BY person_course_execution.fk_course_execution_id DESC;
 ```
+
+
+### Prüfungsvorbereitungs Lösungen
+```sql
+
+
+CREATE TABLE category (
+  id INT AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  PRIMARY KEY(id)
+);
+
+CREATE TABLE category_course (
+  fk_category_id INT NOT NULL,
+  fk_course_id INT NOT NULL,
+  created_at DATETIME NOT NULL,
+  FOREIGN KEY (fk_category_id) REFERENCES category(id),
+  FOREIGN KEY (fk_course_id) REFERENCES course(id)
+);
+
+ALTER TABLE category_course MODIFY created_at DATETIME NOT NULL DEFAULT NOW();
+
+INSERT INTO category (name) VALUES
+ ("Applikationsentwicklung"),
+ ("Datenbanken"),
+ ("MANAGEMENT"),
+ ("Netzwerk");
+
+INSERT INTO category_course (fk_category_id, fk_course_id) VALUES (2,2);
+
+DELETE FROM person_course_execution WHERE fk_participant_id = 14;
+DELETE FROM person WHERE id = 14;
+
+UPDATE person SET lastname = "Nuesch" WHERE firstname = "Patrick" AND lastname = "Wirz";
+
+SELECT p.firstname, p.lastname, c.name
+FROM
+  person p
+INNER JOIN person_course_execution pce ON p.id = pce.fk_participant_id
+INNER JOIN course_execution ce ON pce.fk_course_execution_id = ce.id
+INNER JOIN course c ON ce.fk_course_id = c.id
+WHERE ce.room = 'Red';
+
+
+SELECT p.firstname as "Vorname", p.lastname as "Nachname", COUNT(pce.fk_participant_id) as "Anzahl Anmeldungen"
+FROM
+  person p
+INNER JOIN person_course_execution pce ON p.id = pce.fk_participant_id
+GROUP BY p.id
+HAVING COUNT(pce.fk_participant_id) <= 2
+ORDER BY COUNT(pce.fk_participant_id) DESC;
+```

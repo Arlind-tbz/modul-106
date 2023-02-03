@@ -457,8 +457,9 @@ SELECT SQRT(64);
 ### ...
 
 ```sql
-SELECT person.firstname, person.lastname, COUNT(person_course_execution.fk_course_execution_id) AS Anzahl_Anmeldumgen
+SELECT person.firstname AS "Vorname", person.lastname AS "Nachname", person_course_execution.fk_course_execution_id AS "Anzahl Anmeldungen"
 FROM person
-JOIN person_course_execution ON person.id = person_course_execution.fk_course_execution_id
-GROUP BY firstname;
+JOIN person_course_execution on person.id = person_course_execution.fk_participant_id
+GROUP BY firstname ="Ernst", "Heinz", lastname = "Lorbeer"
+ORDER BY person_course_execution.fk_course_execution_id DESC;
 ```

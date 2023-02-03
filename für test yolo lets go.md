@@ -182,8 +182,8 @@ ON customer.id = order_entry.fk_customer_id;
 
 ##### Erklärung
 
-SELECT reihe/attribut: ordered_at, delivered_at, id
-VON tabelle: order_entry
+SELECT reihe/attribut: ordered_at, delivered_at, id <br>
+VON tabelle: order_entry <br>
 WO die ID = SELECT COUNT(id) FROM order_entry = (22)
 
 ---

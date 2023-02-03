@@ -92,7 +92,7 @@ ALTER TABLE customers MODIFY birthdate DATE;
 
 ---
 
-### SELCET mit COUNT();
+### SELECT mit COUNT();
 
 ###### SYNTAX
 

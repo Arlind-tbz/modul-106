@@ -913,7 +913,11 @@ WHERE CustomerID = 1;
     ```
 3. Namen aller Kategorien und Anzahl Filme
     ```sql
-
+   SELECT category.name, COUNT(film.title) AS Anzahl
+   FROM category
+   JOIN film_category ON category.category_id = film_category.category_id
+   JOIN film ON film_category.film_id = film.film_id
+   GROUP BY category.name;
     ```
 4. Namen der Kategorien die weniger als 60 Filme enthalten
     ```sql

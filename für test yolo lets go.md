@@ -452,6 +452,8 @@ select concat(' Hello, ', 'my name is ', 'Paul');
 ```sql
 SELECT SQRT(64);
 ```
+---
+
 ### ...
 
 ```sql

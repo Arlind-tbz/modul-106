@@ -903,7 +903,13 @@ WHERE CustomerID = 1;
     ```
 2. Vorname und Nachname aller Schauspieler des Films "HARRY IDAHO"
     ```sql
-
+   SELECT actor.first_name, actor.last_name, film.title
+   FROM actor
+   INNER JOIN film_actor 
+   ON actor.actor_id = film_actor.actor_id 
+   INNER JOIN film 
+   ON film.film_id = film_actor.film_id 
+   WHERE film.title = 'HARRY IDAHO';
     ```
 3. Namen aller Kategorien und Anzahl Filme
     ```sql

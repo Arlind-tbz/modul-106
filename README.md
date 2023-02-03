@@ -921,7 +921,13 @@ WHERE CustomerID = 1;
     ```
 4. Namen der Kategorien die weniger als 60 Filme enthalten
     ```sql
-
+   SELECT name FROM category
+   WHERE category_id IN (
+   SELECT category_id
+   FROM film_category
+   GROUP BY category_id
+   HAVING COUNT(*) < 60
+   );
     ```
 5. Länder mit mehr als 30 Städten
     ```sql

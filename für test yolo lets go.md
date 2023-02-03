@@ -2,9 +2,13 @@
 
 ---
 
+###### SYNTAX
+
+###### EXAMPLE
+
 ### Tabelle erstellen
 
-```sql
+```
 CREATE TABLE `order`(
     `id` INT NOT NULL AUTO_INCREMENT,
     `amount` INT NOT NULL,
@@ -31,7 +35,7 @@ CREATE TABLE `product`(
 
 ###### SYNTAX
 
-```sql
+```
 CREATE TABLE `table_name` (
   `fk_name_id` INT NOT NULL,
   `fk_name_id` INT NOT NULL,
@@ -42,7 +46,7 @@ CREATE TABLE `table_name` (
 
 ###### EXAMPLE
 
-```sql
+```
 CREATE TABLE `order_has_product` (
   `fk_order_id` INT NOT NULL,
   `fk_product_id` INT NOT NULL,
@@ -223,6 +227,50 @@ JOIN orders
 ON customers.customer_id = orders.customer_id
 GROUP BY customers.country
 ORDER BY SUM(orders.total) DESC;
+```
+
+---
+
+### GROUP BY & ORDER BY
+
+###### SYNTAX
+
+```sql
+SELECT column_name, aggregate_function(column_name)
+FROM table_name
+GROUP BY column_name;
+```
+
+###### EXAMPLE
+
+```sql
+SELECT department, SUM(salary)
+FROM employees
+GROUP BY department;
+```
+
+###### SYNTAX
+
+```sql
+SELECT column_name, aggregate_function(column_name)
+FROM table_name
+GROUP BY column_name;
+```
+
+###### EXAMPLE
+
+```sql
+SELECT first_name, last_name, salary
+FROM employees
+ORDER BY salary DESC;
+```
+
+###### EXAMPLE
+
+```sql
+SELECT department, SUM(salary)
+FROM employees
+GROUP BY department;
 ```
 
 ---

@@ -142,10 +142,10 @@ ON table1.column = table2.column;
 ###### EXAMPLE
 
 ```sql
-SELECT customers.name, orders.order_id
-FROM customers
-LEFT JOIN orders
-ON customers.customer_id = orders.customer_id;
+SELECT customer.firstname, order_entry.ordered_at
+FROM customer
+LEFT JOIN order_entry
+ON customer.id = order_entry.fk_customer_id;
 ```
 
 ### RIGHT JOIN
@@ -162,12 +162,24 @@ ON table1.column = table2.column;
 ###### EXAMPLE
 
 ```sql
-SELECT customers.name, orders.order_id
-FROM customers
-RIGHT JOIN orders
-ON customers.customer_id = orders.customer_id;
+SELECT customer.firstname, order_entry.ordered_at
+FROM customer
+RIGHT JOIN order_entry
+ON customer.id = order_entry.fk_customer_id;
 ```
 
+---
+
+### SUBQUERY
+
+    ```sql
+    SELECT ordered_at, delivered_at, id FROM order_entry WHERE id > (SELECT COUNT(id) FROM order_entry);
+    ```
+##### Erklärung
+
+SELECT reihe/attribut: ordered_at, delivered_at, id
+VON tabelle: order_entry
+WO die ID = SELECT COUNT(id) FROM order_entry = (22)
 ---
 
 ### DELETE
